@@ -4,67 +4,67 @@
 #define OUTER_LOOP 10
 
 void test_procedure_0(){
-    int sum = 0;
+
 }
 
 void test_procedure_1(int a){
-    int sum = a;
+
 }
 
 void test_procedure_2(int a, int b){
-    int sum = a + b;
+
 }
 
 void test_procedure_3(int a, int b, int c){
-    int sum = a + b + c;
+
 }
 
 void test_procedure_4(int a, int b, int c, int d){
-    int sum = a + b + c + d;
+
 }
 
 void test_procedure_5(int a, int b, int c, int d, int e){
-    int sum = a + b + c + d + e;
+
 }
 
 void test_procedure_6(int a, int b, int c, int d, int e, int f){
-    int sum = a + b + c + d + e + f;
+
 }
 
 void test_procedure_7(int a, int b, int c, int d, int e, int f, int g){
-    int sum = a + b + c + d + e + f + g
+
 }
 
 extern void inline_test_procedure_0(){
-    int sum = 0;
+
 }
 
 extern void inline_test_procedure_1(int a){
-    int sum = a;
+
 }
 
 extern void inline_test_procedure_2(int a, int b){
-    int sum = a + b;
+
 }
 
 extern void inline_test_procedure_3(int a, int b, int c){
-    int sum = a + b + c;
+
 }
 
 extern void inline_test_procedure_4(int a, int b, int c, int d){
-    int sum = a + b + c + d;
+
 }
 
 extern void inline_test_procedure_5(int a, int b, int c, int d, int e){
-    int sum = a + b + c + d + e;
+
 }
 
 extern void inline_test_procedure_6(int a, int b, int c, int d, int e, int f){
-    int sum = a + b + c + d + e + f;
+
 }
 
 extern void inline_test_procedure_7(int a, int b, int c, int d, int e, int f, int g){
-    int sum = a + b + c + d + e + f + g
+
 }
 
 int main(){

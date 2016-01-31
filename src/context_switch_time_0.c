@@ -53,8 +53,6 @@ int main() {
             printf("Run: %d, start: %lu\n", i, start);
             exit(0);
         } else {
-            close(fd[1]);
-
             // Wait for the child to complete
             waitpid(process_pid, &childReturnStatus, 0);
 
@@ -71,6 +69,7 @@ int main() {
 
             end = ( ((uint64_t)cycles_high1 << 32) | cycles_low1 );
             printf("Run: %d,   end: %lu\n\n", i, end);
+            close(fd[1]);
         }
     }
     return 0;

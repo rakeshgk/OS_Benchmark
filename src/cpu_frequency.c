@@ -4,7 +4,7 @@
 #include <math.h>
 #include <unistd.h>
 
-#define NUM_LOOP 10000
+#define NUM_LOOP 20
 #define SLEEP_TIME 10
 
 int main() {

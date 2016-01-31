@@ -6,7 +6,7 @@
 #include <unistd.h>
 #include <sys/types.h>
 
-#define NUM_LOOP 10000
+#define NUM_LOOP 1000
 
 int main() {
     double start, end, total_clocks = 0;

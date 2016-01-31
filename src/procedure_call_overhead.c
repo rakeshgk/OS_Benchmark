@@ -3,7 +3,7 @@
 #include <time.h>
 #include <math.h>
 
-#define NUM_LOOP 10000
+#define NUM_LOOP 1000
 
 void test_procedure_0(){
 
@@ -36,7 +36,7 @@ void test_procedure_6(int a, int b, int c, int d, int e, int f){
 void test_procedure_7(int a, int b, int c, int d, int e, int f, int g){
 
 }
-
+/*
 extern void inline_test_procedure_0(){
 
 }
@@ -68,7 +68,7 @@ extern void inline_test_procedure_6(int a, int b, int c, int d, int e, int f){
 extern void inline_test_procedure_7(int a, int b, int c, int d, int e, int f, int g){
 
 }
-
+*/
 int main() {
     double start, end, total_clocks = 0;
     double avg_clock, stddev, variance, sum = 0;
@@ -91,7 +91,7 @@ int main() {
 
         // perform the actual operation
         // The non-inline part of the code call
-        test_procedure_0();
+        // test_procedure_0();
         // test_procedure_1(1);
         // test_procedure_2(1, 2);
         // test_procedure_3(1, 2, 3);

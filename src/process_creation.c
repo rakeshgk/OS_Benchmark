@@ -8,7 +8,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-#define NUM_LOOP 10
+#define NUM_LOOP 1000
 
 void inline measured_function() {
     pid_t child_pid,tpid;

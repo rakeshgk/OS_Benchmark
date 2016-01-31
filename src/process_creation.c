@@ -1,48 +1,92 @@
-#include<stdio.h>
-#include<stdint.h>
-#include<time.h>
-#include<sys/types.h>
-#include<pthread.h>
+#include <stdio.h>
+#include <stdint.h>
+#include <time.h>
+#include <math.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <pthread.h>
+#include <stdlib.h>
+#include <unistd.h>
 
-#define OUTER_LOOP 10
+#define NUM_LOOP 10
 
+void inline measured_function() {
+    pid_t child_pid,tpid;
+    int child_status;
+    child_pid = fork();
+    if(child_pid == 0) {
+        /* This is done by the child process. */
+        exit(0);
+    } else {
+        /* This is run by the parent.  Wait for the child to terminate. */
+        do {
+            tpid = wait(&child_status);
+        } while(tpid != child_pid);
+    }
+}
 
-int main(){
-	int i=0;
-	pid_t child_pid,tpid;
+int main() {
+    double start, end, total_clocks = 0;
+    double avg_clock, stddev, variance, sum = 0;
+    double clocks[NUM_LOOP] = {0};
+    //int variable = 0;
+    int i;
+    unsigned cycles_low, cycles_high, cycles_low1, cycles_high1;
+    printf("Loading test module... \n");
+    for (i=0; i<NUM_LOOP; i++) {
+        printf("Iteration # %d \n", i);
+        //preempt_disable();            /*we disable preemption on our CPU*/
+        //raw_local_irq_save(flags);    /*we disable hard interrupts on our CPU*/
+
+        asm volatile (
+            "CPUID\n\t"
+            "RDTSC\n\t"
+            "mov %%edx, %0\n\t"
+            "mov %%eax, %1\n\t": "=r" (cycles_high), "=r" (cycles_low)::
+            "%rax", "%rbx", "%rcx", "%rdx");
+
+        // perform the actual operation
+        //measured_function();
+        pid_t child_pid,tpid;
         int child_status;
-	uint32_t cycles_high, cycles_low, cycles_high1, cycles_low1;
-	uint64_t start, end, difference;
-	for(i=0;i<OUTER_LOOP;i++){
-		asm volatile ("cpuid\n\t"
-			      "rdtsc\n\t"
-			      "mov %%edx, %0\n\t"
-			      "mov %%eax, %1\n\t"
-			      : "=r" (cycles_high), "=r" (cycles_low)
-				:: "%rax", "%rbx", "%rcx", "%rdx");
-                child_pid=fork();
-                if(child_pid == 0) {
-                	/* This is done by the child process. */
-                        exit(0);
-                }
-		else {
-		/* This is run by the parent.  Wait for the child to terminate. */
-			do {
-				tpid = wait(&child_status);
-			} while(tpid != child_pid);
-		}
-		asm volatile ("rdtscp\n\t"
-			      "mov %%edx, %0\n\t"
-			      "mov %%eax, %1\n\t"
-			      "cpuid\n\t"
-			      : "=r" (cycles_high1), "=r" (cycles_low1)
-				:: "%rax", "%rbx", "%rcx", "%rdx");
-	}
+        child_pid = fork();
+        if(child_pid == 0) {
+            /* This is done by the child process. */
+            exit(0);
+        } else {
+            /* This is run by the parent.  Wait for the child to terminate. */
+            do {
+                tpid = wait(&child_status);
+            } while(tpid != child_pid);
+        }
 
-	start = (((uint64_t)cycles_high << 32)  | cycles_low);
-	end   = (((uint64_t)cycles_high1 << 32) | cycles_low1);
+        asm volatile(
+            "RDTSCP\n\t"
+            "mov %%edx, %0\n\t"
+            "mov %%eax, %1\n\t"
+            "CPUID\n\t": "=r" (cycles_high1), "=r" (cycles_low1):: "%rax",
+            "%rbx", "%rcx", "%rdx");
 
-	difference = (end - start);
+        //raw_local_irq_restore(flags);     /*we enable hard interrupts on our CPU*/
+        //preempt_enable(); /*we enable preemption*/
 
-	printf("The difference is %lu - ", difference);
+        start = (double) ( ((uint64_t)cycles_high << 32) | cycles_low );
+        end = (double) ( ((uint64_t)cycles_high1 << 32) | cycles_low1 );
+
+        printf("\n function execution time is %f clock cycles \n", (end - start));
+        clocks[i] = (end - start);
+        total_clocks += clocks[i];
+    }
+
+    avg_clock = total_clocks/NUM_LOOP;
+    for (i=0; i<NUM_LOOP; i++) {
+        sum += pow((clocks[i] - avg_clock), 2);
+    }
+
+    variance = sum/(NUM_LOOP - 1);
+        stddev = sqrt(variance);
+    printf("average clock cycles for time is %f \n", avg_clock);
+    printf("variance is %f \n", variance);
+    printf("standard deviation is %f \n", stddev);
+    return 0;
 }

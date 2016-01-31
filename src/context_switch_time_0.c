@@ -5,6 +5,7 @@
 //#include <math.h>
 #include <unistd.h>
 #include <string.h>
+#include <sys/wait.h>
 #include <sys/types.h>
 #include <sys/wait.h>
 
@@ -16,6 +17,14 @@ int main() {
     unsigned cycles_low, cycles_high, cycles_low1, cycles_high1;
     printf("Loading test module... \n");
 
+<<<<<<< HEAD
+=======
+int main(){
+    int i = 0;
+    int childReturnStatus;
+    uint32_t cycles_high = 0, cycles_low = 0, cycles_high1 = 0, cycles_low1 = 0;
+    uint64_t start = 0, end = 0, difference = 0;
+>>>>>>> a503b9f65384a9d4ea854fad9a13d80fbef0465c
     pid_t process_pid;
 
     // Variables for setting up the pipe read and write
@@ -41,8 +50,10 @@ int main() {
         // The child writes to the shared memory
         if(process_pid == 0){
             close(fd[0]);
+
             // Send a "string" through the output side of the pipe
             write(fd[1], string, (strlen(string) + 1));
+
             // Take the start time reading
             asm volatile ("cpuid\n\t"
                           "rdtsc\n\t"
@@ -50,8 +61,14 @@ int main() {
                           "mov %%eax, %1\n\t"
                           : "=r" (cycles_high), "=r" (cycles_low)
                             :: "%rax", "%rbx", "%rcx", "%rdx");
+<<<<<<< HEAD
             start = ( ((uint64_t)cycles_high << 32) | cycles_low );
             printf("Run: %d, start: %lu\n", i, start);
+=======
+
+            start   = (((uint64_t)cycles_high << 32) | cycles_low);
+            printf("Run - %d - The start value is %lu\n", i, start);
+>>>>>>> a503b9f65384a9d4ea854fad9a13d80fbef0465c
             exit(0);
         } else {
             close(fd[1]);
@@ -70,8 +87,13 @@ int main() {
                           : "=r" (cycles_high1), "=r" (cycles_low1)
                             :: "%rax", "%rbx", "%rcx", "%rdx");
 
+<<<<<<< HEAD
             end = ( ((uint64_t)cycles_high1 << 32) | cycles_low1 );
             printf("Run: %d,   end: %lu\n\n", i, end);
+=======
+            end   = (((uint64_t)cycles_high1 << 32) | cycles_low1);
+            printf("Run - %d - The end value is %lu\n", i, end);
+>>>>>>> a503b9f65384a9d4ea854fad9a13d80fbef0465c
         }
     }
     return 0;

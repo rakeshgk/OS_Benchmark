@@ -2,17 +2,18 @@
 #include <stdint.h>
 #include <time.h>
 #include <math.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <sys/types.h>
 
 #define NUM_LOOP 10000
+
+void inline measured_function(volatile int *var) {
+    (*var) = 1;
+}
 
 int main() {
     double start, end, total_clocks = 0;
     double avg_clock, stddev, variance, sum = 0;
     double clocks[NUM_LOOP] = {0};
-    pid_t process_pid;
+    //int variable = 0;
     int i;
     unsigned cycles_low, cycles_high, cycles_low1, cycles_high1;
     printf("Loading test module... \n");
@@ -29,7 +30,7 @@ int main() {
             "%rax", "%rbx", "%rcx", "%rdx");
 
         // perform the actual operation
-        process_pid = getpid();
+        //measured_function(&variable);
 
         asm volatile(
             "RDTSCP\n\t"

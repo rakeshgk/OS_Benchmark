@@ -10,11 +10,13 @@ void inline measured_function(volatile int *var) {
 }
 
 int main() {
-    double start, end, total_clocks = 0;
+    double start, end,start_temp, total_clocks = 0;
     double avg_clock, stddev, variance, sum = 0;
     double clocks[NUM_LOOP] = {0};
-    //int variable = 0;
-    int i;
+    char readbuffer[1];
+    FILE *fd;
+    fd=fopen("sample.txt","r");
+    int i,nbytes;
     unsigned cycles_low, cycles_high, cycles_low1, cycles_high1;
     printf("Loading test module... \n");
     for (i=0; i<NUM_LOOP; i++) {
@@ -28,8 +30,10 @@ int main() {
             "mov %%edx, %0\n\t"
             "mov %%eax, %1\n\t": "=r" (cycles_high), "=r" (cycles_low)::
             "%rax", "%rbx", "%rcx", "%rdx");
-
-        ///measured_function(&variable);
+        start_temp=(((uint64_t)cycles_high << 32) | cycles_low);
+        printf("Run - %d - The start value is %lu\n", i, start);
+	nbytes = read(fd, readbuffer, sizeof(readbuffer));
+        close(fd);
         asm volatile(
             "RDTSCP\n\t"
             "mov %%edx, %0\n\t"

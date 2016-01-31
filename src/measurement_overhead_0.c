@@ -29,7 +29,9 @@ int main() {
             "mov %%eax, %1\n\t": "=r" (cycles_high), "=r" (cycles_low)::
             "%rax", "%rbx", "%rcx", "%rdx");
 
-        ///measured_function(&variable);
+        // perform the actual operation
+        //measured_function(&variable);
+
         asm volatile(
             "RDTSCP\n\t"
             "mov %%edx, %0\n\t"

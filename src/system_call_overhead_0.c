@@ -1,26 +1,16 @@
 #include <stdio.h>
 #include <stdint.h>
-#include <time.h>
-#include <sys/time.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/types.h>
 
 #define OUTER_LOOP 10
-
-// We can't add in-line functions in C without prefixing
-// the function definition with either extern or inline
-extern inline void inlineCallGetTimeOfDay(){
-    struct timeval get_time;
-    gettimeofday(&get_time, NULL);
-}
-
-void callGetTimeOfDay(){
-    struct timeval get_time;
-    gettimeofday(&get_time, NULL);
-}
 
 int main(){
     int i = 0;
     uint32_t cycles_high, cycles_low, cycles_high1, cycles_low1;
     uint64_t start, end, difference;
+    pid_t process_pid;
 
     for(i=0; i<OUTER_LOOP; ++i){
         asm volatile ("cpuid\n\t"
@@ -30,8 +20,7 @@ int main(){
                       : "=r" (cycles_high), "=r" (cycles_low)
                         :: "%rax", "%rbx", "%rcx", "%rdx");
 
-        inlineCallGetTimeOfDay();
-        //callGetTimeOfDay();
+        process_pid = getpid();
 
         asm volatile ("rdtscp\n\t"
                       "mov %%edx, %0\n\t"

@@ -1,28 +1,37 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>
+//#include <time.h>
+//#include <math.h>
 #include <unistd.h>
 #include <string.h>
 #include <sys/types.h>
+#include <sys/wait.h>
 
-#define OUTER_LOOP 10
+#define NUM_LOOP 1000
 
-int main(){
-    int i = 0;
-    uint32_t cycles_high = 0, cycles_low = 0, cycles_high1 = 0, cycles_low1 = 0;
-    uint64_t start = 0, end = 0, difference = 0;
+int main() {
+    uint64_t start, end;
+    int i;
+    unsigned cycles_low, cycles_high, cycles_low1, cycles_high1;
+    printf("Loading test module... \n");
+
     pid_t process_pid;
 
     // Variables for setting up the pipe read and write
     char string[1] = "";
     char readbuffer[1];
-    int nbytes;
+    int nbytes, childReturnStatus;
 
     // To be used for creating pipes
     // fd[0] is set up for reading and fd[1] for writing
     int fd[2];
 
-    for(i=0; i<OUTER_LOOP; ++i){
+    for (i=0; i<NUM_LOOP; i++) {
+        //printf("Iteration # %d \n\n", i);
+        //preempt_disable();            /*we disable preemption on our CPU*/
+        //raw_local_irq_save(flags);    /*we disable hard interrupts on our CPU*/
+
         // Setup the pipe
         pipe(fd);
 
@@ -41,13 +50,14 @@ int main(){
                           "mov %%eax, %1\n\t"
                           : "=r" (cycles_high), "=r" (cycles_low)
                             :: "%rax", "%rbx", "%rcx", "%rdx");
-            start   = (((uint64_t)cycles_high << 32) | cycles_low);
-            printf("Run - %d - The start value is %lu\n", i, start);
+            start = ( ((uint64_t)cycles_high << 32) | cycles_low );
+            printf("Run: %d, start: %lu\n", i, start);
             exit(0);
-        }
-        // The parent receives a string from the shared memory
-        else{
+        } else {
             close(fd[1]);
+
+            // Wait for the child to complete
+            waitpid(process_pid, &childReturnStatus, 0);
 
             // Read in a "string" from the pipe
             nbytes = read(fd[0], readbuffer, sizeof(readbuffer));
@@ -60,9 +70,8 @@ int main(){
                           : "=r" (cycles_high1), "=r" (cycles_low1)
                             :: "%rax", "%rbx", "%rcx", "%rdx");
 
-            end   = (((uint64_t)cycles_high1 << 32) | cycles_low1);
-            difference = end - start;
-            printf("Run - %d - The end value is %lu\n", i, end);
+            end = ( ((uint64_t)cycles_high1 << 32) | cycles_low1 );
+            printf("Run: %d,   end: %lu\n\n", i, end);
         }
     }
     return 0;

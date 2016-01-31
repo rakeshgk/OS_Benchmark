@@ -2,27 +2,34 @@
 #include <stdint.h>
 #include <time.h>
 #include <math.h>
+#include <unistd.h>
+#include <string.h>
+#include <sys/types.h>
+#include <stdlib.h>
 
-#define NUM_LOOP 10000
-
-void inline measured_function(volatile int *var) {
-    (*var) = 1;
-}
+#define NUM_LOOP 1000
 
 int main() {
-    double start, end,start_temp, total_clocks = 0;
+    double start, end, start_temp, total_clocks = 0;
     double avg_clock, stddev, variance, sum = 0;
     double clocks[NUM_LOOP] = {0};
+    char string[1] = "";
     char readbuffer[1];
-    FILE *fd;
-    fd=fopen("sample.txt","r");
-    int i,nbytes;
+    int i, nbytes;
     unsigned cycles_low, cycles_high, cycles_low1, cycles_high1;
-    printf("Loading test module... \n");
+
+    // fd[0] is set up for reading and fd[1] for writing
+    int fd[2];
+
     for (i=0; i<NUM_LOOP; i++) {
         printf("Iteration # %d \n", i);
         //preempt_disable();            /*we disable preemption on our CPU*/
         //raw_local_irq_save(flags);    /*we disable hard interrupts on our CPU*/
+
+        // Setup the pipe
+        pipe(fd);
+        // Send a "string" through the output side of the pipe
+        write(fd[1], string, (strlen(string) + 1));
 
         asm volatile (
             "CPUID\n\t"
@@ -30,10 +37,11 @@ int main() {
             "mov %%edx, %0\n\t"
             "mov %%eax, %1\n\t": "=r" (cycles_high), "=r" (cycles_low)::
             "%rax", "%rbx", "%rcx", "%rdx");
-        start_temp=(((uint64_t)cycles_high << 32) | cycles_low);
-        printf("Run - %d - The start value is %lu\n", i, start);
-	nbytes = read(fd, readbuffer, sizeof(readbuffer));
-        close(fd);
+
+        start_temp = (double) ( ((uint64_t)cycles_high << 32) | cycles_low );
+        printf("Run: %d, start: %f\n", i, start);
+        nbytes = read(fd[0], readbuffer, sizeof(readbuffer));
+
         asm volatile(
             "RDTSCP\n\t"
             "mov %%edx, %0\n\t"
@@ -58,7 +66,7 @@ int main() {
     }
 
     variance = sum/(NUM_LOOP - 1);
-        stddev = sqrt(variance);
+    stddev = sqrt(variance);
     printf("average clock cycles for time is %f \n", avg_clock);
     printf("variance is %f \n", variance);
     printf("standard deviation is %f \n", stddev);

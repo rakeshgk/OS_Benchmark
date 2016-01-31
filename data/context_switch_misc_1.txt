@@ -1,0 +1,4005 @@
+amit@bdaemon:~/acads/cse221/OS_Benchmark/src/misc$ ./a.out 
+Iteration # 0 
+Run: 0, start: 0.000000
+
+ function execution time is 87100.000000 clock cycles 
+Iteration # 1 
+Run: 1, start: 49490436557440.000000
+
+ function execution time is 73548.000000 clock cycles 
+Iteration # 2 
+Run: 2, start: 49490436826404.000000
+
+ function execution time is 72836.000000 clock cycles 
+Iteration # 3 
+Run: 3, start: 49490437077760.000000
+
+ function execution time is 74592.000000 clock cycles 
+Iteration # 4 
+Run: 4, start: 49490437327852.000000
+
+ function execution time is 71780.000000 clock cycles 
+Iteration # 5 
+Run: 5, start: 49490437576960.000000
+
+ function execution time is 72684.000000 clock cycles 
+Iteration # 6 
+Run: 6, start: 49490437822612.000000
+
+ function execution time is 72672.000000 clock cycles 
+Iteration # 7 
+Run: 7, start: 49490438071320.000000
+
+ function execution time is 72488.000000 clock cycles 
+Iteration # 8 
+Run: 8, start: 49490438318560.000000
+
+ function execution time is 71856.000000 clock cycles 
+Iteration # 9 
+Run: 9, start: 49490438569288.000000
+
+ function execution time is 71820.000000 clock cycles 
+Iteration # 10 
+Run: 10, start: 49490438814104.000000
+
+ function execution time is 72436.000000 clock cycles 
+Iteration # 11 
+Run: 11, start: 49490439059420.000000
+
+ function execution time is 71624.000000 clock cycles 
+Iteration # 12 
+Run: 12, start: 49490439305048.000000
+
+ function execution time is 71908.000000 clock cycles 
+Iteration # 13 
+Run: 13, start: 49490439550976.000000
+
+ function execution time is 71660.000000 clock cycles 
+Iteration # 14 
+Run: 14, start: 49490439794968.000000
+
+ function execution time is 71072.000000 clock cycles 
+Iteration # 15 
+Run: 15, start: 49490440038516.000000
+
+ function execution time is 91400.000000 clock cycles 
+Iteration # 16 
+Run: 16, start: 49490440282528.000000
+
+ function execution time is 71360.000000 clock cycles 
+Iteration # 17 
+Run: 17, start: 49490440552828.000000
+
+ function execution time is 71556.000000 clock cycles 
+Iteration # 18 
+Run: 18, start: 49490440797540.000000
+
+ function execution time is 72012.000000 clock cycles 
+Iteration # 19 
+Run: 19, start: 49490441042624.000000
+
+ function execution time is 71368.000000 clock cycles 
+Iteration # 20 
+Run: 20, start: 49490441286308.000000
+
+ function execution time is 72596.000000 clock cycles 
+Iteration # 21 
+Run: 21, start: 49490441577964.000000
+
+ function execution time is 72088.000000 clock cycles 
+Iteration # 22 
+Run: 22, start: 49490441825276.000000
+
+ function execution time is 71524.000000 clock cycles 
+Iteration # 23 
+Run: 23, start: 49490442070148.000000
+
+ function execution time is 71396.000000 clock cycles 
+Iteration # 24 
+Run: 24, start: 49490442313556.000000
+
+ function execution time is 71404.000000 clock cycles 
+Iteration # 25 
+Run: 25, start: 49490442558024.000000
+
+ function execution time is 70948.000000 clock cycles 
+Iteration # 26 
+Run: 26, start: 49490442802068.000000
+
+ function execution time is 71524.000000 clock cycles 
+Iteration # 27 
+Run: 27, start: 49490443045616.000000
+
+ function execution time is 71620.000000 clock cycles 
+Iteration # 28 
+Run: 28, start: 49490443290592.000000
+
+ function execution time is 72468.000000 clock cycles 
+Iteration # 29 
+Run: 29, start: 49490443535344.000000
+
+ function execution time is 71488.000000 clock cycles 
+Iteration # 30 
+Run: 30, start: 49490443780376.000000
+
+ function execution time is 72040.000000 clock cycles 
+Iteration # 31 
+Run: 31, start: 49490444024964.000000
+
+ function execution time is 71972.000000 clock cycles 
+Iteration # 32 
+Run: 32, start: 49490444269892.000000
+
+ function execution time is 72052.000000 clock cycles 
+Iteration # 33 
+Run: 33, start: 49490444521136.000000
+
+ function execution time is 71684.000000 clock cycles 
+Iteration # 34 
+Run: 34, start: 49490444765008.000000
+
+ function execution time is 71044.000000 clock cycles 
+Iteration # 35 
+Run: 35, start: 49490445009504.000000
+
+ function execution time is 70820.000000 clock cycles 
+Iteration # 36 
+Run: 36, start: 49490445253028.000000
+
+ function execution time is 71440.000000 clock cycles 
+Iteration # 37 
+Run: 37, start: 49490445497228.000000
+
+ function execution time is 71820.000000 clock cycles 
+Iteration # 38 
+Run: 38, start: 49490445746252.000000
+
+ function execution time is 72376.000000 clock cycles 
+Iteration # 39 
+Run: 39, start: 49490445990448.000000
+
+ function execution time is 71712.000000 clock cycles 
+Iteration # 40 
+Run: 40, start: 49490446236552.000000
+
+ function execution time is 71204.000000 clock cycles 
+Iteration # 41 
+Run: 41, start: 49490446482312.000000
+
+ function execution time is 71744.000000 clock cycles 
+Iteration # 42 
+Run: 42, start: 49490446726268.000000
+
+ function execution time is 71928.000000 clock cycles 
+Iteration # 43 
+Run: 43, start: 49490446970820.000000
+
+ function execution time is 71564.000000 clock cycles 
+Iteration # 44 
+Run: 44, start: 49490447215804.000000
+
+ function execution time is 71860.000000 clock cycles 
+Iteration # 45 
+Run: 45, start: 49490447461476.000000
+
+ function execution time is 71644.000000 clock cycles 
+Iteration # 46 
+Run: 46, start: 49490447707420.000000
+
+ function execution time is 72052.000000 clock cycles 
+Iteration # 47 
+Run: 47, start: 49490447952532.000000
+
+ function execution time is 71960.000000 clock cycles 
+Iteration # 48 
+Run: 48, start: 49490448196880.000000
+
+ function execution time is 71852.000000 clock cycles 
+Iteration # 49 
+Run: 49, start: 49490448442152.000000
+
+ function execution time is 71184.000000 clock cycles 
+Iteration # 50 
+Run: 50, start: 49490448686120.000000
+
+ function execution time is 71412.000000 clock cycles 
+Iteration # 51 
+Run: 51, start: 49490448930048.000000
+
+ function execution time is 71236.000000 clock cycles 
+Iteration # 52 
+Run: 52, start: 49490449174800.000000
+
+ function execution time is 71164.000000 clock cycles 
+Iteration # 53 
+Run: 53, start: 49490449419648.000000
+
+ function execution time is 72440.000000 clock cycles 
+Iteration # 54 
+Run: 54, start: 49490449662820.000000
+
+ function execution time is 71976.000000 clock cycles 
+Iteration # 55 
+Run: 55, start: 49490449909824.000000
+
+ function execution time is 71416.000000 clock cycles 
+Iteration # 56 
+Run: 56, start: 49490450154088.000000
+
+ function execution time is 72196.000000 clock cycles 
+Iteration # 57 
+Run: 57, start: 49490450400064.000000
+
+ function execution time is 71228.000000 clock cycles 
+Iteration # 58 
+Run: 58, start: 49490450647336.000000
+
+ function execution time is 96756.000000 clock cycles 
+Iteration # 59 
+Run: 59, start: 49490450892736.000000
+
+ function execution time is 72680.000000 clock cycles 
+Iteration # 60 
+Run: 60, start: 49490451167828.000000
+
+ function execution time is 71692.000000 clock cycles 
+Iteration # 61 
+Run: 61, start: 49490451414780.000000
+
+ function execution time is 71436.000000 clock cycles 
+Iteration # 62 
+Run: 62, start: 49490451661092.000000
+
+ function execution time is 73392.000000 clock cycles 
+Iteration # 63 
+Run: 63, start: 49490451909812.000000
+
+ function execution time is 74176.000000 clock cycles 
+Iteration # 64 
+Run: 64, start: 49490452160152.000000
+
+ function execution time is 44856.000000 clock cycles 
+Iteration # 65 
+Run: 65, start: 49490452411692.000000
+
+ function execution time is 43588.000000 clock cycles 
+Iteration # 66 
+Run: 66, start: 49490452488368.000000
+
+ function execution time is 11884.000000 clock cycles 
+Iteration # 67 
+Run: 67, start: 49490452563004.000000
+
+ function execution time is 11856.000000 clock cycles 
+Iteration # 68 
+Run: 68, start: 49490452637592.000000
+
+ function execution time is 12072.000000 clock cycles 
+Iteration # 69 
+Run: 69, start: 49490452712312.000000
+
+ function execution time is 12352.000000 clock cycles 
+Iteration # 70 
+Run: 70, start: 49490452785976.000000
+
+ function execution time is 11840.000000 clock cycles 
+Iteration # 71 
+Run: 71, start: 49490452859748.000000
+
+ function execution time is 13068.000000 clock cycles 
+Iteration # 72 
+Run: 72, start: 49490452935012.000000
+
+ function execution time is 12700.000000 clock cycles 
+Iteration # 73 
+Run: 73, start: 49490453009832.000000
+
+ function execution time is 12580.000000 clock cycles 
+Iteration # 74 
+Run: 74, start: 49490453083404.000000
+
+ function execution time is 12628.000000 clock cycles 
+Iteration # 75 
+Run: 75, start: 49490453157332.000000
+
+ function execution time is 13436.000000 clock cycles 
+Iteration # 76 
+Run: 76, start: 49490453229868.000000
+
+ function execution time is 14496.000000 clock cycles 
+Iteration # 77 
+Run: 77, start: 49490453301448.000000
+
+ function execution time is 44652.000000 clock cycles 
+Iteration # 78 
+Run: 78, start: 49490453342952.000000
+
+ function execution time is 43528.000000 clock cycles 
+Iteration # 79 
+Run: 79, start: 49490453417264.000000
+
+ function execution time is 43936.000000 clock cycles 
+Iteration # 80 
+Run: 80, start: 49490453490640.000000
+
+ function execution time is 44116.000000 clock cycles 
+Iteration # 81 
+Run: 81, start: 49490453564412.000000
+
+ function execution time is 44440.000000 clock cycles 
+Iteration # 82 
+Run: 82, start: 49490453637328.000000
+
+ function execution time is 43512.000000 clock cycles 
+Iteration # 83 
+Run: 83, start: 49490453711860.000000
+
+ function execution time is 44428.000000 clock cycles 
+Iteration # 84 
+Run: 84, start: 49490453785188.000000
+
+ function execution time is 43296.000000 clock cycles 
+Iteration # 85 
+Run: 85, start: 49490453858400.000000
+
+ function execution time is 43748.000000 clock cycles 
+Iteration # 86 
+Run: 86, start: 49490453930596.000000
+
+ function execution time is 44016.000000 clock cycles 
+Iteration # 87 
+Run: 87, start: 49490454003464.000000
+
+ function execution time is 43324.000000 clock cycles 
+Iteration # 88 
+Run: 88, start: 49490454076380.000000
+
+ function execution time is 43552.000000 clock cycles 
+Iteration # 89 
+Run: 89, start: 49490454148736.000000
+
+ function execution time is 44588.000000 clock cycles 
+Iteration # 90 
+Run: 90, start: 49490454221604.000000
+
+ function execution time is 44508.000000 clock cycles 
+Iteration # 91 
+Run: 91, start: 49490454295420.000000
+
+ function execution time is 43612.000000 clock cycles 
+Iteration # 92 
+Run: 92, start: 49490454367864.000000
+
+ function execution time is 43684.000000 clock cycles 
+Iteration # 93 
+Run: 93, start: 49490454444060.000000
+
+ function execution time is 11732.000000 clock cycles 
+Iteration # 94 
+Run: 94, start: 49490454517520.000000
+
+ function execution time is 44984.000000 clock cycles 
+Iteration # 95 
+Run: 95, start: 49490454597508.000000
+
+ function execution time is 43944.000000 clock cycles 
+Iteration # 96 
+Run: 96, start: 49490454672064.000000
+
+ function execution time is 44444.000000 clock cycles 
+Iteration # 97 
+Run: 97, start: 49490454751116.000000
+
+ function execution time is 44632.000000 clock cycles 
+Iteration # 98 
+Run: 98, start: 49490454825036.000000
+
+ function execution time is 44920.000000 clock cycles 
+Iteration # 99 
+Run: 99, start: 49490454903532.000000
+
+ function execution time is 45004.000000 clock cycles 
+Iteration # 100 
+Run: 100, start: 49490454978368.000000
+
+ function execution time is 45000.000000 clock cycles 
+Iteration # 101 
+Run: 101, start: 49490455055044.000000
+
+ function execution time is 44232.000000 clock cycles 
+Iteration # 102 
+Run: 102, start: 49490455129404.000000
+
+ function execution time is 44636.000000 clock cycles 
+Iteration # 103 
+Run: 103, start: 49490455208012.000000
+
+ function execution time is 12812.000000 clock cycles 
+Iteration # 104 
+Run: 104, start: 49490455312340.000000
+
+ function execution time is 14920.000000 clock cycles 
+Iteration # 105 
+Run: 105, start: 49490455384524.000000
+
+ function execution time is 44744.000000 clock cycles 
+Iteration # 106 
+Run: 106, start: 49490455426932.000000
+
+ function execution time is 44552.000000 clock cycles 
+Iteration # 107 
+Run: 107, start: 49490455500432.000000
+
+ function execution time is 44900.000000 clock cycles 
+Iteration # 108 
+Run: 108, start: 49490455574296.000000
+
+ function execution time is 44688.000000 clock cycles 
+Iteration # 109 
+Run: 109, start: 49490455648964.000000
+
+ function execution time is 44520.000000 clock cycles 
+Iteration # 110 
+Run: 110, start: 49490455722164.000000
+
+ function execution time is 44084.000000 clock cycles 
+Iteration # 111 
+Run: 111, start: 49490455796412.000000
+
+ function execution time is 43568.000000 clock cycles 
+Iteration # 112 
+Run: 112, start: 49490455869748.000000
+
+ function execution time is 44024.000000 clock cycles 
+Iteration # 113 
+Run: 113, start: 49490455943040.000000
+
+ function execution time is 41852.000000 clock cycles 
+Iteration # 114 
+Run: 114, start: 49490456015884.000000
+
+ function execution time is 11752.000000 clock cycles 
+Iteration # 115 
+Run: 115, start: 49490456088144.000000
+
+ function execution time is 12208.000000 clock cycles 
+Iteration # 116 
+Run: 116, start: 49490456159424.000000
+
+ function execution time is 11868.000000 clock cycles 
+Iteration # 117 
+Run: 117, start: 49490456232616.000000
+
+ function execution time is 11840.000000 clock cycles 
+Iteration # 118 
+Run: 118, start: 49490456305400.000000
+
+ function execution time is 44488.000000 clock cycles 
+Iteration # 119 
+Run: 119, start: 49490456382828.000000
+
+ function execution time is 42676.000000 clock cycles 
+Iteration # 120 
+Run: 120, start: 49490456456932.000000
+
+ function execution time is 12060.000000 clock cycles 
+Iteration # 121 
+Run: 121, start: 49490456529984.000000
+
+ function execution time is 11900.000000 clock cycles 
+Iteration # 122 
+Run: 122, start: 49490456603392.000000
+
+ function execution time is 11892.000000 clock cycles 
+Iteration # 123 
+Run: 123, start: 49490456677472.000000
+
+ function execution time is 12108.000000 clock cycles 
+Iteration # 124 
+Run: 124, start: 49490456751508.000000
+
+ function execution time is 12476.000000 clock cycles 
+Iteration # 125 
+Run: 125, start: 49490456825384.000000
+
+ function execution time is 12544.000000 clock cycles 
+Iteration # 126 
+Run: 126, start: 49490456899480.000000
+
+ function execution time is 13120.000000 clock cycles 
+Iteration # 127 
+Run: 127, start: 49490456983240.000000
+
+ function execution time is 12764.000000 clock cycles 
+Iteration # 128 
+Run: 128, start: 49490457058148.000000
+
+ function execution time is 12456.000000 clock cycles 
+Iteration # 129 
+Run: 129, start: 49490457131044.000000
+
+ function execution time is 13096.000000 clock cycles 
+Iteration # 130 
+Run: 130, start: 49490457205728.000000
+
+ function execution time is 14180.000000 clock cycles 
+Iteration # 131 
+Run: 131, start: 49490457279316.000000
+
+ function execution time is 15128.000000 clock cycles 
+Iteration # 132 
+Run: 132, start: 49490457351580.000000
+
+ function execution time is 45040.000000 clock cycles 
+Iteration # 133 
+Run: 133, start: 49490457394048.000000
+
+ function execution time is 44660.000000 clock cycles 
+Iteration # 134 
+Run: 134, start: 49490457468764.000000
+
+ function execution time is 45240.000000 clock cycles 
+Iteration # 135 
+Run: 135, start: 49490457543516.000000
+
+ function execution time is 44764.000000 clock cycles 
+Iteration # 136 
+Run: 136, start: 49490457617732.000000
+
+ function execution time is 45112.000000 clock cycles 
+Iteration # 137 
+Run: 137, start: 49490457692872.000000
+
+ function execution time is 45000.000000 clock cycles 
+Iteration # 138 
+Run: 138, start: 49490457766764.000000
+
+ function execution time is 44348.000000 clock cycles 
+Iteration # 139 
+Run: 139, start: 49490457840328.000000
+
+ function execution time is 45232.000000 clock cycles 
+Iteration # 140 
+Run: 140, start: 49490457913704.000000
+
+ function execution time is 43820.000000 clock cycles 
+Iteration # 141 
+Run: 141, start: 49490457988776.000000
+
+ function execution time is 43976.000000 clock cycles 
+Iteration # 142 
+Run: 142, start: 49490458062096.000000
+
+ function execution time is 42408.000000 clock cycles 
+Iteration # 143 
+Run: 143, start: 49490458134628.000000
+
+ function execution time is 11700.000000 clock cycles 
+Iteration # 144 
+Run: 144, start: 49490458207176.000000
+
+ function execution time is 12476.000000 clock cycles 
+Iteration # 145 
+Run: 145, start: 49490458280176.000000
+
+ function execution time is 12108.000000 clock cycles 
+Iteration # 146 
+Run: 146, start: 49490458353392.000000
+
+ function execution time is 12020.000000 clock cycles 
+Iteration # 147 
+Run: 147, start: 49490458426156.000000
+
+ function execution time is 11852.000000 clock cycles 
+Iteration # 148 
+Run: 148, start: 49490458498652.000000
+
+ function execution time is 11924.000000 clock cycles 
+Iteration # 149 
+Run: 149, start: 49490458570520.000000
+
+ function execution time is 43980.000000 clock cycles 
+Iteration # 150 
+Run: 150, start: 49490458649860.000000
+
+ function execution time is 44088.000000 clock cycles 
+Iteration # 151 
+Run: 151, start: 49490458723628.000000
+
+ function execution time is 43852.000000 clock cycles 
+Iteration # 152 
+Run: 152, start: 49490458797004.000000
+
+ function execution time is 44604.000000 clock cycles 
+Iteration # 153 
+Run: 153, start: 49490458870752.000000
+
+ function execution time is 1617328.000000 clock cycles 
+Iteration # 154 
+Run: 154, start: 49490458944556.000000
+
+ function execution time is 13120.000000 clock cycles 
+Iteration # 155 
+Run: 155, start: 49490460598008.000000
+
+ function execution time is 11668.000000 clock cycles 
+Iteration # 156 
+Run: 156, start: 49490460637732.000000
+
+ function execution time is 11248.000000 clock cycles 
+Iteration # 157 
+Run: 157, start: 49490460675500.000000
+
+ function execution time is 11020.000000 clock cycles 
+Iteration # 158 
+Run: 158, start: 49490460712972.000000
+
+ function execution time is 11112.000000 clock cycles 
+Iteration # 159 
+Run: 159, start: 49490460749884.000000
+
+ function execution time is 11940.000000 clock cycles 
+Iteration # 160 
+Run: 160, start: 49490460786660.000000
+
+ function execution time is 11216.000000 clock cycles 
+Iteration # 161 
+Run: 161, start: 49490460824744.000000
+
+ function execution time is 11180.000000 clock cycles 
+Iteration # 162 
+Run: 162, start: 49490460861812.000000
+
+ function execution time is 11172.000000 clock cycles 
+Iteration # 163 
+Run: 163, start: 49490460899084.000000
+
+ function execution time is 11032.000000 clock cycles 
+Iteration # 164 
+Run: 164, start: 49490460936632.000000
+
+ function execution time is 11196.000000 clock cycles 
+Iteration # 165 
+Run: 165, start: 49490460973216.000000
+
+ function execution time is 11108.000000 clock cycles 
+Iteration # 166 
+Run: 166, start: 49490461010996.000000
+
+ function execution time is 11040.000000 clock cycles 
+Iteration # 167 
+Run: 167, start: 49490461048656.000000
+
+ function execution time is 11124.000000 clock cycles 
+Iteration # 168 
+Run: 168, start: 49490461086532.000000
+
+ function execution time is 10984.000000 clock cycles 
+Iteration # 169 
+Run: 169, start: 49490461123884.000000
+
+ function execution time is 11160.000000 clock cycles 
+Iteration # 170 
+Run: 170, start: 49490461161256.000000
+
+ function execution time is 11160.000000 clock cycles 
+Iteration # 171 
+Run: 171, start: 49490461199284.000000
+
+ function execution time is 11256.000000 clock cycles 
+Iteration # 172 
+Run: 172, start: 49490461235980.000000
+
+ function execution time is 11184.000000 clock cycles 
+Iteration # 173 
+Run: 173, start: 49490461273296.000000
+
+ function execution time is 11132.000000 clock cycles 
+Iteration # 174 
+Run: 174, start: 49490461310616.000000
+
+ function execution time is 11064.000000 clock cycles 
+Iteration # 175 
+Run: 175, start: 49490461347356.000000
+
+ function execution time is 11216.000000 clock cycles 
+Iteration # 176 
+Run: 176, start: 49490461383812.000000
+
+ function execution time is 11136.000000 clock cycles 
+Iteration # 177 
+Run: 177, start: 49490461421496.000000
+
+ function execution time is 11204.000000 clock cycles 
+Iteration # 178 
+Run: 178, start: 49490461465196.000000
+
+ function execution time is 11204.000000 clock cycles 
+Iteration # 179 
+Run: 179, start: 49490461502808.000000
+
+ function execution time is 11084.000000 clock cycles 
+Iteration # 180 
+Run: 180, start: 49490461540404.000000
+
+ function execution time is 11204.000000 clock cycles 
+Iteration # 181 
+Run: 181, start: 49490461582776.000000
+
+ function execution time is 11224.000000 clock cycles 
+Iteration # 182 
+Run: 182, start: 49490461620784.000000
+
+ function execution time is 11288.000000 clock cycles 
+Iteration # 183 
+Run: 183, start: 49490461658728.000000
+
+ function execution time is 11328.000000 clock cycles 
+Iteration # 184 
+Run: 184, start: 49490461696052.000000
+
+ function execution time is 11260.000000 clock cycles 
+Iteration # 185 
+Run: 185, start: 49490461733156.000000
+
+ function execution time is 11408.000000 clock cycles 
+Iteration # 186 
+Run: 186, start: 49490461770388.000000
+
+ function execution time is 11364.000000 clock cycles 
+Iteration # 187 
+Run: 187, start: 49490461807120.000000
+
+ function execution time is 11184.000000 clock cycles 
+Iteration # 188 
+Run: 188, start: 49490461844928.000000
+
+ function execution time is 11404.000000 clock cycles 
+Iteration # 189 
+Run: 189, start: 49490461882064.000000
+
+ function execution time is 10912.000000 clock cycles 
+Iteration # 190 
+Run: 190, start: 49490461921744.000000
+
+ function execution time is 11028.000000 clock cycles 
+Iteration # 191 
+Run: 191, start: 49490461957828.000000
+
+ function execution time is 11080.000000 clock cycles 
+Iteration # 192 
+Run: 192, start: 49490461993572.000000
+
+ function execution time is 10944.000000 clock cycles 
+Iteration # 193 
+Run: 193, start: 49490462029640.000000
+
+ function execution time is 10868.000000 clock cycles 
+Iteration # 194 
+Run: 194, start: 49490462065808.000000
+
+ function execution time is 10868.000000 clock cycles 
+Iteration # 195 
+Run: 195, start: 49490462103264.000000
+
+ function execution time is 10964.000000 clock cycles 
+Iteration # 196 
+Run: 196, start: 49490462139248.000000
+
+ function execution time is 11532.000000 clock cycles 
+Iteration # 197 
+Run: 197, start: 49490462175916.000000
+
+ function execution time is 11912.000000 clock cycles 
+Iteration # 198 
+Run: 198, start: 49490462212844.000000
+
+ function execution time is 11116.000000 clock cycles 
+Iteration # 199 
+Run: 199, start: 49490462250640.000000
+
+ function execution time is 10924.000000 clock cycles 
+Iteration # 200 
+Run: 200, start: 49490462288212.000000
+
+ function execution time is 11168.000000 clock cycles 
+Iteration # 201 
+Run: 201, start: 49490462324140.000000
+
+ function execution time is 11320.000000 clock cycles 
+Iteration # 202 
+Run: 202, start: 49490462361588.000000
+
+ function execution time is 11016.000000 clock cycles 
+Iteration # 203 
+Run: 203, start: 49490462402944.000000
+
+ function execution time is 11336.000000 clock cycles 
+Iteration # 204 
+Run: 204, start: 49490462439876.000000
+
+ function execution time is 10944.000000 clock cycles 
+Iteration # 205 
+Run: 205, start: 49490462476212.000000
+
+ function execution time is 11300.000000 clock cycles 
+Iteration # 206 
+Run: 206, start: 49490462512908.000000
+
+ function execution time is 10948.000000 clock cycles 
+Iteration # 207 
+Run: 207, start: 49490462553488.000000
+
+ function execution time is 10972.000000 clock cycles 
+Iteration # 208 
+Run: 208, start: 49490462589932.000000
+
+ function execution time is 11064.000000 clock cycles 
+Iteration # 209 
+Run: 209, start: 49490462627500.000000
+
+ function execution time is 10892.000000 clock cycles 
+Iteration # 210 
+Run: 210, start: 49490462665340.000000
+
+ function execution time is 11008.000000 clock cycles 
+Iteration # 211 
+Run: 211, start: 49490462702044.000000
+
+ function execution time is 11284.000000 clock cycles 
+Iteration # 212 
+Run: 212, start: 49490462744948.000000
+
+ function execution time is 11208.000000 clock cycles 
+Iteration # 213 
+Run: 213, start: 49490462782640.000000
+
+ function execution time is 10956.000000 clock cycles 
+Iteration # 214 
+Run: 214, start: 49490462819356.000000
+
+ function execution time is 11064.000000 clock cycles 
+Iteration # 215 
+Run: 215, start: 49490462859416.000000
+
+ function execution time is 11324.000000 clock cycles 
+Iteration # 216 
+Run: 216, start: 49490462896864.000000
+
+ function execution time is 11248.000000 clock cycles 
+Iteration # 217 
+Run: 217, start: 49490462933148.000000
+
+ function execution time is 11352.000000 clock cycles 
+Iteration # 218 
+Run: 218, start: 49490462970020.000000
+
+ function execution time is 10924.000000 clock cycles 
+Iteration # 219 
+Run: 219, start: 49490463012236.000000
+
+ function execution time is 10796.000000 clock cycles 
+Iteration # 220 
+Run: 220, start: 49490463048468.000000
+
+ function execution time is 12572.000000 clock cycles 
+Iteration # 221 
+Run: 221, start: 49490464468192.000000
+
+ function execution time is 11216.000000 clock cycles 
+Iteration # 222 
+Run: 222, start: 49490464508768.000000
+
+ function execution time is 11244.000000 clock cycles 
+Iteration # 223 
+Run: 223, start: 49490464545944.000000
+
+ function execution time is 11060.000000 clock cycles 
+Iteration # 224 
+Run: 224, start: 49490464582468.000000
+
+ function execution time is 11072.000000 clock cycles 
+Iteration # 225 
+Run: 225, start: 49490464618956.000000
+
+ function execution time is 11100.000000 clock cycles 
+Iteration # 226 
+Run: 226, start: 49490464655700.000000
+
+ function execution time is 11140.000000 clock cycles 
+Iteration # 227 
+Run: 227, start: 49490464691564.000000
+
+ function execution time is 11080.000000 clock cycles 
+Iteration # 228 
+Run: 228, start: 49490464727844.000000
+
+ function execution time is 11480.000000 clock cycles 
+Iteration # 229 
+Run: 229, start: 49490464764604.000000
+
+ function execution time is 11160.000000 clock cycles 
+Iteration # 230 
+Run: 230, start: 49490464803368.000000
+
+ function execution time is 11180.000000 clock cycles 
+Iteration # 231 
+Run: 231, start: 49490464839972.000000
+
+ function execution time is 11236.000000 clock cycles 
+Iteration # 232 
+Run: 232, start: 49490464903740.000000
+
+ function execution time is 11212.000000 clock cycles 
+Iteration # 233 
+Run: 233, start: 49490464940952.000000
+
+ function execution time is 11180.000000 clock cycles 
+Iteration # 234 
+Run: 234, start: 49490464978936.000000
+
+ function execution time is 11448.000000 clock cycles 
+Iteration # 235 
+Run: 235, start: 49490465015336.000000
+
+ function execution time is 11072.000000 clock cycles 
+Iteration # 236 
+Run: 236, start: 49490465052128.000000
+
+ function execution time is 11012.000000 clock cycles 
+Iteration # 237 
+Run: 237, start: 49490465089044.000000
+
+ function execution time is 10944.000000 clock cycles 
+Iteration # 238 
+Run: 238, start: 49490465125768.000000
+
+ function execution time is 11072.000000 clock cycles 
+Iteration # 239 
+Run: 239, start: 49490465162188.000000
+
+ function execution time is 10920.000000 clock cycles 
+Iteration # 240 
+Run: 240, start: 49490465198748.000000
+
+ function execution time is 11052.000000 clock cycles 
+Iteration # 241 
+Run: 241, start: 49490465234940.000000
+
+ function execution time is 11140.000000 clock cycles 
+Iteration # 242 
+Run: 242, start: 49490465271276.000000
+
+ function execution time is 11108.000000 clock cycles 
+Iteration # 243 
+Run: 243, start: 49490465311416.000000
+
+ function execution time is 10928.000000 clock cycles 
+Iteration # 244 
+Run: 244, start: 49490465349392.000000
+
+ function execution time is 10964.000000 clock cycles 
+Iteration # 245 
+Run: 245, start: 49490465385804.000000
+
+ function execution time is 11084.000000 clock cycles 
+Iteration # 246 
+Run: 246, start: 49490465422364.000000
+
+ function execution time is 11064.000000 clock cycles 
+Iteration # 247 
+Run: 247, start: 49490465458732.000000
+
+ function execution time is 10916.000000 clock cycles 
+Iteration # 248 
+Run: 248, start: 49490465495908.000000
+
+ function execution time is 11192.000000 clock cycles 
+Iteration # 249 
+Run: 249, start: 49490465532368.000000
+
+ function execution time is 11448.000000 clock cycles 
+Iteration # 250 
+Run: 250, start: 49490465569892.000000
+
+ function execution time is 11088.000000 clock cycles 
+Iteration # 251 
+Run: 251, start: 49490465607352.000000
+
+ function execution time is 10904.000000 clock cycles 
+Iteration # 252 
+Run: 252, start: 49490465644664.000000
+
+ function execution time is 11072.000000 clock cycles 
+Iteration # 253 
+Run: 253, start: 49490465681180.000000
+
+ function execution time is 10960.000000 clock cycles 
+Iteration # 254 
+Run: 254, start: 49490465717456.000000
+
+ function execution time is 12592.000000 clock cycles 
+Iteration # 255 
+Run: 255, start: 49490465765304.000000
+
+ function execution time is 11324.000000 clock cycles 
+Iteration # 256 
+Run: 256, start: 49490465804368.000000
+
+ function execution time is 11236.000000 clock cycles 
+Iteration # 257 
+Run: 257, start: 49490465841768.000000
+
+ function execution time is 11096.000000 clock cycles 
+Iteration # 258 
+Run: 258, start: 49490465878680.000000
+
+ function execution time is 11164.000000 clock cycles 
+Iteration # 259 
+Run: 259, start: 49490465915348.000000
+
+ function execution time is 11088.000000 clock cycles 
+Iteration # 260 
+Run: 260, start: 49490465952052.000000
+
+ function execution time is 11048.000000 clock cycles 
+Iteration # 261 
+Run: 261, start: 49490465988872.000000
+
+ function execution time is 11032.000000 clock cycles 
+Iteration # 262 
+Run: 262, start: 49490466025128.000000
+
+ function execution time is 11128.000000 clock cycles 
+Iteration # 263 
+Run: 263, start: 49490466061408.000000
+
+ function execution time is 11100.000000 clock cycles 
+Iteration # 264 
+Run: 264, start: 49490466098276.000000
+
+ function execution time is 10912.000000 clock cycles 
+Iteration # 265 
+Run: 265, start: 49490466134480.000000
+
+ function execution time is 11000.000000 clock cycles 
+Iteration # 266 
+Run: 266, start: 49490466170300.000000
+
+ function execution time is 10884.000000 clock cycles 
+Iteration # 267 
+Run: 267, start: 49490466206252.000000
+
+ function execution time is 11044.000000 clock cycles 
+Iteration # 268 
+Run: 268, start: 49490466248676.000000
+
+ function execution time is 11144.000000 clock cycles 
+Iteration # 269 
+Run: 269, start: 49490466285080.000000
+
+ function execution time is 11296.000000 clock cycles 
+Iteration # 270 
+Run: 270, start: 49490466322244.000000
+
+ function execution time is 11580.000000 clock cycles 
+Iteration # 271 
+Run: 271, start: 49490466359728.000000
+
+ function execution time is 10932.000000 clock cycles 
+Iteration # 272 
+Run: 272, start: 49490466401900.000000
+
+ function execution time is 10892.000000 clock cycles 
+Iteration # 273 
+Run: 273, start: 49490466439136.000000
+
+ function execution time is 11192.000000 clock cycles 
+Iteration # 274 
+Run: 274, start: 49490466479560.000000
+
+ function execution time is 11304.000000 clock cycles 
+Iteration # 275 
+Run: 275, start: 49490466517324.000000
+
+ function execution time is 10976.000000 clock cycles 
+Iteration # 276 
+Run: 276, start: 49490466553848.000000
+
+ function execution time is 18152.000000 clock cycles 
+Iteration # 277 
+Run: 277, start: 49490468999728.000000
+
+ function execution time is 11596.000000 clock cycles 
+Iteration # 278 
+Run: 278, start: 49490469047452.000000
+
+ function execution time is 11100.000000 clock cycles 
+Iteration # 279 
+Run: 279, start: 49490469085976.000000
+
+ function execution time is 11024.000000 clock cycles 
+Iteration # 280 
+Run: 280, start: 49490469123964.000000
+
+ function execution time is 11024.000000 clock cycles 
+Iteration # 281 
+Run: 281, start: 49490469161128.000000
+
+ function execution time is 11196.000000 clock cycles 
+Iteration # 282 
+Run: 282, start: 49490469198440.000000
+
+ function execution time is 11144.000000 clock cycles 
+Iteration # 283 
+Run: 283, start: 49490469234816.000000
+
+ function execution time is 11012.000000 clock cycles 
+Iteration # 284 
+Run: 284, start: 49490469271180.000000
+
+ function execution time is 10960.000000 clock cycles 
+Iteration # 285 
+Run: 285, start: 49490469307156.000000
+
+ function execution time is 10972.000000 clock cycles 
+Iteration # 286 
+Run: 286, start: 49490469343476.000000
+
+ function execution time is 11284.000000 clock cycles 
+Iteration # 287 
+Run: 287, start: 49490469380444.000000
+
+ function execution time is 11092.000000 clock cycles 
+Iteration # 288 
+Run: 288, start: 49490469418068.000000
+
+ function execution time is 11016.000000 clock cycles 
+Iteration # 289 
+Run: 289, start: 49490469454388.000000
+
+ function execution time is 11180.000000 clock cycles 
+Iteration # 290 
+Run: 290, start: 49490469491380.000000
+
+ function execution time is 10836.000000 clock cycles 
+Iteration # 291 
+Run: 291, start: 49490469528264.000000
+
+ function execution time is 11100.000000 clock cycles 
+Iteration # 292 
+Run: 292, start: 49490469564172.000000
+
+ function execution time is 11296.000000 clock cycles 
+Iteration # 293 
+Run: 293, start: 49490469605212.000000
+
+ function execution time is 11016.000000 clock cycles 
+Iteration # 294 
+Run: 294, start: 49490469643912.000000
+
+ function execution time is 10964.000000 clock cycles 
+Iteration # 295 
+Run: 295, start: 49490469680332.000000
+
+ function execution time is 11156.000000 clock cycles 
+Iteration # 296 
+Run: 296, start: 49490469716536.000000
+
+ function execution time is 11264.000000 clock cycles 
+Iteration # 297 
+Run: 297, start: 49490469757936.000000
+
+ function execution time is 11292.000000 clock cycles 
+Iteration # 298 
+Run: 298, start: 49490469795388.000000
+
+ function execution time is 11036.000000 clock cycles 
+Iteration # 299 
+Run: 299, start: 49490469832724.000000
+
+ function execution time is 10928.000000 clock cycles 
+Iteration # 300 
+Run: 300, start: 49490469868668.000000
+
+ function execution time is 11080.000000 clock cycles 
+Iteration # 301 
+Run: 301, start: 49490469910772.000000
+
+ function execution time is 11052.000000 clock cycles 
+Iteration # 302 
+Run: 302, start: 49490469946948.000000
+
+ function execution time is 11044.000000 clock cycles 
+Iteration # 303 
+Run: 303, start: 49490469982892.000000
+
+ function execution time is 11324.000000 clock cycles 
+Iteration # 304 
+Run: 304, start: 49490470022168.000000
+
+ function execution time is 10936.000000 clock cycles 
+Iteration # 305 
+Run: 305, start: 49490470064016.000000
+
+ function execution time is 13560.000000 clock cycles 
+Iteration # 306 
+Run: 306, start: 49490470120584.000000
+
+ function execution time is 11252.000000 clock cycles 
+Iteration # 307 
+Run: 307, start: 49490470162616.000000
+
+ function execution time is 11252.000000 clock cycles 
+Iteration # 308 
+Run: 308, start: 49490470199260.000000
+
+ function execution time is 10988.000000 clock cycles 
+Iteration # 309 
+Run: 309, start: 49490470237268.000000
+
+ function execution time is 10952.000000 clock cycles 
+Iteration # 310 
+Run: 310, start: 49490470274276.000000
+
+ function execution time is 10948.000000 clock cycles 
+Iteration # 311 
+Run: 311, start: 49490470311568.000000
+
+ function execution time is 11104.000000 clock cycles 
+Iteration # 312 
+Run: 312, start: 49490470348292.000000
+
+ function execution time is 10888.000000 clock cycles 
+Iteration # 313 
+Run: 313, start: 49490470384860.000000
+
+ function execution time is 18240.000000 clock cycles 
+Iteration # 314 
+Run: 314, start: 49490474197740.000000
+
+ function execution time is 12704.000000 clock cycles 
+Iteration # 315 
+Run: 315, start: 49490474245460.000000
+
+ function execution time is 12152.000000 clock cycles 
+Iteration # 316 
+Run: 316, start: 49490474287268.000000
+
+ function execution time is 13468.000000 clock cycles 
+Iteration # 317 
+Run: 317, start: 49490474327296.000000
+
+ function execution time is 12036.000000 clock cycles 
+Iteration # 318 
+Run: 318, start: 49490474370000.000000
+
+ function execution time is 11564.000000 clock cycles 
+Iteration # 319 
+Run: 319, start: 49490474409324.000000
+
+ function execution time is 11728.000000 clock cycles 
+Iteration # 320 
+Run: 320, start: 49490474449076.000000
+
+ function execution time is 11932.000000 clock cycles 
+Iteration # 321 
+Run: 321, start: 49490474494348.000000
+
+ function execution time is 12124.000000 clock cycles 
+Iteration # 322 
+Run: 322, start: 49490474533616.000000
+
+ function execution time is 11852.000000 clock cycles 
+Iteration # 323 
+Run: 323, start: 49490474572876.000000
+
+ function execution time is 11892.000000 clock cycles 
+Iteration # 324 
+Run: 324, start: 49490474612008.000000
+
+ function execution time is 11636.000000 clock cycles 
+Iteration # 325 
+Run: 325, start: 49490474650316.000000
+
+ function execution time is 11628.000000 clock cycles 
+Iteration # 326 
+Run: 326, start: 49490474688820.000000
+
+ function execution time is 11824.000000 clock cycles 
+Iteration # 327 
+Run: 327, start: 49490474726968.000000
+
+ function execution time is 11820.000000 clock cycles 
+Iteration # 328 
+Run: 328, start: 49490474766628.000000
+
+ function execution time is 11768.000000 clock cycles 
+Iteration # 329 
+Run: 329, start: 49490474805820.000000
+
+ function execution time is 11708.000000 clock cycles 
+Iteration # 330 
+Run: 330, start: 49490474844348.000000
+
+ function execution time is 11892.000000 clock cycles 
+Iteration # 331 
+Run: 331, start: 49490474882400.000000
+
+ function execution time is 11660.000000 clock cycles 
+Iteration # 332 
+Run: 332, start: 49490474920664.000000
+
+ function execution time is 12140.000000 clock cycles 
+Iteration # 333 
+Run: 333, start: 49490474959676.000000
+
+ function execution time is 12116.000000 clock cycles 
+Iteration # 334 
+Run: 334, start: 49490475002340.000000
+
+ function execution time is 11700.000000 clock cycles 
+Iteration # 335 
+Run: 335, start: 49490475041704.000000
+
+ function execution time is 11732.000000 clock cycles 
+Iteration # 336 
+Run: 336, start: 49490475080524.000000
+
+ function execution time is 11624.000000 clock cycles 
+Iteration # 337 
+Run: 337, start: 49490475124084.000000
+
+ function execution time is 11592.000000 clock cycles 
+Iteration # 338 
+Run: 338, start: 49490475163160.000000
+
+ function execution time is 11396.000000 clock cycles 
+Iteration # 339 
+Run: 339, start: 49490475202464.000000
+
+ function execution time is 13904.000000 clock cycles 
+Iteration # 340 
+Run: 340, start: 49490475240392.000000
+
+ function execution time is 11640.000000 clock cycles 
+Iteration # 341 
+Run: 341, start: 49490475281444.000000
+
+ function execution time is 11432.000000 clock cycles 
+Iteration # 342 
+Run: 342, start: 49490475319228.000000
+
+ function execution time is 11812.000000 clock cycles 
+Iteration # 343 
+Run: 343, start: 49490475356208.000000
+
+ function execution time is 11788.000000 clock cycles 
+Iteration # 344 
+Run: 344, start: 49490475394464.000000
+
+ function execution time is 11792.000000 clock cycles 
+Iteration # 345 
+Run: 345, start: 49490475432044.000000
+
+ function execution time is 12432.000000 clock cycles 
+Iteration # 346 
+Run: 346, start: 49490475491960.000000
+
+ function execution time is 11972.000000 clock cycles 
+Iteration # 347 
+Run: 347, start: 49490475531328.000000
+
+ function execution time is 11836.000000 clock cycles 
+Iteration # 348 
+Run: 348, start: 49490475569440.000000
+
+ function execution time is 11724.000000 clock cycles 
+Iteration # 349 
+Run: 349, start: 49490475607920.000000
+
+ function execution time is 11220.000000 clock cycles 
+Iteration # 350 
+Run: 350, start: 49490475645164.000000
+
+ function execution time is 11596.000000 clock cycles 
+Iteration # 351 
+Run: 351, start: 49490475682900.000000
+
+ function execution time is 11372.000000 clock cycles 
+Iteration # 352 
+Run: 352, start: 49490475720236.000000
+
+ function execution time is 12016.000000 clock cycles 
+Iteration # 353 
+Run: 353, start: 49490475759692.000000
+
+ function execution time is 11888.000000 clock cycles 
+Iteration # 354 
+Run: 354, start: 49490475798896.000000
+
+ function execution time is 11980.000000 clock cycles 
+Iteration # 355 
+Run: 355, start: 49490475837360.000000
+
+ function execution time is 11876.000000 clock cycles 
+Iteration # 356 
+Run: 356, start: 49490475876748.000000
+
+ function execution time is 11684.000000 clock cycles 
+Iteration # 357 
+Run: 357, start: 49490475915928.000000
+
+ function execution time is 12004.000000 clock cycles 
+Iteration # 358 
+Run: 358, start: 49490475953812.000000
+
+ function execution time is 11532.000000 clock cycles 
+Iteration # 359 
+Run: 359, start: 49490475992228.000000
+
+ function execution time is 11940.000000 clock cycles 
+Iteration # 360 
+Run: 360, start: 49490476029752.000000
+
+ function execution time is 11512.000000 clock cycles 
+Iteration # 361 
+Run: 361, start: 49490476067940.000000
+
+ function execution time is 11912.000000 clock cycles 
+Iteration # 362 
+Run: 362, start: 49490476105352.000000
+
+ function execution time is 12244.000000 clock cycles 
+Iteration # 363 
+Run: 363, start: 49490476144160.000000
+
+ function execution time is 11540.000000 clock cycles 
+Iteration # 364 
+Run: 364, start: 49490476186864.000000
+
+ function execution time is 12120.000000 clock cycles 
+Iteration # 365 
+Run: 365, start: 49490476228484.000000
+
+ function execution time is 11720.000000 clock cycles 
+Iteration # 366 
+Run: 366, start: 49490476267672.000000
+
+ function execution time is 11556.000000 clock cycles 
+Iteration # 367 
+Run: 367, start: 49490476306488.000000
+
+ function execution time is 11644.000000 clock cycles 
+Iteration # 368 
+Run: 368, start: 49490476345012.000000
+
+ function execution time is 11832.000000 clock cycles 
+Iteration # 369 
+Run: 369, start: 49490476384188.000000
+
+ function execution time is 12204.000000 clock cycles 
+Iteration # 370 
+Run: 370, start: 49490476422624.000000
+
+ function execution time is 12020.000000 clock cycles 
+Iteration # 371 
+Run: 371, start: 49490476461280.000000
+
+ function execution time is 13500.000000 clock cycles 
+Iteration # 372 
+Run: 372, start: 49490476499912.000000
+
+ function execution time is 12140.000000 clock cycles 
+Iteration # 373 
+Run: 373, start: 49490476540540.000000
+
+ function execution time is 125828.000000 clock cycles 
+Iteration # 374 
+Run: 374, start: 49490480830636.000000
+
+ function execution time is 16260.000000 clock cycles 
+Iteration # 375 
+Run: 375, start: 49490481015864.000000
+
+ function execution time is 16256.000000 clock cycles 
+Iteration # 376 
+Run: 376, start: 49490481082020.000000
+
+ function execution time is 15204.000000 clock cycles 
+Iteration # 377 
+Run: 377, start: 49490481138360.000000
+
+ function execution time is 16072.000000 clock cycles 
+Iteration # 378 
+Run: 378, start: 49490481206268.000000
+
+ function execution time is 15508.000000 clock cycles 
+Iteration # 379 
+Run: 379, start: 49490481257780.000000
+
+ function execution time is 18180.000000 clock cycles 
+Iteration # 380 
+Run: 380, start: 49490481308828.000000
+
+ function execution time is 17144.000000 clock cycles 
+Iteration # 381 
+Run: 381, start: 49490481371696.000000
+
+ function execution time is 24572.000000 clock cycles 
+Iteration # 382 
+Run: 382, start: 49490481542516.000000
+
+ function execution time is 17536.000000 clock cycles 
+Iteration # 383 
+Run: 383, start: 49490481616132.000000
+
+ function execution time is 16472.000000 clock cycles 
+Iteration # 384 
+Run: 384, start: 49490481680392.000000
+
+ function execution time is 17148.000000 clock cycles 
+Iteration # 385 
+Run: 385, start: 49490481737056.000000
+
+ function execution time is 101484.000000 clock cycles 
+Iteration # 386 
+Run: 386, start: 49490481800704.000000
+
+ function execution time is 13064.000000 clock cycles 
+Iteration # 387 
+Run: 387, start: 49490482060844.000000
+
+ function execution time is 12112.000000 clock cycles 
+Iteration # 388 
+Run: 388, start: 49490482102384.000000
+
+ function execution time is 14084.000000 clock cycles 
+Iteration # 389 
+Run: 389, start: 49490482198552.000000
+
+ function execution time is 12444.000000 clock cycles 
+Iteration # 390 
+Run: 390, start: 49490482240636.000000
+
+ function execution time is 12880.000000 clock cycles 
+Iteration # 391 
+Run: 391, start: 49490482324180.000000
+
+ function execution time is 13380.000000 clock cycles 
+Iteration # 392 
+Run: 392, start: 49490482402656.000000
+
+ function execution time is 13544.000000 clock cycles 
+Iteration # 393 
+Run: 393, start: 49490482483756.000000
+
+ function execution time is 13632.000000 clock cycles 
+Iteration # 394 
+Run: 394, start: 49490482561908.000000
+
+ function execution time is 13760.000000 clock cycles 
+Iteration # 395 
+Run: 395, start: 49490482642452.000000
+
+ function execution time is 13512.000000 clock cycles 
+Iteration # 396 
+Run: 396, start: 49490482727392.000000
+
+ function execution time is 14364.000000 clock cycles 
+Iteration # 397 
+Run: 397, start: 49490482805352.000000
+
+ function execution time is 14196.000000 clock cycles 
+Iteration # 398 
+Run: 398, start: 49490482885624.000000
+
+ function execution time is 13388.000000 clock cycles 
+Iteration # 399 
+Run: 399, start: 49490482964448.000000
+
+ function execution time is 13168.000000 clock cycles 
+Iteration # 400 
+Run: 400, start: 49490483045680.000000
+
+ function execution time is 13416.000000 clock cycles 
+Iteration # 401 
+Run: 401, start: 49490483122808.000000
+
+ function execution time is 12336.000000 clock cycles 
+Iteration # 402 
+Run: 402, start: 49490483202872.000000
+
+ function execution time is 14124.000000 clock cycles 
+Iteration # 403 
+Run: 403, start: 49490483277916.000000
+
+ function execution time is 14220.000000 clock cycles 
+Iteration # 404 
+Run: 404, start: 49490483356400.000000
+
+ function execution time is 13044.000000 clock cycles 
+Iteration # 405 
+Run: 405, start: 49490483434276.000000
+
+ function execution time is 13636.000000 clock cycles 
+Iteration # 406 
+Run: 406, start: 49490483511776.000000
+
+ function execution time is 13740.000000 clock cycles 
+Iteration # 407 
+Run: 407, start: 49490483589908.000000
+
+ function execution time is 13804.000000 clock cycles 
+Iteration # 408 
+Run: 408, start: 49490483666572.000000
+
+ function execution time is 44868.000000 clock cycles 
+Iteration # 409 
+Run: 409, start: 49490483707604.000000
+
+ function execution time is 46812.000000 clock cycles 
+Iteration # 410 
+Run: 410, start: 49490483782672.000000
+
+ function execution time is 47144.000000 clock cycles 
+Iteration # 411 
+Run: 411, start: 49490483860636.000000
+
+ function execution time is 48052.000000 clock cycles 
+Iteration # 412 
+Run: 412, start: 49490483939284.000000
+
+ function execution time is 47604.000000 clock cycles 
+Iteration # 413 
+Run: 413, start: 49490484017936.000000
+
+ function execution time is 47480.000000 clock cycles 
+Iteration # 414 
+Run: 414, start: 49490484101184.000000
+
+ function execution time is 46300.000000 clock cycles 
+Iteration # 415 
+Run: 415, start: 49490484178140.000000
+
+ function execution time is 46936.000000 clock cycles 
+Iteration # 416 
+Run: 416, start: 49490484259424.000000
+
+ function execution time is 14164.000000 clock cycles 
+Iteration # 417 
+Run: 417, start: 49490484370612.000000
+
+ function execution time is 13664.000000 clock cycles 
+Iteration # 418 
+Run: 418, start: 49490484447840.000000
+
+ function execution time is 13832.000000 clock cycles 
+Iteration # 419 
+Run: 419, start: 49490484526076.000000
+
+ function execution time is 14336.000000 clock cycles 
+Iteration # 420 
+Run: 420, start: 49490484606584.000000
+
+ function execution time is 13688.000000 clock cycles 
+Iteration # 421 
+Run: 421, start: 49490484684476.000000
+
+ function execution time is 13460.000000 clock cycles 
+Iteration # 422 
+Run: 422, start: 49490484762776.000000
+
+ function execution time is 13660.000000 clock cycles 
+Iteration # 423 
+Run: 423, start: 49490484841372.000000
+
+ function execution time is 13456.000000 clock cycles 
+Iteration # 424 
+Run: 424, start: 49490484918432.000000
+
+ function execution time is 14564.000000 clock cycles 
+Iteration # 425 
+Run: 425, start: 49490484996596.000000
+
+ function execution time is 13764.000000 clock cycles 
+Iteration # 426 
+Run: 426, start: 49490485079148.000000
+
+ function execution time is 13668.000000 clock cycles 
+Iteration # 427 
+Run: 427, start: 49490485157996.000000
+
+ function execution time is 13060.000000 clock cycles 
+Iteration # 428 
+Run: 428, start: 49490485236720.000000
+
+ function execution time is 13460.000000 clock cycles 
+Iteration # 429 
+Run: 429, start: 49490485312780.000000
+
+ function execution time is 14508.000000 clock cycles 
+Iteration # 430 
+Run: 430, start: 49490485390072.000000
+
+ function execution time is 13764.000000 clock cycles 
+Iteration # 431 
+Run: 431, start: 49490485474060.000000
+
+ function execution time is 12472.000000 clock cycles 
+Iteration # 432 
+Run: 432, start: 49490485550416.000000
+
+ function execution time is 14240.000000 clock cycles 
+Iteration # 433 
+Run: 433, start: 49490485630460.000000
+
+ function execution time is 12672.000000 clock cycles 
+Iteration # 434 
+Run: 434, start: 49490485709228.000000
+
+ function execution time is 12732.000000 clock cycles 
+Iteration # 435 
+Run: 435, start: 49490485786788.000000
+
+ function execution time is 13044.000000 clock cycles 
+Iteration # 436 
+Run: 436, start: 49490485864860.000000
+
+ function execution time is 13488.000000 clock cycles 
+Iteration # 437 
+Run: 437, start: 49490485943548.000000
+
+ function execution time is 13476.000000 clock cycles 
+Iteration # 438 
+Run: 438, start: 49490486022444.000000
+
+ function execution time is 12672.000000 clock cycles 
+Iteration # 439 
+Run: 439, start: 49490486099592.000000
+
+ function execution time is 13576.000000 clock cycles 
+Iteration # 440 
+Run: 440, start: 49490486177220.000000
+
+ function execution time is 14032.000000 clock cycles 
+Iteration # 441 
+Run: 441, start: 49490486253408.000000
+
+ function execution time is 13964.000000 clock cycles 
+Iteration # 442 
+Run: 442, start: 49490486332936.000000
+
+ function execution time is 13524.000000 clock cycles 
+Iteration # 443 
+Run: 443, start: 49490486411028.000000
+
+ function execution time is 13648.000000 clock cycles 
+Iteration # 444 
+Run: 444, start: 49490486488004.000000
+
+ function execution time is 13384.000000 clock cycles 
+Iteration # 445 
+Run: 445, start: 49490486566072.000000
+
+ function execution time is 13744.000000 clock cycles 
+Iteration # 446 
+Run: 446, start: 49490486644100.000000
+
+ function execution time is 14072.000000 clock cycles 
+Iteration # 447 
+Run: 447, start: 49490486718840.000000
+
+ function execution time is 13800.000000 clock cycles 
+Iteration # 448 
+Run: 448, start: 49490486796008.000000
+
+ function execution time is 15276.000000 clock cycles 
+Iteration # 449 
+Run: 449, start: 49490486870860.000000
+
+ function execution time is 15228.000000 clock cycles 
+Iteration # 450 
+Run: 450, start: 49490486947820.000000
+
+ function execution time is 47308.000000 clock cycles 
+Iteration # 451 
+Run: 451, start: 49490486990852.000000
+
+ function execution time is 46868.000000 clock cycles 
+Iteration # 452 
+Run: 452, start: 49490487068228.000000
+
+ function execution time is 48044.000000 clock cycles 
+Iteration # 453 
+Run: 453, start: 49490487144212.000000
+
+ function execution time is 47400.000000 clock cycles 
+Iteration # 454 
+Run: 454, start: 49490487222192.000000
+
+ function execution time is 47572.000000 clock cycles 
+Iteration # 455 
+Run: 455, start: 49490487308104.000000
+
+ function execution time is 15796.000000 clock cycles 
+Iteration # 456 
+Run: 456, start: 49490487418524.000000
+
+ function execution time is 15664.000000 clock cycles 
+Iteration # 457 
+Run: 457, start: 49490487498596.000000
+
+ function execution time is 13972.000000 clock cycles 
+Iteration # 458 
+Run: 458, start: 49490487578352.000000
+
+ function execution time is 14108.000000 clock cycles 
+Iteration # 459 
+Run: 459, start: 49490487653864.000000
+
+ function execution time is 13344.000000 clock cycles 
+Iteration # 460 
+Run: 460, start: 49490487731908.000000
+
+ function execution time is 14192.000000 clock cycles 
+Iteration # 461 
+Run: 461, start: 49490487807892.000000
+
+ function execution time is 15696.000000 clock cycles 
+Iteration # 462 
+Run: 462, start: 49490487884344.000000
+
+ function execution time is 45992.000000 clock cycles 
+Iteration # 463 
+Run: 463, start: 49490487928504.000000
+
+ function execution time is 45280.000000 clock cycles 
+Iteration # 464 
+Run: 464, start: 49490488004680.000000
+
+ function execution time is 46356.000000 clock cycles 
+Iteration # 465 
+Run: 465, start: 49490488081792.000000
+
+ function execution time is 15428.000000 clock cycles 
+Iteration # 466 
+Run: 466, start: 49490488190544.000000
+
+ function execution time is 13336.000000 clock cycles 
+Iteration # 467 
+Run: 467, start: 49490488269104.000000
+
+ function execution time is 46468.000000 clock cycles 
+Iteration # 468 
+Run: 468, start: 49490488311936.000000
+
+ function execution time is 47332.000000 clock cycles 
+Iteration # 469 
+Run: 469, start: 49490488388544.000000
+
+ function execution time is 71200.000000 clock cycles 
+Iteration # 470 
+Run: 470, start: 49490488466192.000000
+
+ function execution time is 15900.000000 clock cycles 
+Iteration # 471 
+Run: 471, start: 49490488602308.000000
+
+ function execution time is 15576.000000 clock cycles 
+Iteration # 472 
+Run: 472, start: 49490488683116.000000
+
+ function execution time is 15840.000000 clock cycles 
+Iteration # 473 
+Run: 473, start: 49490488759544.000000
+
+ function execution time is 47064.000000 clock cycles 
+Iteration # 474 
+Run: 474, start: 49490488805488.000000
+
+ function execution time is 47404.000000 clock cycles 
+Iteration # 475 
+Run: 475, start: 49490488883296.000000
+
+ function execution time is 47236.000000 clock cycles 
+Iteration # 476 
+Run: 476, start: 49490488961156.000000
+
+ function execution time is 46900.000000 clock cycles 
+Iteration # 477 
+Run: 477, start: 49490489038588.000000
+
+ function execution time is 49556.000000 clock cycles 
+Iteration # 478 
+Run: 478, start: 49490489116624.000000
+
+ function execution time is 46396.000000 clock cycles 
+Iteration # 479 
+Run: 479, start: 49490489196148.000000
+
+ function execution time is 49844.000000 clock cycles 
+Iteration # 480 
+Run: 480, start: 49490489296852.000000
+
+ function execution time is 14004.000000 clock cycles 
+Iteration # 481 
+Run: 481, start: 49490489411988.000000
+
+ function execution time is 13560.000000 clock cycles 
+Iteration # 482 
+Run: 482, start: 49490489490436.000000
+
+ function execution time is 47676.000000 clock cycles 
+Iteration # 483 
+Run: 483, start: 49490489532208.000000
+
+ function execution time is 47828.000000 clock cycles 
+Iteration # 484 
+Run: 484, start: 49490489610456.000000
+
+ function execution time is 48092.000000 clock cycles 
+Iteration # 485 
+Run: 485, start: 49490489688520.000000
+
+ function execution time is 47228.000000 clock cycles 
+Iteration # 486 
+Run: 486, start: 49490489767676.000000
+
+ function execution time is 48388.000000 clock cycles 
+Iteration # 487 
+Run: 487, start: 49490489847684.000000
+
+ function execution time is 48652.000000 clock cycles 
+Iteration # 488 
+Run: 488, start: 49490489925944.000000
+
+ function execution time is 48392.000000 clock cycles 
+Iteration # 489 
+Run: 489, start: 49490490005504.000000
+
+ function execution time is 46664.000000 clock cycles 
+Iteration # 490 
+Run: 490, start: 49490490084560.000000
+
+ function execution time is 45880.000000 clock cycles 
+Iteration # 491 
+Run: 491, start: 49490490161012.000000
+
+ function execution time is 12148.000000 clock cycles 
+Iteration # 492 
+Run: 492, start: 49490490238060.000000
+
+ function execution time is 12484.000000 clock cycles 
+Iteration # 493 
+Run: 493, start: 49490490316868.000000
+
+ function execution time is 13500.000000 clock cycles 
+Iteration # 494 
+Run: 494, start: 49490490395056.000000
+
+ function execution time is 13072.000000 clock cycles 
+Iteration # 495 
+Run: 495, start: 49490490473672.000000
+
+ function execution time is 14344.000000 clock cycles 
+Iteration # 496 
+Run: 496, start: 49490490551436.000000
+
+ function execution time is 13684.000000 clock cycles 
+Iteration # 497 
+Run: 497, start: 49490490629848.000000
+
+ function execution time is 15548.000000 clock cycles 
+Iteration # 498 
+Run: 498, start: 49490490705120.000000
+
+ function execution time is 15640.000000 clock cycles 
+Iteration # 499 
+Run: 499, start: 49490490783756.000000
+
+ function execution time is 48108.000000 clock cycles 
+Iteration # 500 
+Run: 500, start: 49490490827732.000000
+
+ function execution time is 46612.000000 clock cycles 
+Iteration # 501 
+Run: 501, start: 49490490908036.000000
+
+ function execution time is 47628.000000 clock cycles 
+Iteration # 502 
+Run: 502, start: 49490490985100.000000
+
+ function execution time is 47508.000000 clock cycles 
+Iteration # 503 
+Run: 503, start: 49490491063372.000000
+
+ function execution time is 47348.000000 clock cycles 
+Iteration # 504 
+Run: 504, start: 49490491142300.000000
+
+ function execution time is 45504.000000 clock cycles 
+Iteration # 505 
+Run: 505, start: 49490491219200.000000
+
+ function execution time is 47176.000000 clock cycles 
+Iteration # 506 
+Run: 506, start: 49490491294588.000000
+
+ function execution time is 47940.000000 clock cycles 
+Iteration # 507 
+Run: 507, start: 49490491372528.000000
+
+ function execution time is 47852.000000 clock cycles 
+Iteration # 508 
+Run: 508, start: 49490491457732.000000
+
+ function execution time is 47784.000000 clock cycles 
+Iteration # 509 
+Run: 509, start: 49490491536612.000000
+
+ function execution time is 46972.000000 clock cycles 
+Iteration # 510 
+Run: 510, start: 49490491614912.000000
+
+ function execution time is 16960.000000 clock cycles 
+Iteration # 511 
+Run: 511, start: 49490491753048.000000
+
+ function execution time is 14788.000000 clock cycles 
+Iteration # 512 
+Run: 512, start: 49490491838984.000000
+
+ function execution time is 14280.000000 clock cycles 
+Iteration # 513 
+Run: 513, start: 49490491924252.000000
+
+ function execution time is 14976.000000 clock cycles 
+Iteration # 514 
+Run: 514, start: 49490492006504.000000
+
+ function execution time is 14084.000000 clock cycles 
+Iteration # 515 
+Run: 515, start: 49490492087880.000000
+
+ function execution time is 13776.000000 clock cycles 
+Iteration # 516 
+Run: 516, start: 49490492169068.000000
+
+ function execution time is 14512.000000 clock cycles 
+Iteration # 517 
+Run: 517, start: 49490492248236.000000
+
+ function execution time is 13540.000000 clock cycles 
+Iteration # 518 
+Run: 518, start: 49490492329320.000000
+
+ function execution time is 13868.000000 clock cycles 
+Iteration # 519 
+Run: 519, start: 49490492408796.000000
+
+ function execution time is 14448.000000 clock cycles 
+Iteration # 520 
+Run: 520, start: 49490492489300.000000
+
+ function execution time is 15076.000000 clock cycles 
+Iteration # 521 
+Run: 521, start: 49490492569300.000000
+
+ function execution time is 14000.000000 clock cycles 
+Iteration # 522 
+Run: 522, start: 49490492652084.000000
+
+ function execution time is 14424.000000 clock cycles 
+Iteration # 523 
+Run: 523, start: 49490492733332.000000
+
+ function execution time is 14044.000000 clock cycles 
+Iteration # 524 
+Run: 524, start: 49490492812960.000000
+
+ function execution time is 14004.000000 clock cycles 
+Iteration # 525 
+Run: 525, start: 49490492893588.000000
+
+ function execution time is 14836.000000 clock cycles 
+Iteration # 526 
+Run: 526, start: 49490492972660.000000
+
+ function execution time is 13800.000000 clock cycles 
+Iteration # 527 
+Run: 527, start: 49490493053156.000000
+
+ function execution time is 13848.000000 clock cycles 
+Iteration # 528 
+Run: 528, start: 49490493132224.000000
+
+ function execution time is 13804.000000 clock cycles 
+Iteration # 529 
+Run: 529, start: 49490493211760.000000
+
+ function execution time is 13740.000000 clock cycles 
+Iteration # 530 
+Run: 530, start: 49490493290008.000000
+
+ function execution time is 16156.000000 clock cycles 
+Iteration # 531 
+Run: 531, start: 49490493366576.000000
+
+ function execution time is 14236.000000 clock cycles 
+Iteration # 532 
+Run: 532, start: 49490493446832.000000
+
+ function execution time is 15848.000000 clock cycles 
+Iteration # 533 
+Run: 533, start: 49490493524708.000000
+
+ function execution time is 16044.000000 clock cycles 
+Iteration # 534 
+Run: 534, start: 49490493607112.000000
+
+ function execution time is 14204.000000 clock cycles 
+Iteration # 535 
+Run: 535, start: 49490493689532.000000
+
+ function execution time is 15748.000000 clock cycles 
+Iteration # 536 
+Run: 536, start: 49490493767096.000000
+
+ function execution time is 48380.000000 clock cycles 
+Iteration # 537 
+Run: 537, start: 49490493812436.000000
+
+ function execution time is 48592.000000 clock cycles 
+Iteration # 538 
+Run: 538, start: 49490493891228.000000
+
+ function execution time is 47604.000000 clock cycles 
+Iteration # 539 
+Run: 539, start: 49490493971272.000000
+
+ function execution time is 48312.000000 clock cycles 
+Iteration # 540 
+Run: 540, start: 49490494049848.000000
+
+ function execution time is 50136.000000 clock cycles 
+Iteration # 541 
+Run: 541, start: 49490494129668.000000
+
+ function execution time is 47516.000000 clock cycles 
+Iteration # 542 
+Run: 542, start: 49490494211200.000000
+
+ function execution time is 47828.000000 clock cycles 
+Iteration # 543 
+Run: 543, start: 49490494290108.000000
+
+ function execution time is 47668.000000 clock cycles 
+Iteration # 544 
+Run: 544, start: 49490494368964.000000
+
+ function execution time is 47368.000000 clock cycles 
+Iteration # 545 
+Run: 545, start: 49490494448280.000000
+
+ function execution time is 46352.000000 clock cycles 
+Iteration # 546 
+Run: 546, start: 49490494527040.000000
+
+ function execution time is 45368.000000 clock cycles 
+Iteration # 547 
+Run: 547, start: 49490494606236.000000
+
+ function execution time is 45940.000000 clock cycles 
+Iteration # 548 
+Run: 548, start: 49490494684344.000000
+
+ function execution time is 12868.000000 clock cycles 
+Iteration # 549 
+Run: 549, start: 49490494762964.000000
+
+ function execution time is 48464.000000 clock cycles 
+Iteration # 550 
+Run: 550, start: 49490494845052.000000
+
+ function execution time is 12740.000000 clock cycles 
+Iteration # 551 
+Run: 551, start: 49490494926564.000000
+
+ function execution time is 12952.000000 clock cycles 
+Iteration # 552 
+Run: 552, start: 49490495006236.000000
+
+ function execution time is 13496.000000 clock cycles 
+Iteration # 553 
+Run: 553, start: 49490495085608.000000
+
+ function execution time is 13036.000000 clock cycles 
+Iteration # 554 
+Run: 554, start: 49490495165580.000000
+
+ function execution time is 12460.000000 clock cycles 
+Iteration # 555 
+Run: 555, start: 49490495245556.000000
+
+ function execution time is 14872.000000 clock cycles 
+Iteration # 556 
+Run: 556, start: 49490498885712.000000
+
+ function execution time is 12408.000000 clock cycles 
+Iteration # 557 
+Run: 557, start: 49490498931628.000000
+
+ function execution time is 12292.000000 clock cycles 
+Iteration # 558 
+Run: 558, start: 49490498972568.000000
+
+ function execution time is 12480.000000 clock cycles 
+Iteration # 559 
+Run: 559, start: 49490499013356.000000
+
+ function execution time is 12488.000000 clock cycles 
+Iteration # 560 
+Run: 560, start: 49490499058912.000000
+
+ function execution time is 12328.000000 clock cycles 
+Iteration # 561 
+Run: 561, start: 49490499099724.000000
+
+ function execution time is 12232.000000 clock cycles 
+Iteration # 562 
+Run: 562, start: 49490499140484.000000
+
+ function execution time is 12264.000000 clock cycles 
+Iteration # 563 
+Run: 563, start: 49490499180768.000000
+
+ function execution time is 12252.000000 clock cycles 
+Iteration # 564 
+Run: 564, start: 49490499221220.000000
+
+ function execution time is 12048.000000 clock cycles 
+Iteration # 565 
+Run: 565, start: 49490499261724.000000
+
+ function execution time is 12048.000000 clock cycles 
+Iteration # 566 
+Run: 566, start: 49490499302588.000000
+
+ function execution time is 12440.000000 clock cycles 
+Iteration # 567 
+Run: 567, start: 49490499345268.000000
+
+ function execution time is 12172.000000 clock cycles 
+Iteration # 568 
+Run: 568, start: 49490499385816.000000
+
+ function execution time is 12172.000000 clock cycles 
+Iteration # 569 
+Run: 569, start: 49490499425924.000000
+
+ function execution time is 12232.000000 clock cycles 
+Iteration # 570 
+Run: 570, start: 49490499466436.000000
+
+ function execution time is 12064.000000 clock cycles 
+Iteration # 571 
+Run: 571, start: 49490499506848.000000
+
+ function execution time is 12376.000000 clock cycles 
+Iteration # 572 
+Run: 572, start: 49490499546956.000000
+
+ function execution time is 12216.000000 clock cycles 
+Iteration # 573 
+Run: 573, start: 49490499587524.000000
+
+ function execution time is 12292.000000 clock cycles 
+Iteration # 574 
+Run: 574, start: 49490499628412.000000
+
+ function execution time is 12392.000000 clock cycles 
+Iteration # 575 
+Run: 575, start: 49490499673516.000000
+
+ function execution time is 12072.000000 clock cycles 
+Iteration # 576 
+Run: 576, start: 49490499714268.000000
+
+ function execution time is 12156.000000 clock cycles 
+Iteration # 577 
+Run: 577, start: 49490499754308.000000
+
+ function execution time is 11932.000000 clock cycles 
+Iteration # 578 
+Run: 578, start: 49490499795060.000000
+
+ function execution time is 12540.000000 clock cycles 
+Iteration # 579 
+Run: 579, start: 49490499835100.000000
+
+ function execution time is 12144.000000 clock cycles 
+Iteration # 580 
+Run: 580, start: 49490499875496.000000
+
+ function execution time is 12032.000000 clock cycles 
+Iteration # 581 
+Run: 581, start: 49490499915716.000000
+
+ function execution time is 12404.000000 clock cycles 
+Iteration # 582 
+Run: 582, start: 49490499955680.000000
+
+ function execution time is 12576.000000 clock cycles 
+Iteration # 583 
+Run: 583, start: 49490499998304.000000
+
+ function execution time is 12008.000000 clock cycles 
+Iteration # 584 
+Run: 584, start: 49490500039140.000000
+
+ function execution time is 11840.000000 clock cycles 
+Iteration # 585 
+Run: 585, start: 49490500079244.000000
+
+ function execution time is 12196.000000 clock cycles 
+Iteration # 586 
+Run: 586, start: 49490500119040.000000
+
+ function execution time is 12264.000000 clock cycles 
+Iteration # 587 
+Run: 587, start: 49490500159228.000000
+
+ function execution time is 12212.000000 clock cycles 
+Iteration # 588 
+Run: 588, start: 49490500201036.000000
+
+ function execution time is 12084.000000 clock cycles 
+Iteration # 589 
+Run: 589, start: 49490500241072.000000
+
+ function execution time is 11912.000000 clock cycles 
+Iteration # 590 
+Run: 590, start: 49490500281312.000000
+
+ function execution time is 12056.000000 clock cycles 
+Iteration # 591 
+Run: 591, start: 49490500321636.000000
+
+ function execution time is 11564.000000 clock cycles 
+Iteration # 592 
+Run: 592, start: 49490500361288.000000
+
+ function execution time is 11712.000000 clock cycles 
+Iteration # 593 
+Run: 593, start: 49490500399932.000000
+
+ function execution time is 11736.000000 clock cycles 
+Iteration # 594 
+Run: 594, start: 49490500438688.000000
+
+ function execution time is 12100.000000 clock cycles 
+Iteration # 595 
+Run: 595, start: 49490500478112.000000
+
+ function execution time is 11532.000000 clock cycles 
+Iteration # 596 
+Run: 596, start: 49490500517332.000000
+
+ function execution time is 11704.000000 clock cycles 
+Iteration # 597 
+Run: 597, start: 49490500556232.000000
+
+ function execution time is 11728.000000 clock cycles 
+Iteration # 598 
+Run: 598, start: 49490500595316.000000
+
+ function execution time is 12196.000000 clock cycles 
+Iteration # 599 
+Run: 599, start: 49490500636228.000000
+
+ function execution time is 12196.000000 clock cycles 
+Iteration # 600 
+Run: 600, start: 49490500676124.000000
+
+ function execution time is 11760.000000 clock cycles 
+Iteration # 601 
+Run: 601, start: 49490500715680.000000
+
+ function execution time is 11544.000000 clock cycles 
+Iteration # 602 
+Run: 602, start: 49490500756408.000000
+
+ function execution time is 11764.000000 clock cycles 
+Iteration # 603 
+Run: 603, start: 49490500795352.000000
+
+ function execution time is 11752.000000 clock cycles 
+Iteration # 604 
+Run: 604, start: 49490500835172.000000
+
+ function execution time is 11600.000000 clock cycles 
+Iteration # 605 
+Run: 605, start: 49490500874172.000000
+
+ function execution time is 11892.000000 clock cycles 
+Iteration # 606 
+Run: 606, start: 49490500912768.000000
+
+ function execution time is 11568.000000 clock cycles 
+Iteration # 607 
+Run: 607, start: 49490500952396.000000
+
+ function execution time is 11792.000000 clock cycles 
+Iteration # 608 
+Run: 608, start: 49490500991684.000000
+
+ function execution time is 11728.000000 clock cycles 
+Iteration # 609 
+Run: 609, start: 49490501030856.000000
+
+ function execution time is 11960.000000 clock cycles 
+Iteration # 610 
+Run: 610, start: 49490501070068.000000
+
+ function execution time is 11708.000000 clock cycles 
+Iteration # 611 
+Run: 611, start: 49490501109436.000000
+
+ function execution time is 11612.000000 clock cycles 
+Iteration # 612 
+Run: 612, start: 49490501148892.000000
+
+ function execution time is 12104.000000 clock cycles 
+Iteration # 613 
+Run: 613, start: 49490501187736.000000
+
+ function execution time is 11788.000000 clock cycles 
+Iteration # 614 
+Run: 614, start: 49490501227012.000000
+
+ function execution time is 12020.000000 clock cycles 
+Iteration # 615 
+Run: 615, start: 49490501268368.000000
+
+ function execution time is 12124.000000 clock cycles 
+Iteration # 616 
+Run: 616, start: 49490501307964.000000
+
+ function execution time is 11628.000000 clock cycles 
+Iteration # 617 
+Run: 617, start: 49490501349136.000000
+
+ function execution time is 11520.000000 clock cycles 
+Iteration # 618 
+Run: 618, start: 49490501388300.000000
+
+ function execution time is 11960.000000 clock cycles 
+Iteration # 619 
+Run: 619, start: 49490501426904.000000
+
+ function execution time is 11868.000000 clock cycles 
+Iteration # 620 
+Run: 620, start: 49490501466484.000000
+
+ function execution time is 11992.000000 clock cycles 
+Iteration # 621 
+Run: 621, start: 49490501505516.000000
+
+ function execution time is 11812.000000 clock cycles 
+Iteration # 622 
+Run: 622, start: 49490501545168.000000
+
+ function execution time is 11644.000000 clock cycles 
+Iteration # 623 
+Run: 623, start: 49490501584156.000000
+
+ function execution time is 11804.000000 clock cycles 
+Iteration # 624 
+Run: 624, start: 49490501623884.000000
+
+ function execution time is 11916.000000 clock cycles 
+Iteration # 625 
+Run: 625, start: 49490501663280.000000
+
+ function execution time is 11896.000000 clock cycles 
+Iteration # 626 
+Run: 626, start: 49490501702648.000000
+
+ function execution time is 12180.000000 clock cycles 
+Iteration # 627 
+Run: 627, start: 49490501741756.000000
+
+ function execution time is 11580.000000 clock cycles 
+Iteration # 628 
+Run: 628, start: 49490501781464.000000
+
+ function execution time is 12192.000000 clock cycles 
+Iteration # 629 
+Run: 629, start: 49490501820280.000000
+
+ function execution time is 11768.000000 clock cycles 
+Iteration # 630 
+Run: 630, start: 49490501860404.000000
+
+ function execution time is 12020.000000 clock cycles 
+Iteration # 631 
+Run: 631, start: 49490501901188.000000
+
+ function execution time is 11616.000000 clock cycles 
+Iteration # 632 
+Run: 632, start: 49490501940068.000000
+
+ function execution time is 11868.000000 clock cycles 
+Iteration # 633 
+Run: 633, start: 49490501979508.000000
+
+ function execution time is 11728.000000 clock cycles 
+Iteration # 634 
+Run: 634, start: 49490502018780.000000
+
+ function execution time is 11908.000000 clock cycles 
+Iteration # 635 
+Run: 635, start: 49490502057512.000000
+
+ function execution time is 13540.000000 clock cycles 
+Iteration # 636 
+Run: 636, start: 49490502096616.000000
+
+ function execution time is 11744.000000 clock cycles 
+Iteration # 637 
+Run: 637, start: 49490502136800.000000
+
+ function execution time is 11792.000000 clock cycles 
+Iteration # 638 
+Run: 638, start: 49490502176140.000000
+
+ function execution time is 11896.000000 clock cycles 
+Iteration # 639 
+Run: 639, start: 49490502215536.000000
+
+ function execution time is 13344.000000 clock cycles 
+Iteration # 640 
+Run: 640, start: 49490502254560.000000
+
+ function execution time is 12264.000000 clock cycles 
+Iteration # 641 
+Run: 641, start: 49490502294944.000000
+
+ function execution time is 11848.000000 clock cycles 
+Iteration # 642 
+Run: 642, start: 49490502334832.000000
+
+ function execution time is 11808.000000 clock cycles 
+Iteration # 643 
+Run: 643, start: 49490502374392.000000
+
+ function execution time is 11696.000000 clock cycles 
+Iteration # 644 
+Run: 644, start: 49490502416524.000000
+
+ function execution time is 11768.000000 clock cycles 
+Iteration # 645 
+Run: 645, start: 49490502455508.000000
+
+ function execution time is 11888.000000 clock cycles 
+Iteration # 646 
+Run: 646, start: 49490502494756.000000
+
+ function execution time is 11804.000000 clock cycles 
+Iteration # 647 
+Run: 647, start: 49490502536596.000000
+
+ function execution time is 11312.000000 clock cycles 
+Iteration # 648 
+Run: 648, start: 49490502575588.000000
+
+ function execution time is 11912.000000 clock cycles 
+Iteration # 649 
+Run: 649, start: 49490502614220.000000
+
+ function execution time is 11836.000000 clock cycles 
+Iteration # 650 
+Run: 650, start: 49490502654064.000000
+
+ function execution time is 11808.000000 clock cycles 
+Iteration # 651 
+Run: 651, start: 49490502693180.000000
+
+ function execution time is 11832.000000 clock cycles 
+Iteration # 652 
+Run: 652, start: 49490502732528.000000
+
+ function execution time is 11720.000000 clock cycles 
+Iteration # 653 
+Run: 653, start: 49490502771252.000000
+
+ function execution time is 12088.000000 clock cycles 
+Iteration # 654 
+Run: 654, start: 49490502810204.000000
+
+ function execution time is 11628.000000 clock cycles 
+Iteration # 655 
+Run: 655, start: 49490502849612.000000
+
+ function execution time is 11688.000000 clock cycles 
+Iteration # 656 
+Run: 656, start: 49490502888792.000000
+
+ function execution time is 12188.000000 clock cycles 
+Iteration # 657 
+Run: 657, start: 49490502928056.000000
+
+ function execution time is 11572.000000 clock cycles 
+Iteration # 658 
+Run: 658, start: 49490502967480.000000
+
+ function execution time is 11584.000000 clock cycles 
+Iteration # 659 
+Run: 659, start: 49490503006376.000000
+
+ function execution time is 11656.000000 clock cycles 
+Iteration # 660 
+Run: 660, start: 49490503045592.000000
+
+ function execution time is 12052.000000 clock cycles 
+Iteration # 661 
+Run: 661, start: 49490503084760.000000
+
+ function execution time is 11676.000000 clock cycles 
+Iteration # 662 
+Run: 662, start: 49490503123904.000000
+
+ function execution time is 12004.000000 clock cycles 
+Iteration # 663 
+Run: 663, start: 49490503165332.000000
+
+ function execution time is 11896.000000 clock cycles 
+Iteration # 664 
+Run: 664, start: 49490503204648.000000
+
+ function execution time is 11760.000000 clock cycles 
+Iteration # 665 
+Run: 665, start: 49490503243892.000000
+
+ function execution time is 11308.000000 clock cycles 
+Iteration # 666 
+Run: 666, start: 49490503282908.000000
+
+ function execution time is 11748.000000 clock cycles 
+Iteration # 667 
+Run: 667, start: 49490503321236.000000
+
+ function execution time is 11604.000000 clock cycles 
+Iteration # 668 
+Run: 668, start: 49490503360524.000000
+
+ function execution time is 12144.000000 clock cycles 
+Iteration # 669 
+Run: 669, start: 49490503399084.000000
+
+ function execution time is 11704.000000 clock cycles 
+Iteration # 670 
+Run: 670, start: 49490503438564.000000
+
+ function execution time is 11220.000000 clock cycles 
+Iteration # 671 
+Run: 671, start: 49490503477380.000000
+
+ function execution time is 11968.000000 clock cycles 
+Iteration # 672 
+Run: 672, start: 49490503515192.000000
+
+ function execution time is 11924.000000 clock cycles 
+Iteration # 673 
+Run: 673, start: 49490503554364.000000
+
+ function execution time is 12240.000000 clock cycles 
+Iteration # 674 
+Run: 674, start: 49490503593792.000000
+
+ function execution time is 11816.000000 clock cycles 
+Iteration # 675 
+Run: 675, start: 49490503634080.000000
+
+ function execution time is 11912.000000 clock cycles 
+Iteration # 676 
+Run: 676, start: 49490503673104.000000
+
+ function execution time is 11924.000000 clock cycles 
+Iteration # 677 
+Run: 677, start: 49490503712332.000000
+
+ function execution time is 11788.000000 clock cycles 
+Iteration # 678 
+Run: 678, start: 49490503751648.000000
+
+ function execution time is 12332.000000 clock cycles 
+Iteration # 679 
+Run: 679, start: 49490503793440.000000
+
+ function execution time is 11840.000000 clock cycles 
+Iteration # 680 
+Run: 680, start: 49490503833072.000000
+
+ function execution time is 11532.000000 clock cycles 
+Iteration # 681 
+Run: 681, start: 49490503871932.000000
+
+ function execution time is 11964.000000 clock cycles 
+Iteration # 682 
+Run: 682, start: 49490503911268.000000
+
+ function execution time is 11780.000000 clock cycles 
+Iteration # 683 
+Run: 683, start: 49490503950888.000000
+
+ function execution time is 11484.000000 clock cycles 
+Iteration # 684 
+Run: 684, start: 49490503990500.000000
+
+ function execution time is 12072.000000 clock cycles 
+Iteration # 685 
+Run: 685, start: 49490504028992.000000
+
+ function execution time is 11932.000000 clock cycles 
+Iteration # 686 
+Run: 686, start: 49490504069048.000000
+
+ function execution time is 11772.000000 clock cycles 
+Iteration # 687 
+Run: 687, start: 49490504108256.000000
+
+ function execution time is 11704.000000 clock cycles 
+Iteration # 688 
+Run: 688, start: 49490504147508.000000
+
+ function execution time is 12008.000000 clock cycles 
+Iteration # 689 
+Run: 689, start: 49490504186812.000000
+
+ function execution time is 12052.000000 clock cycles 
+Iteration # 690 
+Run: 690, start: 49490504225848.000000
+
+ function execution time is 11848.000000 clock cycles 
+Iteration # 691 
+Run: 691, start: 49490504265568.000000
+
+ function execution time is 11680.000000 clock cycles 
+Iteration # 692 
+Run: 692, start: 49490504304940.000000
+
+ function execution time is 11760.000000 clock cycles 
+Iteration # 693 
+Run: 693, start: 49490504343728.000000
+
+ function execution time is 11856.000000 clock cycles 
+Iteration # 694 
+Run: 694, start: 49490504382912.000000
+
+ function execution time is 18684.000000 clock cycles 
+Iteration # 695 
+Run: 695, start: 49490504941356.000000
+
+ function execution time is 11672.000000 clock cycles 
+Iteration # 696 
+Run: 696, start: 49490504988372.000000
+
+ function execution time is 11748.000000 clock cycles 
+Iteration # 697 
+Run: 697, start: 49490505028000.000000
+
+ function execution time is 11688.000000 clock cycles 
+Iteration # 698 
+Run: 698, start: 49490505067152.000000
+
+ function execution time is 11796.000000 clock cycles 
+Iteration # 699 
+Run: 699, start: 49490505106184.000000
+
+ function execution time is 11888.000000 clock cycles 
+Iteration # 700 
+Run: 700, start: 49490505144604.000000
+
+ function execution time is 11632.000000 clock cycles 
+Iteration # 701 
+Run: 701, start: 49490505183992.000000
+
+ function execution time is 11508.000000 clock cycles 
+Iteration # 702 
+Run: 702, start: 49490505223052.000000
+
+ function execution time is 11672.000000 clock cycles 
+Iteration # 703 
+Run: 703, start: 49490505262120.000000
+
+ function execution time is 11672.000000 clock cycles 
+Iteration # 704 
+Run: 704, start: 49490505301556.000000
+
+ function execution time is 11784.000000 clock cycles 
+Iteration # 705 
+Run: 705, start: 49490505340576.000000
+
+ function execution time is 11872.000000 clock cycles 
+Iteration # 706 
+Run: 706, start: 49490505379548.000000
+
+ function execution time is 3048536.000000 clock cycles 
+Iteration # 707 
+Run: 707, start: 49490505419256.000000
+
+ function execution time is 14076.000000 clock cycles 
+Iteration # 708 
+Run: 708, start: 49490508506020.000000
+
+ function execution time is 12396.000000 clock cycles 
+Iteration # 709 
+Run: 709, start: 49490508549080.000000
+
+ function execution time is 12128.000000 clock cycles 
+Iteration # 710 
+Run: 710, start: 49490508590260.000000
+
+ function execution time is 11640.000000 clock cycles 
+Iteration # 711 
+Run: 711, start: 49490508630320.000000
+
+ function execution time is 11820.000000 clock cycles 
+Iteration # 712 
+Run: 712, start: 49490508669596.000000
+
+ function execution time is 11908.000000 clock cycles 
+Iteration # 713 
+Run: 713, start: 49490508708876.000000
+
+ function execution time is 70312.000000 clock cycles 
+Iteration # 714 
+Run: 714, start: 49490520622916.000000
+
+ function execution time is 12600.000000 clock cycles 
+Iteration # 715 
+Run: 715, start: 49490520737020.000000
+
+ function execution time is 18772.000000 clock cycles 
+Iteration # 716 
+Run: 716, start: 49490520778416.000000
+
+ function execution time is 13384.000000 clock cycles 
+Iteration # 717 
+Run: 717, start: 49490520832636.000000
+
+ function execution time is 11008.000000 clock cycles 
+Iteration # 718 
+Run: 718, start: 49490520874764.000000
+
+ function execution time is 12444.000000 clock cycles 
+Iteration # 719 
+Run: 719, start: 49490520912856.000000
+
+ function execution time is 13964.000000 clock cycles 
+Iteration # 720 
+Run: 720, start: 49490520965100.000000
+
+ function execution time is 10832.000000 clock cycles 
+Iteration # 721 
+Run: 721, start: 49490521009688.000000
+
+ function execution time is 13232.000000 clock cycles 
+Iteration # 722 
+Run: 722, start: 49490521048008.000000
+
+ function execution time is 19668.000000 clock cycles 
+Iteration # 723 
+Run: 723, start: 49490521088168.000000
+
+ function execution time is 11200.000000 clock cycles 
+Iteration # 724 
+Run: 724, start: 49490521139224.000000
+
+ function execution time is 11656.000000 clock cycles 
+Iteration # 725 
+Run: 725, start: 49490521177044.000000
+
+ function execution time is 12732.000000 clock cycles 
+Iteration # 726 
+Run: 726, start: 49490521216532.000000
+
+ function execution time is 20776.000000 clock cycles 
+Iteration # 727 
+Run: 727, start: 49490521276340.000000
+
+ function execution time is 11916.000000 clock cycles 
+Iteration # 728 
+Run: 728, start: 49490521336160.000000
+
+ function execution time is 11184.000000 clock cycles 
+Iteration # 729 
+Run: 729, start: 49490521375628.000000
+
+ function execution time is 15276.000000 clock cycles 
+Iteration # 730 
+Run: 730, start: 49490521427416.000000
+
+ function execution time is 33316.000000 clock cycles 
+Iteration # 731 
+Run: 731, start: 49490521470872.000000
+
+ function execution time is 11148.000000 clock cycles 
+Iteration # 732 
+Run: 732, start: 49490521531484.000000
+
+ function execution time is 11116.000000 clock cycles 
+Iteration # 733 
+Run: 733, start: 49490521571376.000000
+
+ function execution time is 11004.000000 clock cycles 
+Iteration # 734 
+Run: 734, start: 49490521609364.000000
+
+ function execution time is 10972.000000 clock cycles 
+Iteration # 735 
+Run: 735, start: 49490521646704.000000
+
+ function execution time is 10940.000000 clock cycles 
+Iteration # 736 
+Run: 736, start: 49490521683928.000000
+
+ function execution time is 11312.000000 clock cycles 
+Iteration # 737 
+Run: 737, start: 49490521728608.000000
+
+ function execution time is 11268.000000 clock cycles 
+Iteration # 738 
+Run: 738, start: 49490521766672.000000
+
+ function execution time is 11804.000000 clock cycles 
+Iteration # 739 
+Run: 739, start: 49490521804560.000000
+
+ function execution time is 21548.000000 clock cycles 
+Iteration # 740 
+Run: 740, start: 49490521849392.000000
+
+ function execution time is 12512.000000 clock cycles 
+Iteration # 741 
+Run: 741, start: 49490521911288.000000
+
+ function execution time is 13472.000000 clock cycles 
+Iteration # 742 
+Run: 742, start: 49490521953080.000000
+
+ function execution time is 11300.000000 clock cycles 
+Iteration # 743 
+Run: 743, start: 49490521997668.000000
+
+ function execution time is 46092.000000 clock cycles 
+Iteration # 744 
+Run: 744, start: 49490537629536.000000
+
+ function execution time is 31532.000000 clock cycles 
+Iteration # 745 
+Run: 745, start: 49490537714788.000000
+
+ function execution time is 14924.000000 clock cycles 
+Iteration # 746 
+Run: 746, start: 49490537782624.000000
+
+ function execution time is 15800.000000 clock cycles 
+Iteration # 747 
+Run: 747, start: 49490537833648.000000
+
+ function execution time is 13908.000000 clock cycles 
+Iteration # 748 
+Run: 748, start: 49490537888696.000000
+
+ function execution time is 15092.000000 clock cycles 
+Iteration # 749 
+Run: 749, start: 49490537937848.000000
+
+ function execution time is 25876.000000 clock cycles 
+Iteration # 750 
+Run: 750, start: 49490538571952.000000
+
+ function execution time is 11568.000000 clock cycles 
+Iteration # 751 
+Run: 751, start: 49490538625308.000000
+
+ function execution time is 14192.000000 clock cycles 
+Iteration # 752 
+Run: 752, start: 49490538668796.000000
+
+ function execution time is 12168.000000 clock cycles 
+Iteration # 753 
+Run: 753, start: 49490538710456.000000
+
+ function execution time is 12348.000000 clock cycles 
+Iteration # 754 
+Run: 754, start: 49490538752832.000000
+
+ function execution time is 16780.000000 clock cycles 
+Iteration # 755 
+Run: 755, start: 49490538793908.000000
+
+ function execution time is 13220.000000 clock cycles 
+Iteration # 756 
+Run: 756, start: 49490538838004.000000
+
+ function execution time is 11484.000000 clock cycles 
+Iteration # 757 
+Run: 757, start: 49490538882236.000000
+
+ function execution time is 12216.000000 clock cycles 
+Iteration # 758 
+Run: 758, start: 49490538922052.000000
+
+ function execution time is 12692.000000 clock cycles 
+Iteration # 759 
+Run: 759, start: 49490538968968.000000
+
+ function execution time is 12560.000000 clock cycles 
+Iteration # 760 
+Run: 760, start: 49490539012584.000000
+
+ function execution time is 14924.000000 clock cycles 
+Iteration # 761 
+Run: 761, start: 49490539052768.000000
+
+ function execution time is 15036.000000 clock cycles 
+Iteration # 762 
+Run: 762, start: 49490539108876.000000
+
+ function execution time is 13784.000000 clock cycles 
+Iteration # 763 
+Run: 763, start: 49490539156172.000000
+
+ function execution time is 12136.000000 clock cycles 
+Iteration # 764 
+Run: 764, start: 49490539202528.000000
+
+ function execution time is 20660.000000 clock cycles 
+Iteration # 765 
+Run: 765, start: 49490539245896.000000
+
+ function execution time is 14168.000000 clock cycles 
+Iteration # 766 
+Run: 766, start: 49490539296008.000000
+
+ function execution time is 15680.000000 clock cycles 
+Iteration # 767 
+Run: 767, start: 49490539342084.000000
+
+ function execution time is 11532.000000 clock cycles 
+Iteration # 768 
+Run: 768, start: 49490539388840.000000
+
+ function execution time is 11900.000000 clock cycles 
+Iteration # 769 
+Run: 769, start: 49490539435392.000000
+
+ function execution time is 15604.000000 clock cycles 
+Iteration # 770 
+Run: 770, start: 49490539477036.000000
+
+ function execution time is 12220.000000 clock cycles 
+Iteration # 771 
+Run: 771, start: 49490539522648.000000
+
+ function execution time is 12688.000000 clock cycles 
+Iteration # 772 
+Run: 772, start: 49490539570744.000000
+
+ function execution time is 14236.000000 clock cycles 
+Iteration # 773 
+Run: 773, start: 49490539614016.000000
+
+ function execution time is 12084.000000 clock cycles 
+Iteration # 774 
+Run: 774, start: 49490539657700.000000
+
+ function execution time is 17824.000000 clock cycles 
+Iteration # 775 
+Run: 775, start: 49490539700752.000000
+
+ function execution time is 13436.000000 clock cycles 
+Iteration # 776 
+Run: 776, start: 49490539755136.000000
+
+ function execution time is 11912.000000 clock cycles 
+Iteration # 777 
+Run: 777, start: 49490539800732.000000
+
+ function execution time is 14032.000000 clock cycles 
+Iteration # 778 
+Run: 778, start: 49490539843428.000000
+
+ function execution time is 14972.000000 clock cycles 
+Iteration # 779 
+Run: 779, start: 49490539895028.000000
+
+ function execution time is 13976.000000 clock cycles 
+Iteration # 780 
+Run: 780, start: 49490539940080.000000
+
+ function execution time is 11968.000000 clock cycles 
+Iteration # 781 
+Run: 781, start: 49490539994980.000000
+
+ function execution time is 14468.000000 clock cycles 
+Iteration # 782 
+Run: 782, start: 49490540054972.000000
+
+ function execution time is 17104.000000 clock cycles 
+Iteration # 783 
+Run: 783, start: 49490540106932.000000
+
+ function execution time is 17008.000000 clock cycles 
+Iteration # 784 
+Run: 784, start: 49490540158744.000000
+
+ function execution time is 12500.000000 clock cycles 
+Iteration # 785 
+Run: 785, start: 49490540209440.000000
+
+ function execution time is 21808.000000 clock cycles 
+Iteration # 786 
+Run: 786, start: 49490540380828.000000
+
+ function execution time is 17472.000000 clock cycles 
+Iteration # 787 
+Run: 787, start: 49490540440168.000000
+
+ function execution time is 15404.000000 clock cycles 
+Iteration # 788 
+Run: 788, start: 49490540498424.000000
+
+ function execution time is 11296.000000 clock cycles 
+Iteration # 789 
+Run: 789, start: 49490540545456.000000
+
+ function execution time is 15284.000000 clock cycles 
+Iteration # 790 
+Run: 790, start: 49490540601496.000000
+
+ function execution time is 13480.000000 clock cycles 
+Iteration # 791 
+Run: 791, start: 49490540664264.000000
+
+ function execution time is 14668.000000 clock cycles 
+Iteration # 792 
+Run: 792, start: 49490540710900.000000
+
+ function execution time is 12208.000000 clock cycles 
+Iteration # 793 
+Run: 793, start: 49490540756196.000000
+
+ function execution time is 15592.000000 clock cycles 
+Iteration # 794 
+Run: 794, start: 49490540812100.000000
+
+ function execution time is 13732.000000 clock cycles 
+Iteration # 795 
+Run: 795, start: 49490540860736.000000
+
+ function execution time is 13672.000000 clock cycles 
+Iteration # 796 
+Run: 796, start: 49490540907828.000000
+
+ function execution time is 13272.000000 clock cycles 
+Iteration # 797 
+Run: 797, start: 49490540958004.000000
+
+ function execution time is 14100.000000 clock cycles 
+Iteration # 798 
+Run: 798, start: 49490541003376.000000
+
+ function execution time is 22992.000000 clock cycles 
+Iteration # 799 
+Run: 799, start: 49490541069568.000000
+
+ function execution time is 13288.000000 clock cycles 
+Iteration # 800 
+Run: 800, start: 49490541127888.000000
+
+ function execution time is 13920.000000 clock cycles 
+Iteration # 801 
+Run: 801, start: 49490541171536.000000
+
+ function execution time is 13316.000000 clock cycles 
+Iteration # 802 
+Run: 802, start: 49490541220880.000000
+
+ function execution time is 12776.000000 clock cycles 
+Iteration # 803 
+Run: 803, start: 49490541273860.000000
+
+ function execution time is 14072.000000 clock cycles 
+Iteration # 804 
+Run: 804, start: 49490541318352.000000
+
+ function execution time is 16816.000000 clock cycles 
+Iteration # 805 
+Run: 805, start: 49490541362384.000000
+
+ function execution time is 15748.000000 clock cycles 
+Iteration # 806 
+Run: 806, start: 49490541417180.000000
+
+ function execution time is 13012.000000 clock cycles 
+Iteration # 807 
+Run: 807, start: 49490541463560.000000
+
+ function execution time is 15020.000000 clock cycles 
+Iteration # 808 
+Run: 808, start: 49490541504456.000000
+
+ function execution time is 13732.000000 clock cycles 
+Iteration # 809 
+Run: 809, start: 49490541554364.000000
+
+ function execution time is 14060.000000 clock cycles 
+Iteration # 810 
+Run: 810, start: 49490541598604.000000
+
+ function execution time is 15052.000000 clock cycles 
+Iteration # 811 
+Run: 811, start: 49490541644364.000000
+
+ function execution time is 21064.000000 clock cycles 
+Iteration # 812 
+Run: 812, start: 49490541689628.000000
+
+ function execution time is 12808.000000 clock cycles 
+Iteration # 813 
+Run: 813, start: 49490541739708.000000
+
+ function execution time is 15620.000000 clock cycles 
+Iteration # 814 
+Run: 814, start: 49490541781868.000000
+
+ function execution time is 23180.000000 clock cycles 
+Iteration # 815 
+Run: 815, start: 49490541832636.000000
+
+ function execution time is 12272.000000 clock cycles 
+Iteration # 816 
+Run: 816, start: 49490541891020.000000
+
+ function execution time is 12528.000000 clock cycles 
+Iteration # 817 
+Run: 817, start: 49490541934884.000000
+
+ function execution time is 19408.000000 clock cycles 
+Iteration # 818 
+Run: 818, start: 49490542057944.000000
+
+ function execution time is 14836.000000 clock cycles 
+Iteration # 819 
+Run: 819, start: 49490542111128.000000
+
+ function execution time is 16296.000000 clock cycles 
+Iteration # 820 
+Run: 820, start: 49490542165716.000000
+
+ function execution time is 13988.000000 clock cycles 
+Iteration # 821 
+Run: 821, start: 49490542213660.000000
+
+ function execution time is 13916.000000 clock cycles 
+Iteration # 822 
+Run: 822, start: 49490542258896.000000
+
+ function execution time is 15028.000000 clock cycles 
+Iteration # 823 
+Run: 823, start: 49490542312120.000000
+
+ function execution time is 13848.000000 clock cycles 
+Iteration # 824 
+Run: 824, start: 49490542361016.000000
+
+ function execution time is 14200.000000 clock cycles 
+Iteration # 825 
+Run: 825, start: 49490542405864.000000
+
+ function execution time is 20044.000000 clock cycles 
+Iteration # 826 
+Run: 826, start: 49490542450276.000000
+
+ function execution time is 13820.000000 clock cycles 
+Iteration # 827 
+Run: 827, start: 49490542505852.000000
+
+ function execution time is 13664.000000 clock cycles 
+Iteration # 828 
+Run: 828, start: 49490542550168.000000
+
+ function execution time is 14120.000000 clock cycles 
+Iteration # 829 
+Run: 829, start: 49490542593496.000000
+
+ function execution time is 13340.000000 clock cycles 
+Iteration # 830 
+Run: 830, start: 49490542646808.000000
+
+ function execution time is 18044.000000 clock cycles 
+Iteration # 831 
+Run: 831, start: 49490542699704.000000
+
+ function execution time is 11812.000000 clock cycles 
+Iteration # 832 
+Run: 832, start: 49490542777764.000000
+
+ function execution time is 11464.000000 clock cycles 
+Iteration # 833 
+Run: 833, start: 49490542816200.000000
+
+ function execution time is 11096.000000 clock cycles 
+Iteration # 834 
+Run: 834, start: 49490542854184.000000
+
+ function execution time is 11348.000000 clock cycles 
+Iteration # 835 
+Run: 835, start: 49490542891396.000000
+
+ function execution time is 11832.000000 clock cycles 
+Iteration # 836 
+Run: 836, start: 49490542929656.000000
+
+ function execution time is 11304.000000 clock cycles 
+Iteration # 837 
+Run: 837, start: 49490542967936.000000
+
+ function execution time is 11716.000000 clock cycles 
+Iteration # 838 
+Run: 838, start: 49490543005436.000000
+
+ function execution time is 11636.000000 clock cycles 
+Iteration # 839 
+Run: 839, start: 49490543043312.000000
+
+ function execution time is 11216.000000 clock cycles 
+Iteration # 840 
+Run: 840, start: 49490543085580.000000
+
+ function execution time is 11304.000000 clock cycles 
+Iteration # 841 
+Run: 841, start: 49490543123040.000000
+
+ function execution time is 11288.000000 clock cycles 
+Iteration # 842 
+Run: 842, start: 49490543160784.000000
+
+ function execution time is 11060.000000 clock cycles 
+Iteration # 843 
+Run: 843, start: 49490543198356.000000
+
+ function execution time is 11256.000000 clock cycles 
+Iteration # 844 
+Run: 844, start: 49490543235500.000000
+
+ function execution time is 11152.000000 clock cycles 
+Iteration # 845 
+Run: 845, start: 49490543272944.000000
+
+ function execution time is 11180.000000 clock cycles 
+Iteration # 846 
+Run: 846, start: 49490543310720.000000
+
+ function execution time is 11540.000000 clock cycles 
+Iteration # 847 
+Run: 847, start: 49490543350208.000000
+
+ function execution time is 11084.000000 clock cycles 
+Iteration # 848 
+Run: 848, start: 49490543388900.000000
+
+ function execution time is 11164.000000 clock cycles 
+Iteration # 849 
+Run: 849, start: 49490543426164.000000
+
+ function execution time is 11204.000000 clock cycles 
+Iteration # 850 
+Run: 850, start: 49490543464264.000000
+
+ function execution time is 11352.000000 clock cycles 
+Iteration # 851 
+Run: 851, start: 49490543501552.000000
+
+ function execution time is 11196.000000 clock cycles 
+Iteration # 852 
+Run: 852, start: 49490543541680.000000
+
+ function execution time is 11304.000000 clock cycles 
+Iteration # 853 
+Run: 853, start: 49490543578884.000000
+
+ function execution time is 11692.000000 clock cycles 
+Iteration # 854 
+Run: 854, start: 49490543636344.000000
+
+ function execution time is 11448.000000 clock cycles 
+Iteration # 855 
+Run: 855, start: 49490543674336.000000
+
+ function execution time is 11320.000000 clock cycles 
+Iteration # 856 
+Run: 856, start: 49490543711764.000000
+
+ function execution time is 11452.000000 clock cycles 
+Iteration # 857 
+Run: 857, start: 49490543749156.000000
+
+ function execution time is 11268.000000 clock cycles 
+Iteration # 858 
+Run: 858, start: 49490543786792.000000
+
+ function execution time is 11292.000000 clock cycles 
+Iteration # 859 
+Run: 859, start: 49490543824164.000000
+
+ function execution time is 11076.000000 clock cycles 
+Iteration # 860 
+Run: 860, start: 49490543861772.000000
+
+ function execution time is 11292.000000 clock cycles 
+Iteration # 861 
+Run: 861, start: 49490543899152.000000
+
+ function execution time is 11020.000000 clock cycles 
+Iteration # 862 
+Run: 862, start: 49490543936784.000000
+
+ function execution time is 11704.000000 clock cycles 
+Iteration # 863 
+Run: 863, start: 49490543975748.000000
+
+ function execution time is 11232.000000 clock cycles 
+Iteration # 864 
+Run: 864, start: 49490544013832.000000
+
+ function execution time is 11360.000000 clock cycles 
+Iteration # 865 
+Run: 865, start: 49490544051328.000000
+
+ function execution time is 11496.000000 clock cycles 
+Iteration # 866 
+Run: 866, start: 49490544088960.000000
+
+ function execution time is 11160.000000 clock cycles 
+Iteration # 867 
+Run: 867, start: 49490544126580.000000
+
+ function execution time is 11372.000000 clock cycles 
+Iteration # 868 
+Run: 868, start: 49490544163856.000000
+
+ function execution time is 11636.000000 clock cycles 
+Iteration # 869 
+Run: 869, start: 49490544201452.000000
+
+ function execution time is 11352.000000 clock cycles 
+Iteration # 870 
+Run: 870, start: 49490544239176.000000
+
+ function execution time is 11328.000000 clock cycles 
+Iteration # 871 
+Run: 871, start: 49490544276920.000000
+
+ function execution time is 11140.000000 clock cycles 
+Iteration # 872 
+Run: 872, start: 49490544314648.000000
+
+ function execution time is 11280.000000 clock cycles 
+Iteration # 873 
+Run: 873, start: 49490544351888.000000
+
+ function execution time is 11296.000000 clock cycles 
+Iteration # 874 
+Run: 874, start: 49490544389432.000000
+
+ function execution time is 11252.000000 clock cycles 
+Iteration # 875 
+Run: 875, start: 49490544426924.000000
+
+ function execution time is 11552.000000 clock cycles 
+Iteration # 876 
+Run: 876, start: 49490544464272.000000
+
+ function execution time is 11112.000000 clock cycles 
+Iteration # 877 
+Run: 877, start: 49490544502124.000000
+
+ function execution time is 11012.000000 clock cycles 
+Iteration # 878 
+Run: 878, start: 49490544539456.000000
+
+ function execution time is 11492.000000 clock cycles 
+Iteration # 879 
+Run: 879, start: 49490544578752.000000
+
+ function execution time is 16836.000000 clock cycles 
+Iteration # 880 
+Run: 880, start: 49490544804384.000000
+
+ function execution time is 11504.000000 clock cycles 
+Iteration # 881 
+Run: 881, start: 49490544850812.000000
+
+ function execution time is 11020.000000 clock cycles 
+Iteration # 882 
+Run: 882, start: 49490544888752.000000
+
+ function execution time is 11200.000000 clock cycles 
+Iteration # 883 
+Run: 883, start: 49490544925776.000000
+
+ function execution time is 11392.000000 clock cycles 
+Iteration # 884 
+Run: 884, start: 49490544963008.000000
+
+ function execution time is 11048.000000 clock cycles 
+Iteration # 885 
+Run: 885, start: 49490545000628.000000
+
+ function execution time is 10956.000000 clock cycles 
+Iteration # 886 
+Run: 886, start: 49490545038172.000000
+
+ function execution time is 11176.000000 clock cycles 
+Iteration # 887 
+Run: 887, start: 49490545075368.000000
+
+ function execution time is 11560.000000 clock cycles 
+Iteration # 888 
+Run: 888, start: 49490545112640.000000
+
+ function execution time is 11332.000000 clock cycles 
+Iteration # 889 
+Run: 889, start: 49490545150044.000000
+
+ function execution time is 12764.000000 clock cycles 
+Iteration # 890 
+Run: 890, start: 49490545205796.000000
+
+ function execution time is 11192.000000 clock cycles 
+Iteration # 891 
+Run: 891, start: 49490545245084.000000
+
+ function execution time is 11040.000000 clock cycles 
+Iteration # 892 
+Run: 892, start: 49490545282540.000000
+
+ function execution time is 11312.000000 clock cycles 
+Iteration # 893 
+Run: 893, start: 49490545319780.000000
+
+ function execution time is 11504.000000 clock cycles 
+Iteration # 894 
+Run: 894, start: 49490545357504.000000
+
+ function execution time is 11328.000000 clock cycles 
+Iteration # 895 
+Run: 895, start: 49490545397680.000000
+
+ function execution time is 10980.000000 clock cycles 
+Iteration # 896 
+Run: 896, start: 49490545435196.000000
+
+ function execution time is 11172.000000 clock cycles 
+Iteration # 897 
+Run: 897, start: 49490545472332.000000
+
+ function execution time is 11060.000000 clock cycles 
+Iteration # 898 
+Run: 898, start: 49490545509816.000000
+
+ function execution time is 11216.000000 clock cycles 
+Iteration # 899 
+Run: 899, start: 49490545547008.000000
+
+ function execution time is 11008.000000 clock cycles 
+Iteration # 900 
+Run: 900, start: 49490545584160.000000
+
+ function execution time is 11040.000000 clock cycles 
+Iteration # 901 
+Run: 901, start: 49490545621260.000000
+
+ function execution time is 10932.000000 clock cycles 
+Iteration # 902 
+Run: 902, start: 49490545658456.000000
+
+ function execution time is 11416.000000 clock cycles 
+Iteration # 903 
+Run: 903, start: 49490545695852.000000
+
+ function execution time is 11456.000000 clock cycles 
+Iteration # 904 
+Run: 904, start: 49490545733476.000000
+
+ function execution time is 11068.000000 clock cycles 
+Iteration # 905 
+Run: 905, start: 49490545771156.000000
+
+ function execution time is 11084.000000 clock cycles 
+Iteration # 906 
+Run: 906, start: 49490545808296.000000
+
+ function execution time is 10972.000000 clock cycles 
+Iteration # 907 
+Run: 907, start: 49490545845380.000000
+
+ function execution time is 11184.000000 clock cycles 
+Iteration # 908 
+Run: 908, start: 49490545886764.000000
+
+ function execution time is 11184.000000 clock cycles 
+Iteration # 909 
+Run: 909, start: 49490545924180.000000
+
+ function execution time is 11248.000000 clock cycles 
+Iteration # 910 
+Run: 910, start: 49490545961532.000000
+
+ function execution time is 11400.000000 clock cycles 
+Iteration # 911 
+Run: 911, start: 49490546000780.000000
+
+ function execution time is 11008.000000 clock cycles 
+Iteration # 912 
+Run: 912, start: 49490546038480.000000
+
+ function execution time is 11456.000000 clock cycles 
+Iteration # 913 
+Run: 913, start: 49490546075604.000000
+
+ function execution time is 11144.000000 clock cycles 
+Iteration # 914 
+Run: 914, start: 49490546113428.000000
+
+ function execution time is 11232.000000 clock cycles 
+Iteration # 915 
+Run: 915, start: 49490546151256.000000
+
+ function execution time is 11264.000000 clock cycles 
+Iteration # 916 
+Run: 916, start: 49490546189776.000000
+
+ function execution time is 11356.000000 clock cycles 
+Iteration # 917 
+Run: 917, start: 49490546227548.000000
+
+ function execution time is 11480.000000 clock cycles 
+Iteration # 918 
+Run: 918, start: 49490546265412.000000
+
+ function execution time is 11284.000000 clock cycles 
+Iteration # 919 
+Run: 919, start: 49490546303692.000000
+
+ function execution time is 11332.000000 clock cycles 
+Iteration # 920 
+Run: 920, start: 49490546342864.000000
+
+ function execution time is 11172.000000 clock cycles 
+Iteration # 921 
+Run: 921, start: 49490546380996.000000
+
+ function execution time is 11196.000000 clock cycles 
+Iteration # 922 
+Run: 922, start: 49490546418440.000000
+
+ function execution time is 11192.000000 clock cycles 
+Iteration # 923 
+Run: 923, start: 49490546455648.000000
+
+ function execution time is 11664.000000 clock cycles 
+Iteration # 924 
+Run: 924, start: 49490546495452.000000
+
+ function execution time is 11124.000000 clock cycles 
+Iteration # 925 
+Run: 925, start: 49490546533424.000000
+
+ function execution time is 11924.000000 clock cycles 
+Iteration # 926 
+Run: 926, start: 49490546587064.000000
+
+ function execution time is 11788.000000 clock cycles 
+Iteration # 927 
+Run: 927, start: 49490546627456.000000
+
+ function execution time is 11300.000000 clock cycles 
+Iteration # 928 
+Run: 928, start: 49490546665956.000000
+
+ function execution time is 11136.000000 clock cycles 
+Iteration # 929 
+Run: 929, start: 49490546703444.000000
+
+ function execution time is 12808.000000 clock cycles 
+Iteration # 930 
+Run: 930, start: 49490546773856.000000
+
+ function execution time is 11400.000000 clock cycles 
+Iteration # 931 
+Run: 931, start: 49490546813424.000000
+
+ function execution time is 11164.000000 clock cycles 
+Iteration # 932 
+Run: 932, start: 49490546851156.000000
+
+ function execution time is 11008.000000 clock cycles 
+Iteration # 933 
+Run: 933, start: 49490546888672.000000
+
+ function execution time is 11576.000000 clock cycles 
+Iteration # 934 
+Run: 934, start: 49490546925920.000000
+
+ function execution time is 11208.000000 clock cycles 
+Iteration # 935 
+Run: 935, start: 49490546963840.000000
+
+ function execution time is 11204.000000 clock cycles 
+Iteration # 936 
+Run: 936, start: 49490547001184.000000
+
+ function execution time is 11032.000000 clock cycles 
+Iteration # 937 
+Run: 937, start: 49490547038596.000000
+
+ function execution time is 11344.000000 clock cycles 
+Iteration # 938 
+Run: 938, start: 49490547076188.000000
+
+ function execution time is 11344.000000 clock cycles 
+Iteration # 939 
+Run: 939, start: 49490547113632.000000
+
+ function execution time is 11412.000000 clock cycles 
+Iteration # 940 
+Run: 940, start: 49490547151256.000000
+
+ function execution time is 11184.000000 clock cycles 
+Iteration # 941 
+Run: 941, start: 49490547189036.000000
+
+ function execution time is 11376.000000 clock cycles 
+Iteration # 942 
+Run: 942, start: 49490547226824.000000
+
+ function execution time is 11488.000000 clock cycles 
+Iteration # 943 
+Run: 943, start: 49490547265036.000000
+
+ function execution time is 11548.000000 clock cycles 
+Iteration # 944 
+Run: 944, start: 49490547305548.000000
+
+ function execution time is 11244.000000 clock cycles 
+Iteration # 945 
+Run: 945, start: 49490547343156.000000
+
+ function execution time is 11020.000000 clock cycles 
+Iteration # 946 
+Run: 946, start: 49490547380724.000000
+
+ function execution time is 11128.000000 clock cycles 
+Iteration # 947 
+Run: 947, start: 49490547417740.000000
+
+ function execution time is 11396.000000 clock cycles 
+Iteration # 948 
+Run: 948, start: 49490547454772.000000
+
+ function execution time is 11416.000000 clock cycles 
+Iteration # 949 
+Run: 949, start: 49490547492452.000000
+
+ function execution time is 11604.000000 clock cycles 
+Iteration # 950 
+Run: 950, start: 49490547530244.000000
+
+ function execution time is 11276.000000 clock cycles 
+Iteration # 951 
+Run: 951, start: 49490547568092.000000
+
+ function execution time is 11056.000000 clock cycles 
+Iteration # 952 
+Run: 952, start: 49490547605528.000000
+
+ function execution time is 11160.000000 clock cycles 
+Iteration # 953 
+Run: 953, start: 49490547642852.000000
+
+ function execution time is 11352.000000 clock cycles 
+Iteration # 954 
+Run: 954, start: 49490547680148.000000
+
+ function execution time is 11124.000000 clock cycles 
+Iteration # 955 
+Run: 955, start: 49490547718096.000000
+
+ function execution time is 11036.000000 clock cycles 
+Iteration # 956 
+Run: 956, start: 49490547755168.000000
+
+ function execution time is 11124.000000 clock cycles 
+Iteration # 957 
+Run: 957, start: 49490547792356.000000
+
+ function execution time is 11108.000000 clock cycles 
+Iteration # 958 
+Run: 958, start: 49490547829616.000000
+
+ function execution time is 11324.000000 clock cycles 
+Iteration # 959 
+Run: 959, start: 49490547868616.000000
+
+ function execution time is 11428.000000 clock cycles 
+Iteration # 960 
+Run: 960, start: 49490547908232.000000
+
+ function execution time is 11616.000000 clock cycles 
+Iteration # 961 
+Run: 961, start: 49490547946152.000000
+
+ function execution time is 11768.000000 clock cycles 
+Iteration # 962 
+Run: 962, start: 49490547999692.000000
+
+ function execution time is 11316.000000 clock cycles 
+Iteration # 963 
+Run: 963, start: 49490548038152.000000
+
+ function execution time is 11132.000000 clock cycles 
+Iteration # 964 
+Run: 964, start: 49490548076068.000000
+
+ function execution time is 11364.000000 clock cycles 
+Iteration # 965 
+Run: 965, start: 49490548113440.000000
+
+ function execution time is 11148.000000 clock cycles 
+Iteration # 966 
+Run: 966, start: 49490548151224.000000
+
+ function execution time is 11408.000000 clock cycles 
+Iteration # 967 
+Run: 967, start: 49490548188732.000000
+
+ function execution time is 11200.000000 clock cycles 
+Iteration # 968 
+Run: 968, start: 49490548226076.000000
+
+ function execution time is 11316.000000 clock cycles 
+Iteration # 969 
+Run: 969, start: 49490548263264.000000
+
+ function execution time is 11284.000000 clock cycles 
+Iteration # 970 
+Run: 970, start: 49490548301812.000000
+
+ function execution time is 11104.000000 clock cycles 
+Iteration # 971 
+Run: 971, start: 49490548339200.000000
+
+ function execution time is 11016.000000 clock cycles 
+Iteration # 972 
+Run: 972, start: 49490548376368.000000
+
+ function execution time is 11500.000000 clock cycles 
+Iteration # 973 
+Run: 973, start: 49490548413488.000000
+
+ function execution time is 11408.000000 clock cycles 
+Iteration # 974 
+Run: 974, start: 49490548451268.000000
+
+ function execution time is 11364.000000 clock cycles 
+Iteration # 975 
+Run: 975, start: 49490548489048.000000
+
+ function execution time is 11424.000000 clock cycles 
+Iteration # 976 
+Run: 976, start: 49490548528992.000000
+
+ function execution time is 11128.000000 clock cycles 
+Iteration # 977 
+Run: 977, start: 49490548566656.000000
+
+ function execution time is 11216.000000 clock cycles 
+Iteration # 978 
+Run: 978, start: 49490548604440.000000
+
+ function execution time is 11260.000000 clock cycles 
+Iteration # 979 
+Run: 979, start: 49490548641768.000000
+
+ function execution time is 11248.000000 clock cycles 
+Iteration # 980 
+Run: 980, start: 49490548679100.000000
+
+ function execution time is 10960.000000 clock cycles 
+Iteration # 981 
+Run: 981, start: 49490548716756.000000
+
+ function execution time is 11436.000000 clock cycles 
+Iteration # 982 
+Run: 982, start: 49490548753884.000000
+
+ function execution time is 11520.000000 clock cycles 
+Iteration # 983 
+Run: 983, start: 49490548791876.000000
+
+ function execution time is 11280.000000 clock cycles 
+Iteration # 984 
+Run: 984, start: 49490548829892.000000
+
+ function execution time is 11320.000000 clock cycles 
+Iteration # 985 
+Run: 985, start: 49490548867404.000000
+
+ function execution time is 11656.000000 clock cycles 
+Iteration # 986 
+Run: 986, start: 49490548904956.000000
+
+ function execution time is 11052.000000 clock cycles 
+Iteration # 987 
+Run: 987, start: 49490548942948.000000
+
+ function execution time is 11136.000000 clock cycles 
+Iteration # 988 
+Run: 988, start: 49490548980280.000000
+
+ function execution time is 11164.000000 clock cycles 
+Iteration # 989 
+Run: 989, start: 49490549017912.000000
+
+ function execution time is 11180.000000 clock cycles 
+Iteration # 990 
+Run: 990, start: 49490549055364.000000
+
+ function execution time is 11296.000000 clock cycles 
+Iteration # 991 
+Run: 991, start: 49490549093024.000000
+
+ function execution time is 11444.000000 clock cycles 
+Iteration # 992 
+Run: 992, start: 49490549132436.000000
+
+ function execution time is 11348.000000 clock cycles 
+Iteration # 993 
+Run: 993, start: 49490549170144.000000
+
+ function execution time is 11920.000000 clock cycles 
+Iteration # 994 
+Run: 994, start: 49490549223388.000000
+
+ function execution time is 11436.000000 clock cycles 
+Iteration # 995 
+Run: 995, start: 49490549261760.000000
+
+ function execution time is 11348.000000 clock cycles 
+Iteration # 996 
+Run: 996, start: 49490549299184.000000
+
+ function execution time is 11116.000000 clock cycles 
+Iteration # 997 
+Run: 997, start: 49490549337068.000000
+
+ function execution time is 11236.000000 clock cycles 
+Iteration # 998 
+Run: 998, start: 49490549374472.000000
+
+ function execution time is 11384.000000 clock cycles 
+Iteration # 999 
+Run: 999, start: 49490549411840.000000
+
+ function execution time is 11140.000000 clock cycles 
+average clock cycles for time is 25020.552000 
+variance is 12038713511.254559 
+standard deviation is 109721.071410 
+amit@bdaemon:~/acads/cse221/OS_Benchmark/src/misc$

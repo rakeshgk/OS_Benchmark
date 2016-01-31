@@ -1,0 +1,306 @@
+amit@bdaemon:~/acads/cse221/OS_Benchmark/src$ ./a.out 
+Loading test module... 
+Iteration # 0 
+
+ function execution time is 284740.000000 clock cycles 
+Iteration # 1 
+
+ function execution time is 289980.000000 clock cycles 
+Iteration # 2 
+
+ function execution time is 258672.000000 clock cycles 
+Iteration # 3 
+
+ function execution time is 256008.000000 clock cycles 
+Iteration # 4 
+
+ function execution time is 252760.000000 clock cycles 
+Iteration # 5 
+
+ function execution time is 252968.000000 clock cycles 
+Iteration # 6 
+
+ function execution time is 249692.000000 clock cycles 
+Iteration # 7 
+
+ function execution time is 251208.000000 clock cycles 
+Iteration # 8 
+
+ function execution time is 306056.000000 clock cycles 
+Iteration # 9 
+
+ function execution time is 254768.000000 clock cycles 
+Iteration # 10 
+
+ function execution time is 252872.000000 clock cycles 
+Iteration # 11 
+
+ function execution time is 252380.000000 clock cycles 
+Iteration # 12 
+
+ function execution time is 249848.000000 clock cycles 
+Iteration # 13 
+
+ function execution time is 250040.000000 clock cycles 
+Iteration # 14 
+
+ function execution time is 248396.000000 clock cycles 
+Iteration # 15 
+
+ function execution time is 250460.000000 clock cycles 
+Iteration # 16 
+
+ function execution time is 250072.000000 clock cycles 
+Iteration # 17 
+
+ function execution time is 251496.000000 clock cycles 
+Iteration # 18 
+
+ function execution time is 248520.000000 clock cycles 
+Iteration # 19 
+
+ function execution time is 248156.000000 clock cycles 
+Iteration # 20 
+
+ function execution time is 248524.000000 clock cycles 
+Iteration # 21 
+
+ function execution time is 249288.000000 clock cycles 
+Iteration # 22 
+
+ function execution time is 248380.000000 clock cycles 
+Iteration # 23 
+
+ function execution time is 247428.000000 clock cycles 
+Iteration # 24 
+
+ function execution time is 248404.000000 clock cycles 
+Iteration # 25 
+
+ function execution time is 248908.000000 clock cycles 
+Iteration # 26 
+
+ function execution time is 249252.000000 clock cycles 
+Iteration # 27 
+
+ function execution time is 249396.000000 clock cycles 
+Iteration # 28 
+
+ function execution time is 251132.000000 clock cycles 
+Iteration # 29 
+
+ function execution time is 248380.000000 clock cycles 
+Iteration # 30 
+
+ function execution time is 247848.000000 clock cycles 
+Iteration # 31 
+
+ function execution time is 249424.000000 clock cycles 
+Iteration # 32 
+
+ function execution time is 249244.000000 clock cycles 
+Iteration # 33 
+
+ function execution time is 248524.000000 clock cycles 
+Iteration # 34 
+
+ function execution time is 248344.000000 clock cycles 
+Iteration # 35 
+
+ function execution time is 250840.000000 clock cycles 
+Iteration # 36 
+
+ function execution time is 250208.000000 clock cycles 
+Iteration # 37 
+
+ function execution time is 295480.000000 clock cycles 
+Iteration # 38 
+
+ function execution time is 252420.000000 clock cycles 
+Iteration # 39 
+
+ function execution time is 251340.000000 clock cycles 
+Iteration # 40 
+
+ function execution time is 248876.000000 clock cycles 
+Iteration # 41 
+
+ function execution time is 248788.000000 clock cycles 
+Iteration # 42 
+
+ function execution time is 247748.000000 clock cycles 
+Iteration # 43 
+
+ function execution time is 251040.000000 clock cycles 
+Iteration # 44 
+
+ function execution time is 249652.000000 clock cycles 
+Iteration # 45 
+
+ function execution time is 247160.000000 clock cycles 
+Iteration # 46 
+
+ function execution time is 248636.000000 clock cycles 
+Iteration # 47 
+
+ function execution time is 246892.000000 clock cycles 
+Iteration # 48 
+
+ function execution time is 248708.000000 clock cycles 
+Iteration # 49 
+
+ function execution time is 248436.000000 clock cycles 
+Iteration # 50 
+
+ function execution time is 251944.000000 clock cycles 
+Iteration # 51 
+
+ function execution time is 253016.000000 clock cycles 
+Iteration # 52 
+
+ function execution time is 251040.000000 clock cycles 
+Iteration # 53 
+
+ function execution time is 248956.000000 clock cycles 
+Iteration # 54 
+
+ function execution time is 251360.000000 clock cycles 
+Iteration # 55 
+
+ function execution time is 251820.000000 clock cycles 
+Iteration # 56 
+
+ function execution time is 250744.000000 clock cycles 
+Iteration # 57 
+
+ function execution time is 250852.000000 clock cycles 
+Iteration # 58 
+
+ function execution time is 248168.000000 clock cycles 
+Iteration # 59 
+
+ function execution time is 277012.000000 clock cycles 
+Iteration # 60 
+
+ function execution time is 255372.000000 clock cycles 
+Iteration # 61 
+
+ function execution time is 250744.000000 clock cycles 
+Iteration # 62 
+
+ function execution time is 249476.000000 clock cycles 
+Iteration # 63 
+
+ function execution time is 249884.000000 clock cycles 
+Iteration # 64 
+
+ function execution time is 253388.000000 clock cycles 
+Iteration # 65 
+
+ function execution time is 250752.000000 clock cycles 
+Iteration # 66 
+
+ function execution time is 252408.000000 clock cycles 
+Iteration # 67 
+
+ function execution time is 255748.000000 clock cycles 
+Iteration # 68 
+
+ function execution time is 4230364.000000 clock cycles 
+Iteration # 69 
+
+ function execution time is 4294540.000000 clock cycles 
+Iteration # 70 
+
+ function execution time is 615448.000000 clock cycles 
+Iteration # 71 
+
+ function execution time is 263344.000000 clock cycles 
+Iteration # 72 
+
+ function execution time is 255948.000000 clock cycles 
+Iteration # 73 
+
+ function execution time is 253012.000000 clock cycles 
+Iteration # 74 
+
+ function execution time is 251632.000000 clock cycles 
+Iteration # 75 
+
+ function execution time is 250808.000000 clock cycles 
+Iteration # 76 
+
+ function execution time is 252204.000000 clock cycles 
+Iteration # 77 
+
+ function execution time is 249164.000000 clock cycles 
+Iteration # 78 
+
+ function execution time is 253368.000000 clock cycles 
+Iteration # 79 
+
+ function execution time is 260308.000000 clock cycles 
+Iteration # 80 
+
+ function execution time is 252772.000000 clock cycles 
+Iteration # 81 
+
+ function execution time is 250724.000000 clock cycles 
+Iteration # 82 
+
+ function execution time is 251760.000000 clock cycles 
+Iteration # 83 
+
+ function execution time is 251724.000000 clock cycles 
+Iteration # 84 
+
+ function execution time is 252732.000000 clock cycles 
+Iteration # 85 
+
+ function execution time is 251668.000000 clock cycles 
+Iteration # 86 
+
+ function execution time is 254908.000000 clock cycles 
+Iteration # 87 
+
+ function execution time is 250808.000000 clock cycles 
+Iteration # 88 
+
+ function execution time is 252744.000000 clock cycles 
+Iteration # 89 
+
+ function execution time is 253544.000000 clock cycles 
+Iteration # 90 
+
+ function execution time is 251744.000000 clock cycles 
+Iteration # 91 
+
+ function execution time is 312708.000000 clock cycles 
+Iteration # 92 
+
+ function execution time is 250968.000000 clock cycles 
+Iteration # 93 
+
+ function execution time is 248116.000000 clock cycles 
+Iteration # 94 
+
+ function execution time is 249368.000000 clock cycles 
+Iteration # 95 
+
+ function execution time is 252416.000000 clock cycles 
+Iteration # 96 
+
+ function execution time is 250448.000000 clock cycles 
+Iteration # 97 
+
+ function execution time is 249380.000000 clock cycles 
+Iteration # 98 
+
+ function execution time is 252752.000000 clock cycles 
+Iteration # 99 
+
+ function execution time is 251776.000000 clock cycles 
+average clock cycles for time is 337536.760000 
+variance is 319013743195.376099 
+standard deviation is 564813.016135 
+amit@bdaemon:~/acads/cse221/OS_Benchmark/src$

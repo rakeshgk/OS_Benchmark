@@ -1,0 +1,67 @@
+amit@bdaemon:~/acads/cse221/OS_Benchmark/src$ gcc cpu_frequency.c -lm
+amit@bdaemon:~/acads/cse221/OS_Benchmark/src$ ./a.out 
+Loading test module... 
+Iteration # 0 
+
+ function execution time is 23944818432.000000 clock cycles 
+Iteration # 1 
+
+ function execution time is 23944807420.000000 clock cycles 
+Iteration # 2 
+
+ function execution time is 23944736400.000000 clock cycles 
+Iteration # 3 
+
+ function execution time is 23944735540.000000 clock cycles 
+Iteration # 4 
+
+ function execution time is 23944937376.000000 clock cycles 
+Iteration # 5 
+
+ function execution time is 23944848344.000000 clock cycles 
+Iteration # 6 
+
+ function execution time is 23944734936.000000 clock cycles 
+Iteration # 7 
+
+ function execution time is 23944732504.000000 clock cycles 
+Iteration # 8 
+
+ function execution time is 23944731980.000000 clock cycles 
+Iteration # 9 
+
+ function execution time is 23944926092.000000 clock cycles 
+Iteration # 10 
+
+ function execution time is 23944937896.000000 clock cycles 
+Iteration # 11 
+
+ function execution time is 23944941660.000000 clock cycles 
+Iteration # 12 
+
+ function execution time is 23944803032.000000 clock cycles 
+Iteration # 13 
+
+ function execution time is 23944877160.000000 clock cycles 
+Iteration # 14 
+
+ function execution time is 23944733592.000000 clock cycles 
+Iteration # 15 
+
+ function execution time is 23944809744.000000 clock cycles 
+Iteration # 16 
+
+ function execution time is 23944739732.000000 clock cycles 
+Iteration # 17 
+
+ function execution time is 23944741516.000000 clock cycles 
+Iteration # 18 
+
+ function execution time is 23944734804.000000 clock cycles 
+Iteration # 19 
+
+ function execution time is 23944826104.000000 clock cycles 
+average clock cycles for time is 23944807713.200001 
+variance is 6287603609.431580 
+standard deviation is 79294.410960 
+amit@bdaemon:~/acads/cse221/OS_Benchmark/src$

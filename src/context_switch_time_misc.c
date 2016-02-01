@@ -6,6 +6,7 @@
 #include <string.h>
 #include <sys/types.h>
 #include <stdlib.h>
+//#include <sys/wait.h>
 
 #define NUM_LOOP 1000
 
@@ -31,11 +32,11 @@ int main() {
         pipe(fd);
         // Send a "string" through the output side of the pipe
         write(fd[1], string, (strlen(string) + 1));
-	process_pid = fork();
-	
-	if(process_pid == 0){
+        process_pid = fork();
+
+        if(process_pid == 0){
             exit(0);
-	}
+        }
 
         asm volatile (
             "CPUID\n\t"
@@ -44,8 +45,8 @@ int main() {
             "mov %%eax, %1\n\t": "=r" (cycles_high), "=r" (cycles_low)::
             "%rax", "%rbx", "%rcx", "%rdx");
 
-	waitpid(process_pid, &childReturnStatus, 0);        
-	start_temp = (double) ( ((uint64_t)cycles_high << 32) | cycles_low );
+	    // waitpid(process_pid, &childReturnStatus, 0);
+	    start_temp = (double) ( ((uint64_t)cycles_high << 32) | cycles_low );
         printf("Run: %d, start: %f\n", i, start);
         nbytes = read(fd[0], readbuffer, sizeof(readbuffer));
 

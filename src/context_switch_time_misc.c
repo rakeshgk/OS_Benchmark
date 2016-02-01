@@ -19,7 +19,8 @@ int main() {
     unsigned cycles_low, cycles_high, cycles_low1, cycles_high1;
 
     // fd[0] is set up for reading and fd[1] for writing
-    int fd[2];
+    int fd[2],childReturnStatus;
+    pid_t process_pid;
 
     for (i=0; i<NUM_LOOP; i++) {
         printf("Iteration # %d \n", i);
@@ -30,6 +31,11 @@ int main() {
         pipe(fd);
         // Send a "string" through the output side of the pipe
         write(fd[1], string, (strlen(string) + 1));
+	process_pid = fork();
+	
+	if(process_pid == 0){
+            exit(0);
+	}
 
         asm volatile (
             "CPUID\n\t"
@@ -38,7 +44,8 @@ int main() {
             "mov %%eax, %1\n\t": "=r" (cycles_high), "=r" (cycles_low)::
             "%rax", "%rbx", "%rcx", "%rdx");
 
-        start_temp = (double) ( ((uint64_t)cycles_high << 32) | cycles_low );
+	waitpid(process_pid, &childReturnStatus, 0);        
+	start_temp = (double) ( ((uint64_t)cycles_high << 32) | cycles_low );
         printf("Run: %d, start: %f\n", i, start);
         nbytes = read(fd[0], readbuffer, sizeof(readbuffer));
 

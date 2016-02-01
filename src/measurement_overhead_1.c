@@ -25,13 +25,10 @@ int main() {
             "mov %%eax, %1\n\t": "=r" (cycles_high), "=r" (cycles_low)::
             "%rax", "%rbx", "%rcx", "%rdx");
 
-        printf("Iteration # %d \n", i);
-
         // perform the actual operation
         for (j=0; j<INN_LOOP; j++) {
             // NO op
         }
-        printf("Iteration # %d \n", i);
 
         asm volatile(
             "RDTSCP\n\t"

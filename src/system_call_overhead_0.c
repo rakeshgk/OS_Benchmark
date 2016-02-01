@@ -2,49 +2,67 @@
 #include <stdint.h>
 #include <time.h>
 #include <math.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <pthread.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <sys/types.h>
 
-#define NUM_LOOP 1000
+#define NUM_LOOP 100
 
 int main() {
-    double start, end, total_clocks = 0;
+    double start = 0, end = 0, total_clocks = 0;
     double avg_clock, stddev, variance, sum = 0;
     double clocks[NUM_LOOP] = {0};
-    pid_t process_pid;
+    //int variable = 0;
     int i;
     unsigned cycles_low, cycles_high, cycles_low1, cycles_high1;
+    pid_t child_pid, tpid, process_pid;
+    int child_status;
     printf("Loading test module... \n");
     for (i=0; i<NUM_LOOP; i++) {
-        printf("Iteration # %d \n", i);
+        //printf("Iteration # %d \n", i);
         //preempt_disable();            /*we disable preemption on our CPU*/
         //raw_local_irq_save(flags);    /*we disable hard interrupts on our CPU*/
 
-        asm volatile (
-            "CPUID\n\t"
-            "RDTSC\n\t"
-            "mov %%edx, %0\n\t"
-            "mov %%eax, %1\n\t": "=r" (cycles_high), "=r" (cycles_low)::
-            "%rax", "%rbx", "%rcx", "%rdx");
-
         // perform the actual operation
-        process_pid = getpid();
+        //measured_function();
 
-        asm volatile(
-            "RDTSCP\n\t"
-            "mov %%edx, %0\n\t"
-            "mov %%eax, %1\n\t"
-            "CPUID\n\t": "=r" (cycles_high1), "=r" (cycles_low1):: "%rax",
-            "%rbx", "%rcx", "%rdx");
+        child_pid = fork();
+        if(child_pid == 0) {
+            /* This is done by the child process. */
+            asm volatile (
+                "CPUID\n\t"
+                "RDTSC\n\t"
+                "mov %%edx, %0\n\t"
+                "mov %%eax, %1\n\t": "=r" (cycles_high), "=r" (cycles_low)::
+                "%rax", "%rbx", "%rcx", "%rdx");
+
+            process_pid = getpid();
+
+            asm volatile(
+                "RDTSCP\n\t"
+                "mov %%edx, %0\n\t"
+                "mov %%eax, %1\n\t"
+                "CPUID\n\t": "=r" (cycles_high1), "=r" (cycles_low1):: "%rax",
+                "%rbx", "%rcx", "%rdx");
+
+            start = (double) ( ((uint64_t)cycles_high << 32) | cycles_low );
+            end = (double) ( ((uint64_t)cycles_high1 << 32) | cycles_low1 );
+            printf("\n Iteration %d, time: %f\n", i, (end - start));
+
+            exit(0);
+        } else {
+            /* This is run by the parent.  Wait for the child to terminate. */
+            //do {
+            //    tpid = wait(&child_status);
+            //} while(tpid != child_pid);
+            waitpid(child_pid, &child_status, 0);
+        }
 
         //raw_local_irq_restore(flags);     /*we enable hard interrupts on our CPU*/
         //preempt_enable(); /*we enable preemption*/
 
-        start = (double) ( ((uint64_t)cycles_high << 32) | cycles_low );
-        end = (double) ( ((uint64_t)cycles_high1 << 32) | cycles_low1 );
-
-        printf("\n function execution time is %f clock cycles \n", (end - start));
         clocks[i] = (end - start);
         total_clocks += clocks[i];
     }

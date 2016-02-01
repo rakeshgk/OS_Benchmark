@@ -1,43 +1,45 @@
+amit@bdaemon:~/acads/cse221/OS_Benchmark/src$ gcc system_call_overhead_1.c -lm
+amit@bdaemon:~/acads/cse221/OS_Benchmark/src$ ./a.out 
 Loading test module... 
 Iteration # 0 
 
- function execution time is 64.000000 clock cycles 
+ function execution time is 104.000000 clock cycles 
 Iteration # 1 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 44.000000 clock cycles 
 Iteration # 2 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 48.000000 clock cycles 
 Iteration # 3 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 52.000000 clock cycles 
 Iteration # 4 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 48.000000 clock cycles 
 Iteration # 5 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 40.000000 clock cycles 
 Iteration # 6 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 44.000000 clock cycles 
 Iteration # 7 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 48.000000 clock cycles 
 Iteration # 8 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 48.000000 clock cycles 
 Iteration # 9 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 10 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 48.000000 clock cycles 
 Iteration # 11 
 
  function execution time is 32.000000 clock cycles 
 Iteration # 12 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 13 
 
  function execution time is 36.000000 clock cycles 
@@ -46,7 +48,7 @@ Iteration # 14
  function execution time is 36.000000 clock cycles 
 Iteration # 15 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 16 
 
  function execution time is 36.000000 clock cycles 
@@ -67,10 +69,10 @@ Iteration # 21
  function execution time is 36.000000 clock cycles 
 Iteration # 22 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 23 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 24 
 
  function execution time is 36.000000 clock cycles 
@@ -82,13 +84,13 @@ Iteration # 26
  function execution time is 36.000000 clock cycles 
 Iteration # 27 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 28 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 29 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 30 
 
  function execution time is 36.000000 clock cycles 
@@ -97,13 +99,13 @@ Iteration # 31
  function execution time is 36.000000 clock cycles 
 Iteration # 32 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 33 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 34 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 35 
 
  function execution time is 36.000000 clock cycles 
@@ -121,13 +123,13 @@ Iteration # 39
  function execution time is 36.000000 clock cycles 
 Iteration # 40 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 41 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 42 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 43 
 
  function execution time is 36.000000 clock cycles 
@@ -139,7 +141,7 @@ Iteration # 45
  function execution time is 36.000000 clock cycles 
 Iteration # 46 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 47 
 
  function execution time is 36.000000 clock cycles 
@@ -154,7 +156,7 @@ Iteration # 50
  function execution time is 36.000000 clock cycles 
 Iteration # 51 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 52 
 
  function execution time is 36.000000 clock cycles 
@@ -163,10 +165,10 @@ Iteration # 53
  function execution time is 36.000000 clock cycles 
 Iteration # 54 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 55 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 56 
 
  function execution time is 36.000000 clock cycles 
@@ -178,7 +180,7 @@ Iteration # 58
  function execution time is 36.000000 clock cycles 
 Iteration # 59 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 60 
 
  function execution time is 36.000000 clock cycles 
@@ -187,7 +189,7 @@ Iteration # 61
  function execution time is 36.000000 clock cycles 
 Iteration # 62 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 63 
 
  function execution time is 36.000000 clock cycles 
@@ -196,7 +198,7 @@ Iteration # 64
  function execution time is 36.000000 clock cycles 
 Iteration # 65 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 66 
 
  function execution time is 36.000000 clock cycles 
@@ -205,10 +207,10 @@ Iteration # 67
  function execution time is 36.000000 clock cycles 
 Iteration # 68 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 69 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 70 
 
  function execution time is 36.000000 clock cycles 
@@ -226,13 +228,13 @@ Iteration # 74
  function execution time is 36.000000 clock cycles 
 Iteration # 75 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 76 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 77 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 78 
 
  function execution time is 36.000000 clock cycles 
@@ -241,31 +243,31 @@ Iteration # 79
  function execution time is 36.000000 clock cycles 
 Iteration # 80 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 81 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 82 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 83 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 84 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 85 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 86 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 87 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 88 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 89 
 
  function execution time is 36.000000 clock cycles 
@@ -292,16 +294,16 @@ Iteration # 96
  function execution time is 36.000000 clock cycles 
 Iteration # 97 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 98 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 99 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 100 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 101 
 
  function execution time is 36.000000 clock cycles 
@@ -313,25 +315,25 @@ Iteration # 103
  function execution time is 36.000000 clock cycles 
 Iteration # 104 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 105 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 106 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 107 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 108 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 109 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 110 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 111 
 
  function execution time is 36.000000 clock cycles 
@@ -343,7 +345,7 @@ Iteration # 113
  function execution time is 36.000000 clock cycles 
 Iteration # 114 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 115 
 
  function execution time is 36.000000 clock cycles 
@@ -355,7 +357,7 @@ Iteration # 117
  function execution time is 36.000000 clock cycles 
 Iteration # 118 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 119 
 
  function execution time is 36.000000 clock cycles 
@@ -367,13 +369,13 @@ Iteration # 121
  function execution time is 36.000000 clock cycles 
 Iteration # 122 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 123 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 124 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 125 
 
  function execution time is 36.000000 clock cycles 
@@ -388,7 +390,7 @@ Iteration # 128
  function execution time is 36.000000 clock cycles 
 Iteration # 129 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 130 
 
  function execution time is 36.000000 clock cycles 
@@ -412,10 +414,10 @@ Iteration # 136
  function execution time is 36.000000 clock cycles 
 Iteration # 137 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 138 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 139 
 
  function execution time is 36.000000 clock cycles 
@@ -436,7 +438,7 @@ Iteration # 144
  function execution time is 36.000000 clock cycles 
 Iteration # 145 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 146 
 
  function execution time is 36.000000 clock cycles 
@@ -448,7 +450,7 @@ Iteration # 148
  function execution time is 36.000000 clock cycles 
 Iteration # 149 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 150 
 
  function execution time is 36.000000 clock cycles 
@@ -472,19 +474,19 @@ Iteration # 156
  function execution time is 32.000000 clock cycles 
 Iteration # 157 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 158 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 159 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 160 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 161 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 162 
 
  function execution time is 36.000000 clock cycles 
@@ -496,7 +498,7 @@ Iteration # 164
  function execution time is 36.000000 clock cycles 
 Iteration # 165 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 166 
 
  function execution time is 36.000000 clock cycles 
@@ -517,7 +519,7 @@ Iteration # 171
  function execution time is 36.000000 clock cycles 
 Iteration # 172 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 173 
 
  function execution time is 36.000000 clock cycles 
@@ -535,16 +537,16 @@ Iteration # 177
  function execution time is 36.000000 clock cycles 
 Iteration # 178 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 179 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 180 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 181 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 182 
 
  function execution time is 36.000000 clock cycles 
@@ -559,7 +561,7 @@ Iteration # 185
  function execution time is 36.000000 clock cycles 
 Iteration # 186 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 187 
 
  function execution time is 36.000000 clock cycles 
@@ -571,7 +573,7 @@ Iteration # 189
  function execution time is 36.000000 clock cycles 
 Iteration # 190 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 191 
 
  function execution time is 36.000000 clock cycles 
@@ -589,37 +591,37 @@ Iteration # 195
  function execution time is 36.000000 clock cycles 
 Iteration # 196 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 197 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 198 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 199 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 200 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 201 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 202 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 203 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 204 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 205 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 206 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 207 
 
  function execution time is 32.000000 clock cycles 
@@ -631,22 +633,22 @@ Iteration # 209
  function execution time is 32.000000 clock cycles 
 Iteration # 210 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 211 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 212 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 213 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 214 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 215 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 216 
 
  function execution time is 36.000000 clock cycles 
@@ -670,19 +672,19 @@ Iteration # 222
  function execution time is 36.000000 clock cycles 
 Iteration # 223 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 224 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 225 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 226 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 227 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 228 
 
  function execution time is 36.000000 clock cycles 
@@ -697,10 +699,10 @@ Iteration # 231
  function execution time is 36.000000 clock cycles 
 Iteration # 232 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 233 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 234 
 
  function execution time is 36.000000 clock cycles 
@@ -724,7 +726,7 @@ Iteration # 240
  function execution time is 36.000000 clock cycles 
 Iteration # 241 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 242 
 
  function execution time is 36.000000 clock cycles 
@@ -736,25 +738,25 @@ Iteration # 244
  function execution time is 36.000000 clock cycles 
 Iteration # 245 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 246 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 247 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 248 
 
  function execution time is 32.000000 clock cycles 
 Iteration # 249 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 250 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 251 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 252 
 
  function execution time is 36.000000 clock cycles 
@@ -763,16 +765,16 @@ Iteration # 253
  function execution time is 36.000000 clock cycles 
 Iteration # 254 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 255 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 256 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 257 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 258 
 
  function execution time is 36.000000 clock cycles 
@@ -784,19 +786,19 @@ Iteration # 260
  function execution time is 36.000000 clock cycles 
 Iteration # 261 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 262 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 263 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 264 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 265 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 266 
 
  function execution time is 36.000000 clock cycles 
@@ -808,34 +810,34 @@ Iteration # 268
  function execution time is 36.000000 clock cycles 
 Iteration # 269 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 270 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 271 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 272 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 273 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 274 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 275 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 276 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 277 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 278 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 279 
 
  function execution time is 36.000000 clock cycles 
@@ -850,7 +852,7 @@ Iteration # 282
  function execution time is 36.000000 clock cycles 
 Iteration # 283 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 64.000000 clock cycles 
 Iteration # 284 
 
  function execution time is 36.000000 clock cycles 
@@ -874,7 +876,7 @@ Iteration # 290
  function execution time is 36.000000 clock cycles 
 Iteration # 291 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 292 
 
  function execution time is 36.000000 clock cycles 
@@ -883,16 +885,16 @@ Iteration # 293
  function execution time is 36.000000 clock cycles 
 Iteration # 294 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 295 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 296 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 297 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 298 
 
  function execution time is 36.000000 clock cycles 
@@ -904,7 +906,7 @@ Iteration # 300
  function execution time is 36.000000 clock cycles 
 Iteration # 301 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 302 
 
  function execution time is 36.000000 clock cycles 
@@ -931,7 +933,7 @@ Iteration # 309
  function execution time is 36.000000 clock cycles 
 Iteration # 310 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 311 
 
  function execution time is 36.000000 clock cycles 
@@ -949,10 +951,10 @@ Iteration # 315
  function execution time is 36.000000 clock cycles 
 Iteration # 316 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 317 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 318 
 
  function execution time is 36.000000 clock cycles 
@@ -964,7 +966,7 @@ Iteration # 320
  function execution time is 36.000000 clock cycles 
 Iteration # 321 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 322 
 
  function execution time is 36.000000 clock cycles 
@@ -979,28 +981,28 @@ Iteration # 325
  function execution time is 36.000000 clock cycles 
 Iteration # 326 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 327 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 328 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 329 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 330 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 331 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 332 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 333 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 334 
 
  function execution time is 36.000000 clock cycles 
@@ -1018,31 +1020,31 @@ Iteration # 338
  function execution time is 36.000000 clock cycles 
 Iteration # 339 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 108.000000 clock cycles 
 Iteration # 340 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 341 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 40.000000 clock cycles 
 Iteration # 342 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 343 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 48.000000 clock cycles 
 Iteration # 344 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 345 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 346 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 347 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 348 
 
  function execution time is 36.000000 clock cycles 
@@ -1051,10 +1053,10 @@ Iteration # 349
  function execution time is 36.000000 clock cycles 
 Iteration # 350 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 351 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 352 
 
  function execution time is 36.000000 clock cycles 
@@ -1069,7 +1071,7 @@ Iteration # 355
  function execution time is 36.000000 clock cycles 
 Iteration # 356 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 357 
 
  function execution time is 36.000000 clock cycles 
@@ -1081,22 +1083,22 @@ Iteration # 359
  function execution time is 36.000000 clock cycles 
 Iteration # 360 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 361 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 362 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 363 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 364 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 365 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 366 
 
  function execution time is 36.000000 clock cycles 
@@ -1105,7 +1107,7 @@ Iteration # 367
  function execution time is 36.000000 clock cycles 
 Iteration # 368 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 369 
 
  function execution time is 36.000000 clock cycles 
@@ -1114,10 +1116,10 @@ Iteration # 370
  function execution time is 36.000000 clock cycles 
 Iteration # 371 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 372 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 373 
 
  function execution time is 36.000000 clock cycles 
@@ -1129,7 +1131,7 @@ Iteration # 375
  function execution time is 36.000000 clock cycles 
 Iteration # 376 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 377 
 
  function execution time is 36.000000 clock cycles 
@@ -1141,7 +1143,7 @@ Iteration # 379
  function execution time is 36.000000 clock cycles 
 Iteration # 380 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 381 
 
  function execution time is 36.000000 clock cycles 
@@ -1150,7 +1152,7 @@ Iteration # 382
  function execution time is 36.000000 clock cycles 
 Iteration # 383 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 384 
 
  function execution time is 36.000000 clock cycles 
@@ -1159,7 +1161,7 @@ Iteration # 385
  function execution time is 36.000000 clock cycles 
 Iteration # 386 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 387 
 
  function execution time is 36.000000 clock cycles 
@@ -1174,10 +1176,10 @@ Iteration # 390
  function execution time is 36.000000 clock cycles 
 Iteration # 391 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 392 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 393 
 
  function execution time is 32.000000 clock cycles 
@@ -1192,7 +1194,7 @@ Iteration # 396
  function execution time is 36.000000 clock cycles 
 Iteration # 397 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 398 
 
  function execution time is 36.000000 clock cycles 
@@ -1207,7 +1209,7 @@ Iteration # 401
  function execution time is 36.000000 clock cycles 
 Iteration # 402 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 403 
 
  function execution time is 36.000000 clock cycles 
@@ -1216,25 +1218,25 @@ Iteration # 404
  function execution time is 36.000000 clock cycles 
 Iteration # 405 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 406 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 407 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 408 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 409 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 410 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 411 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 412 
 
  function execution time is 36.000000 clock cycles 
@@ -1243,7 +1245,7 @@ Iteration # 413
  function execution time is 36.000000 clock cycles 
 Iteration # 414 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 415 
 
  function execution time is 36.000000 clock cycles 
@@ -1252,7 +1254,7 @@ Iteration # 416
  function execution time is 36.000000 clock cycles 
 Iteration # 417 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 418 
 
  function execution time is 36.000000 clock cycles 
@@ -1261,22 +1263,22 @@ Iteration # 419
  function execution time is 36.000000 clock cycles 
 Iteration # 420 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 421 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 422 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 423 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 424 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 425 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 426 
 
  function execution time is 36.000000 clock cycles 
@@ -1288,7 +1290,7 @@ Iteration # 428
  function execution time is 36.000000 clock cycles 
 Iteration # 429 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 44.000000 clock cycles 
 Iteration # 430 
 
  function execution time is 36.000000 clock cycles 
@@ -1306,7 +1308,7 @@ Iteration # 434
  function execution time is 36.000000 clock cycles 
 Iteration # 435 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 436 
 
  function execution time is 36.000000 clock cycles 
@@ -1315,10 +1317,10 @@ Iteration # 437
  function execution time is 36.000000 clock cycles 
 Iteration # 438 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 439 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 440 
 
  function execution time is 36.000000 clock cycles 
@@ -1342,13 +1344,13 @@ Iteration # 446
  function execution time is 36.000000 clock cycles 
 Iteration # 447 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 448 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 449 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 450 
 
  function execution time is 36.000000 clock cycles 
@@ -1360,7 +1362,7 @@ Iteration # 452
  function execution time is 36.000000 clock cycles 
 Iteration # 453 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 454 
 
  function execution time is 36.000000 clock cycles 
@@ -1372,13 +1374,13 @@ Iteration # 456
  function execution time is 36.000000 clock cycles 
 Iteration # 457 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 458 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 459 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 460 
 
  function execution time is 36.000000 clock cycles 
@@ -1396,10 +1398,10 @@ Iteration # 464
  function execution time is 36.000000 clock cycles 
 Iteration # 465 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 466 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 467 
 
  function execution time is 36.000000 clock cycles 
@@ -1435,10 +1437,10 @@ Iteration # 477
  function execution time is 36.000000 clock cycles 
 Iteration # 478 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 479 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 480 
 
  function execution time is 36.000000 clock cycles 
@@ -1450,28 +1452,28 @@ Iteration # 482
  function execution time is 36.000000 clock cycles 
 Iteration # 483 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 484 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 485 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 486 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 487 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 488 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 489 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 490 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 491 
 
  function execution time is 36.000000 clock cycles 
@@ -1480,10 +1482,10 @@ Iteration # 492
  function execution time is 36.000000 clock cycles 
 Iteration # 493 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 494 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 495 
 
  function execution time is 36.000000 clock cycles 
@@ -1492,13 +1494,13 @@ Iteration # 496
  function execution time is 36.000000 clock cycles 
 Iteration # 497 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 498 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 499 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 500 
 
  function execution time is 36.000000 clock cycles 
@@ -1510,7 +1512,7 @@ Iteration # 502
  function execution time is 36.000000 clock cycles 
 Iteration # 503 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 504 
 
  function execution time is 36.000000 clock cycles 
@@ -1543,7 +1545,7 @@ Iteration # 513
  function execution time is 36.000000 clock cycles 
 Iteration # 514 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 515 
 
  function execution time is 36.000000 clock cycles 
@@ -1561,25 +1563,25 @@ Iteration # 519
  function execution time is 36.000000 clock cycles 
 Iteration # 520 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 88.000000 clock cycles 
 Iteration # 521 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 522 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 523 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 524 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 525 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 526 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 527 
 
  function execution time is 36.000000 clock cycles 
@@ -1588,13 +1590,13 @@ Iteration # 528
  function execution time is 36.000000 clock cycles 
 Iteration # 529 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 530 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 531 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 532 
 
  function execution time is 36.000000 clock cycles 
@@ -1609,13 +1611,13 @@ Iteration # 535
  function execution time is 36.000000 clock cycles 
 Iteration # 536 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 537 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 538 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 539 
 
  function execution time is 36.000000 clock cycles 
@@ -1630,7 +1632,7 @@ Iteration # 542
  function execution time is 36.000000 clock cycles 
 Iteration # 543 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 544 
 
  function execution time is 36.000000 clock cycles 
@@ -1690,7 +1692,7 @@ Iteration # 562
  function execution time is 36.000000 clock cycles 
 Iteration # 563 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 564 
 
  function execution time is 36.000000 clock cycles 
@@ -1711,7 +1713,7 @@ Iteration # 569
  function execution time is 36.000000 clock cycles 
 Iteration # 570 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 571 
 
  function execution time is 36.000000 clock cycles 
@@ -1720,10 +1722,10 @@ Iteration # 572
  function execution time is 36.000000 clock cycles 
 Iteration # 573 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 574 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 575 
 
  function execution time is 36.000000 clock cycles 
@@ -1732,7 +1734,7 @@ Iteration # 576
  function execution time is 36.000000 clock cycles 
 Iteration # 577 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 578 
 
  function execution time is 36.000000 clock cycles 
@@ -1744,19 +1746,19 @@ Iteration # 580
  function execution time is 36.000000 clock cycles 
 Iteration # 581 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 582 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 583 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 584 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 585 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 586 
 
  function execution time is 36.000000 clock cycles 
@@ -1771,7 +1773,7 @@ Iteration # 589
  function execution time is 36.000000 clock cycles 
 Iteration # 590 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 591 
 
  function execution time is 36.000000 clock cycles 
@@ -1783,7 +1785,7 @@ Iteration # 593
  function execution time is 36.000000 clock cycles 
 Iteration # 594 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 595 
 
  function execution time is 36.000000 clock cycles 
@@ -1798,10 +1800,10 @@ Iteration # 598
  function execution time is 36.000000 clock cycles 
 Iteration # 599 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 600 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 601 
 
  function execution time is 36.000000 clock cycles 
@@ -1822,7 +1824,7 @@ Iteration # 606
  function execution time is 36.000000 clock cycles 
 Iteration # 607 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 608 
 
  function execution time is 36.000000 clock cycles 
@@ -1834,7 +1836,7 @@ Iteration # 610
  function execution time is 36.000000 clock cycles 
 Iteration # 611 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 612 
 
  function execution time is 36.000000 clock cycles 
@@ -1849,16 +1851,16 @@ Iteration # 615
  function execution time is 36.000000 clock cycles 
 Iteration # 616 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 617 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 618 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 619 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 620 
 
  function execution time is 36.000000 clock cycles 
@@ -1867,19 +1869,19 @@ Iteration # 621
  function execution time is 36.000000 clock cycles 
 Iteration # 622 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 623 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 624 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 625 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 626 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 627 
 
  function execution time is 36.000000 clock cycles 
@@ -1888,10 +1890,10 @@ Iteration # 628
  function execution time is 36.000000 clock cycles 
 Iteration # 629 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 630 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 631 
 
  function execution time is 36.000000 clock cycles 
@@ -1906,19 +1908,19 @@ Iteration # 634
  function execution time is 36.000000 clock cycles 
 Iteration # 635 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 636 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 637 
 
  function execution time is 32.000000 clock cycles 
 Iteration # 638 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 639 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 640 
 
  function execution time is 36.000000 clock cycles 
@@ -1930,13 +1932,13 @@ Iteration # 642
  function execution time is 36.000000 clock cycles 
 Iteration # 643 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 644 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 645 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 646 
 
  function execution time is 32.000000 clock cycles 
@@ -1954,22 +1956,22 @@ Iteration # 650
  function execution time is 36.000000 clock cycles 
 Iteration # 651 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 652 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 653 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 654 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 655 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 656 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 657 
 
  function execution time is 36.000000 clock cycles 
@@ -1993,7 +1995,7 @@ Iteration # 663
  function execution time is 32.000000 clock cycles 
 Iteration # 664 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 665 
 
  function execution time is 36.000000 clock cycles 
@@ -2002,7 +2004,7 @@ Iteration # 666
  function execution time is 36.000000 clock cycles 
 Iteration # 667 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 668 
 
  function execution time is 36.000000 clock cycles 
@@ -2011,7 +2013,7 @@ Iteration # 669
  function execution time is 36.000000 clock cycles 
 Iteration # 670 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 671 
 
  function execution time is 36.000000 clock cycles 
@@ -2023,7 +2025,7 @@ Iteration # 673
  function execution time is 36.000000 clock cycles 
 Iteration # 674 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 675 
 
  function execution time is 36.000000 clock cycles 
@@ -2038,7 +2040,7 @@ Iteration # 678
  function execution time is 36.000000 clock cycles 
 Iteration # 679 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 680 
 
  function execution time is 36.000000 clock cycles 
@@ -2047,28 +2049,28 @@ Iteration # 681
  function execution time is 36.000000 clock cycles 
 Iteration # 682 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 683 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 684 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 685 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 686 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 687 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 688 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 689 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 690 
 
  function execution time is 36.000000 clock cycles 
@@ -2077,7 +2079,7 @@ Iteration # 691
  function execution time is 36.000000 clock cycles 
 Iteration # 692 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 693 
 
  function execution time is 36.000000 clock cycles 
@@ -2095,10 +2097,10 @@ Iteration # 697
  function execution time is 36.000000 clock cycles 
 Iteration # 698 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 699 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 700 
 
  function execution time is 36.000000 clock cycles 
@@ -2107,73 +2109,73 @@ Iteration # 701
  function execution time is 36.000000 clock cycles 
 Iteration # 702 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 703 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 704 
 
  function execution time is 32.000000 clock cycles 
 Iteration # 705 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 706 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 707 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 708 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 709 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 710 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 711 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 712 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 713 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 714 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 715 
 
  function execution time is 32.000000 clock cycles 
 Iteration # 716 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 717 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 718 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 719 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 720 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 721 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 722 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 723 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 724 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 725 
 
  function execution time is 36.000000 clock cycles 
@@ -2185,16 +2187,16 @@ Iteration # 727
  function execution time is 36.000000 clock cycles 
 Iteration # 728 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 729 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 730 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 731 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 732 
 
  function execution time is 36.000000 clock cycles 
@@ -2209,13 +2211,13 @@ Iteration # 735
  function execution time is 36.000000 clock cycles 
 Iteration # 736 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 737 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 738 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 739 
 
  function execution time is 36.000000 clock cycles 
@@ -2233,16 +2235,16 @@ Iteration # 743
  function execution time is 36.000000 clock cycles 
 Iteration # 744 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 745 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 746 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 747 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 748 
 
  function execution time is 36.000000 clock cycles 
@@ -2251,19 +2253,19 @@ Iteration # 749
  function execution time is 36.000000 clock cycles 
 Iteration # 750 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 751 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 752 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 753 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 754 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 755 
 
  function execution time is 36.000000 clock cycles 
@@ -2272,7 +2274,7 @@ Iteration # 756
  function execution time is 36.000000 clock cycles 
 Iteration # 757 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 758 
 
  function execution time is 36.000000 clock cycles 
@@ -2281,19 +2283,19 @@ Iteration # 759
  function execution time is 36.000000 clock cycles 
 Iteration # 760 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 761 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 762 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 763 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 764 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 765 
 
  function execution time is 36.000000 clock cycles 
@@ -2314,7 +2316,7 @@ Iteration # 770
  function execution time is 36.000000 clock cycles 
 Iteration # 771 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 772 
 
  function execution time is 36.000000 clock cycles 
@@ -2332,7 +2334,7 @@ Iteration # 776
  function execution time is 36.000000 clock cycles 
 Iteration # 777 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 778 
 
  function execution time is 36.000000 clock cycles 
@@ -2341,13 +2343,13 @@ Iteration # 779
  function execution time is 36.000000 clock cycles 
 Iteration # 780 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 781 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 782 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 783 
 
  function execution time is 36.000000 clock cycles 
@@ -2356,7 +2358,7 @@ Iteration # 784
  function execution time is 36.000000 clock cycles 
 Iteration # 785 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 786 
 
  function execution time is 36.000000 clock cycles 
@@ -2392,13 +2394,13 @@ Iteration # 796
  function execution time is 36.000000 clock cycles 
 Iteration # 797 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 798 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 799 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 800 
 
  function execution time is 36.000000 clock cycles 
@@ -2410,13 +2412,13 @@ Iteration # 802
  function execution time is 36.000000 clock cycles 
 Iteration # 803 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 804 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 805 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 806 
 
  function execution time is 32.000000 clock cycles 
@@ -2431,7 +2433,7 @@ Iteration # 809
  function execution time is 36.000000 clock cycles 
 Iteration # 810 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 120.000000 clock cycles 
 Iteration # 811 
 
  function execution time is 36.000000 clock cycles 
@@ -2440,10 +2442,10 @@ Iteration # 812
  function execution time is 36.000000 clock cycles 
 Iteration # 813 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 814 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 815 
 
  function execution time is 36.000000 clock cycles 
@@ -2473,7 +2475,7 @@ Iteration # 823
  function execution time is 36.000000 clock cycles 
 Iteration # 824 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 825 
 
  function execution time is 36.000000 clock cycles 
@@ -2488,7 +2490,7 @@ Iteration # 828
  function execution time is 36.000000 clock cycles 
 Iteration # 829 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 48.000000 clock cycles 
 Iteration # 830 
 
  function execution time is 36.000000 clock cycles 
@@ -2500,7 +2502,7 @@ Iteration # 832
  function execution time is 36.000000 clock cycles 
 Iteration # 833 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 834 
 
  function execution time is 36.000000 clock cycles 
@@ -2521,43 +2523,43 @@ Iteration # 839
  function execution time is 36.000000 clock cycles 
 Iteration # 840 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 841 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 842 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 843 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 844 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 845 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 846 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 847 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 848 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 849 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 850 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 851 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 852 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 853 
 
  function execution time is 36.000000 clock cycles 
@@ -2575,19 +2577,19 @@ Iteration # 857
  function execution time is 36.000000 clock cycles 
 Iteration # 858 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 859 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 860 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 861 
 
  function execution time is 36.000000 clock cycles 
 Iteration # 862 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 863 
 
  function execution time is 36.000000 clock cycles 
@@ -2614,7 +2616,7 @@ Iteration # 870
  function execution time is 36.000000 clock cycles 
 Iteration # 871 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 872 
 
  function execution time is 36.000000 clock cycles 
@@ -2626,7 +2628,7 @@ Iteration # 874
  function execution time is 36.000000 clock cycles 
 Iteration # 875 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 876 
 
  function execution time is 36.000000 clock cycles 
@@ -2647,7 +2649,7 @@ Iteration # 881
  function execution time is 36.000000 clock cycles 
 Iteration # 882 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 883 
 
  function execution time is 36.000000 clock cycles 
@@ -2668,7 +2670,7 @@ Iteration # 888
  function execution time is 36.000000 clock cycles 
 Iteration # 889 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 890 
 
  function execution time is 36.000000 clock cycles 
@@ -2821,7 +2823,7 @@ Iteration # 939
  function execution time is 36.000000 clock cycles 
 Iteration # 940 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 941 
 
  function execution time is 36.000000 clock cycles 
@@ -2836,7 +2838,7 @@ Iteration # 944
  function execution time is 36.000000 clock cycles 
 Iteration # 945 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 946 
 
  function execution time is 36.000000 clock cycles 
@@ -2890,7 +2892,7 @@ Iteration # 962
  function execution time is 36.000000 clock cycles 
 Iteration # 963 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 964 
 
  function execution time is 36.000000 clock cycles 
@@ -2932,10 +2934,10 @@ Iteration # 976
  function execution time is 36.000000 clock cycles 
 Iteration # 977 
 
- function execution time is 32.000000 clock cycles 
+ function execution time is 36.000000 clock cycles 
 Iteration # 978 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 44.000000 clock cycles 
 Iteration # 979 
 
  function execution time is 36.000000 clock cycles 
@@ -2944,7 +2946,7 @@ Iteration # 980
  function execution time is 36.000000 clock cycles 
 Iteration # 981 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 982 
 
  function execution time is 36.000000 clock cycles 
@@ -2962,7 +2964,7 @@ Iteration # 986
  function execution time is 36.000000 clock cycles 
 Iteration # 987 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 988 
 
  function execution time is 32.000000 clock cycles 
@@ -2989,7 +2991,7 @@ Iteration # 995
  function execution time is 36.000000 clock cycles 
 Iteration # 996 
 
- function execution time is 36.000000 clock cycles 
+ function execution time is 32.000000 clock cycles 
 Iteration # 997 
 
  function execution time is 36.000000 clock cycles 
@@ -2998,7 +3000,9 @@ Iteration # 998
  function execution time is 36.000000 clock cycles 
 Iteration # 999 
 
- function execution time is 36.000000 clock cycles 
-average clock cycles for time is 35.092000 
-variance is 3.707243 
-standard deviation is 1.925420 
+ function execution time is 32.000000 clock cycles 
+average clock cycles for time is 35.944000 
+variance is 23.924789 
+standard deviation is 4.891297 
+amit@bdaemon:~/acads/cse221/OS_Benchmark/src$
+

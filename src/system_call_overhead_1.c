@@ -13,7 +13,7 @@ int main() {
     double start, end, total_clocks = 0;
     double avg_clock, stddev, variance, sum = 0;
     double clocks[NUM_LOOP] = {0};
-    //uint32_t ret_int;
+    uint32_t ret_val;
     int i;
     unsigned cycles_low, cycles_high, cycles_low1, cycles_high1;
     printf("Loading test module... \n");
@@ -30,7 +30,7 @@ int main() {
             "%rax", "%rbx", "%rcx", "%rdx");
 
         // perform the actual operation
-        (void) function_that_returns_uint32();
+        ret_val = function_that_returns_uint32();
 
         asm volatile(
             "RDTSCP\n\t"
@@ -48,6 +48,7 @@ int main() {
         printf("\n function execution time is %f clock cycles \n", (end - start));
         clocks[i] = (end - start);
         total_clocks += clocks[i];
+        ret_val++;
     }
 
     avg_clock = total_clocks/NUM_LOOP;

@@ -16,7 +16,6 @@ int main() {
     uint32_t ret_val;
     int i;
     unsigned cycles_low, cycles_high, cycles_low1, cycles_high1;
-    uint32_t ret_val;
     printf("Loading test module... \n");
     for (i=0; i<NUM_LOOP; i++) {
         printf("Iteration # %d \n", i);
@@ -49,13 +48,9 @@ int main() {
         printf("\n function execution time is %f clock cycles \n", (end - start));
         clocks[i] = (end - start);
         total_clocks += clocks[i];
-<<<<<<< HEAD
-        ret_val++;
-=======
 
         // To make sure that the warning does not come
         ret_val += 1;
->>>>>>> refs/remotes/origin/master
     }
 
     avg_clock = total_clocks/NUM_LOOP;

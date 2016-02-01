@@ -21,7 +21,6 @@ int main() {
     int child_status;
     printf("Loading test module... \n");
     for (i=0; i<NUM_LOOP; i++) {
-        //printf("Iteration # %d \n", i);
         //preempt_disable();            /*we disable preemption on our CPU*/
         //raw_local_irq_save(flags);    /*we disable hard interrupts on our CPU*/
 

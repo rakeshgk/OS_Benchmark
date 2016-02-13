@@ -7,6 +7,9 @@
 #define INN_LOOP 1000
 
 int main() {
+    /*
+        Divide the final clock cycles you get by INN_LOOP
+    */
     uint32_t cycles_low, cycles_high;
     uint32_t cycles_low1, cycles_high1;
     uint64_t start, end;
@@ -38,5 +41,6 @@ int main() {
         end   = (((uint64_t)cycles_high1 << 32) | cycles_low1);
         fprintf(fp, "%ld,%ld\n", start, end);
     }
+    fclose(fp);
     return 0;
 }

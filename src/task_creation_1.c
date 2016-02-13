@@ -12,20 +12,23 @@
 #define NUM_LOOP 1000
 
 void pthread_function(void *ptr) {
-	pthread_exit(0);
+    // Don't run anything inside this function
 }
 
 int main() {
+    /*
+        Measure the time taken to create and run a task using
+        kernel threads
+    */
     uint64_t start, end, total_clocks = 0;
     uint64_t avg_clock;
-
+    uint32_t cycles_low, cycles_high, cycles_low1, cycles_high1;
     int i;
-    unsigned cycles_low, cycles_high, cycles_low1, cycles_high1;
+    FILE* fp;
+    fp = fopen("../data/task_creation_1.csv", "w");
 
     for (i=0; i<NUM_LOOP; i++) {
         pthread_t thread;
-        //preempt_disable();            /*we disable preemption on our CPU*/
-        //raw_local_irq_save(flags);    /*we disable hard interrupts on our CPU*/
 
         asm volatile (
             "CPUID\n\t"
@@ -44,18 +47,13 @@ int main() {
             "CPUID\n\t": "=r" (cycles_high1), "=r" (cycles_low1):: "%rax",
             "%rbx", "%rcx", "%rdx");
 
-        //raw_local_irq_restore(flags);     /*we enable hard interrupts on our CPU*/
-        //preempt_enable(); /*we enable preemption*/
+
+        start = (((uint64_t)cycles_high << 32) | cycles_low);
+        end   = (((uint64_t)cycles_high1 << 32) | cycles_low1);
+        fprintf(fp, "%lu,%lu\n", start, end);
+
         pthread_join(thread, NULL);
-
-        start = (double) ( ((uint64_t)cycles_high << 32) | cycles_low );
-        end = (double) ( ((uint64_t)cycles_high1 << 32) | cycles_low1 );
-
-        printf("Time: %lu\n", (end - start));
-        total_clocks += (end - start);
     }
-
-    avg_clock = total_clocks/NUM_LOOP;
-
+    fclose(fp);
     return 0;
 }

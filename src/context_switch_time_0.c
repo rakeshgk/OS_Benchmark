@@ -17,15 +17,12 @@ int main() {
     unsigned cycles_low, cycles_high, cycles_low1, cycles_high1;
 
     pid_t process_pid;
-
-    // Variables for setting up the pipe read and write
-    char string[1] = "";
-    char readbuffer[1];
-    int nbytes, childReturnStatus;
-
+ 
     // To be used for creating pipes
     // fd[0] is set up for reading and fd[1] for writing
     int fd[2];
+    FILE* fp;
+    fp = fopen("../data/context_switch_time_0.csv", "w");
 
     for (i=0; i<NUM_LOOP; i++) {
 
@@ -37,28 +34,8 @@ int main() {
 
         // The child writes to the shared memory
         if(process_pid == 0){
-            close(fd[0]);
-
-            // Send a "string" through the output side of the pipe
-            write(fd[1], string, (strlen(string) + 1));
-
-            // Take the start time reading
-            asm volatile ("cpuid\n\t"
-                          "rdtsc\n\t"
-                          "mov %%edx, %0\n\t"
-                          "mov %%eax, %1\n\t"
-                          : "=r" (cycles_high), "=r" (cycles_low)
-                            :: "%rax", "%rbx", "%rcx", "%rdx");
-            start = ( ((uint64_t)cycles_high << 32) | cycles_low );
-            printf("Run: %d, start: %lu\n", i, start);
-            exit(0);
-        } else {
-            // Wait for the child to complete
-            waitpid(process_pid, &childReturnStatus, 0);
-
-            // Read in a "string" from the pipe
-            nbytes = read(fd[0], readbuffer, sizeof(readbuffer));
-
+            read(fd[0],&start,sizeof(start));
+		
             // Take the end time reading
             asm volatile ("rdtscp\n\t"
                           "mov %%edx, %0\n\t"
@@ -68,9 +45,25 @@ int main() {
                             :: "%rax", "%rbx", "%rcx", "%rdx");
 
             end = ( ((uint64_t)cycles_high1 << 32) | cycles_low1 );
-            printf("Run: %d,   end: %lu\n\n", i, end);
-            close(fd[1]);
+	    
+            fprintf(fp, "%ld,%ld\n", start, end);
+            return 0;
+        } else {
+            
+
+	// Take the start time reading
+            asm volatile ("cpuid\n\t"
+                          "rdtsc\n\t"
+                          "mov %%edx, %0\n\t"
+                          "mov %%eax, %1\n\t"
+                          : "=r" (cycles_high), "=r" (cycles_low)
+                            :: "%rax", "%rbx", "%rcx", "%rdx");
+            start = ( ((uint64_t)cycles_high << 32) | cycles_low );
+	    write(fd[1],&start,sizeof(start));
+	    
         }
+	close(fd[0]);
+	close(fd[1]);
     }
     return 0;
 }

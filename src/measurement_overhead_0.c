@@ -3,7 +3,7 @@
 #include <time.h>
 #include <math.h>
 
-#define NUM_LOOP 10000
+#define NUM_LOOP 1000
 
 void inline measured_function(volatile int *var) {
     (*var) = 1;
@@ -12,13 +12,15 @@ void inline measured_function(volatile int *var) {
 int main() {
     /*
         Report the overhead of using RDTSCP and the 4 MOV instructions
+        This is the overhead involved in reading time
+        This overhead will be subtracted from subsequent results
     */
     uint32_t cycles_low, cycles_high;
     uint32_t cycles_low1, cycles_high1;
     uint64_t start, end;
     int i;
     FILE* fp;
-    fp = fopen("../data/measurement_0.csv", "w");
+    fp = fopen("../data/measurement_overhead_0.csv", "w");
 
     for (i=0; i<NUM_LOOP; i++) {
         asm volatile (
@@ -42,7 +44,6 @@ int main() {
         end   = (((uint64_t)cycles_high1 << 32) | cycles_low1);
         fprintf(fp, "%ld,%ld\n", start, end);
     }
-
     fclose(fp);
     return 0;
 }

@@ -1,2 +1,9 @@
 ## Please export timestamp in this format
 ## start_time, end_time
+
+This format will remain the same for all except the files
+    task_creation_0.c
+    context_switch_time_0.c
+
+As there are two processes trying to update the same file the pattern in unpredictable
+Use abs() and not just simple subtraction when performing the end time calculation

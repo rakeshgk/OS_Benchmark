@@ -3,7 +3,7 @@
 #include <time.h>
 #include <math.h>
 
-#define NUM_LOOP 10000
+#define NUM_LOOP 1000
 
 void test_procedure_0(){
 
@@ -38,6 +38,10 @@ void test_procedure_7(int a, int b, int c, int d, int e, int f, int g){
 }
 
 int main() {
+    /*
+        Uncomment each line of code that involves a function call.
+        Call them one after the other to find the overhead of passing arguments
+    */
     uint32_t cycles_low, cycles_high;
     uint32_t cycles_low1, cycles_high1;
     uint64_t start, end;
@@ -73,9 +77,8 @@ int main() {
 
         start = (((uint64_t)cycles_high << 32) | cycles_low);
         end   = (((uint64_t)cycles_high1 << 32) | cycles_low1);
-        fprintf(fp, "%ld,%ld\n", start, end);
+        fprintf(fp, "%lu,%lu\n", start, end);
     }
-
     fclose(fp);
     return 0;
 }

@@ -8,14 +8,16 @@
 
 int main() {
     /*
-        Divide the final clock cycles you get by INN_LOOP
+        Divide the final clock cycles you get by the number - INN_LOOP
+        This gives the loop overhead
+        This is the time overhead involved when using a loop to execute code
     */
     uint32_t cycles_low, cycles_high;
     uint32_t cycles_low1, cycles_high1;
     uint64_t start, end;
     int i, j;
     FILE* fp;
-    fp = fopen("../data/measurement_1.csv", "w");
+    fp = fopen("../data/measurement_overhead_1.csv", "w");
 
     for (i=0; i<NUM_LOOP; i++) {
         asm volatile (
@@ -39,7 +41,7 @@ int main() {
 
         start = (((uint64_t)cycles_high << 32) | cycles_low);
         end   = (((uint64_t)cycles_high1 << 32) | cycles_low1);
-        fprintf(fp, "%ld,%ld\n", start, end);
+        fprintf(fp, "%lu,%lu\n", start, end);
     }
     fclose(fp);
     return 0;

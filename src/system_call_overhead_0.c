@@ -8,7 +8,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-#define NUM_LOOP 100
+#define NUM_LOOP 1000
 
 int main() {
     double start = 0, end = 0, total_clocks = 0;

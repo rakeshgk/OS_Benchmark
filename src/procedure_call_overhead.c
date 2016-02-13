@@ -91,14 +91,14 @@ int main() {
 
         // perform the actual operation
         // The non-inline part of the code call
-        // test_procedure_0();
-        // test_procedure_1(1);
-        // test_procedure_2(1, 2);
-        // test_procedure_3(1, 2, 3);
-        // test_procedure_4(1, 2, 3, 4);
-        // test_procedure_5(1, 2, 3, 4, 5);
-        // test_procedure_6(1, 2, 3, 4, 5, 6);
-        // test_procedure_7(1, 2, 3, 4, 5, 6, 7);
+        test_procedure_0();
+        test_procedure_1(1);
+        test_procedure_2(1, 2);
+        test_procedure_3(1, 2, 3);
+        test_procedure_4(1, 2, 3, 4);
+        test_procedure_5(1, 2, 3, 4, 5);
+        test_procedure_6(1, 2, 3, 4, 5, 6);
+        test_procedure_7(1, 2, 3, 4, 5, 6, 7);
 
         // The inline part of the code call
         // inline_test_procedure_0

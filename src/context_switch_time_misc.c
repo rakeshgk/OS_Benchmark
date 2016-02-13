@@ -8,7 +8,7 @@
 #include <stdlib.h>
 //#include <sys/wait.h>
 
-#define NUM_LOOP 1000
+#define NUM_LOOP 30
 
 int main() {
     double start, end, start_temp, total_clocks = 0;
@@ -26,8 +26,7 @@ int main() {
     for (i=0; i<NUM_LOOP; i++) {
         printf("Iteration # %d \n", i);
         //preempt_disable();            /*we disable preemption on our CPU*/
-        //raw_local_irq_save(flags);    /*we disable hard interrupts on our CPU*/
-
+        //raw_local_irq_save(flags);    /*we disable hard interrupts on our CPU*1
         // Setup the pipe
         pipe(fd);
         // Send a "string" through the output side of the pipe

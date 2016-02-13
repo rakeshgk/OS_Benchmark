@@ -56,7 +56,6 @@ int main() {
             waitpid(child_pid, &child_status, 0);
         }
     }
-
     fclose(fp);
     return 0;
 }

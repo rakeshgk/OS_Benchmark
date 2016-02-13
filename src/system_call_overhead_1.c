@@ -12,7 +12,9 @@ uint32_t function_that_returns_uint32(){
 int main() {
     uint64_t start, end;
     uint32_t ret_val;
-    unsigned cycles_low, cycles_high, cycles_low1, cycles_high1;
+    uint32_t cycles_low, cycles_high, cycles_low1, cycles_high1;
+    FILE* fp;
+    fp = fopen("../data/system_call_overhead_1.csv", "a");
 
     asm volatile (
         "CPUID\n\t"
@@ -31,15 +33,9 @@ int main() {
         "CPUID\n\t": "=r" (cycles_high1), "=r" (cycles_low1):: "%rax",
         "%rbx", "%rcx", "%rdx");
 
-    //raw_local_irq_restore(flags);     /*we enable hard interrupts on our CPU*/
-    //preempt_enable(); /*we enable preemption*/
-
-    ret_val++;
-
-    start = ( ((uint64_t)cycles_high << 32) | cycles_low );
-    end =  ( ((uint64_t)cycles_high1 << 32) | cycles_low1 );
-
-    printf("Time: %lu\n", (end - start));
-
+    start = (((uint64_t)cycles_high << 32) | cycles_low);
+    end   = (((uint64_t)cycles_high1 << 32) | cycles_low1);
+    fprintf(fp, "%ld,%ld\n", start, end);
+    fclose(fp);
     return 0;
 }

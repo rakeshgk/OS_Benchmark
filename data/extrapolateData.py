@@ -13,6 +13,7 @@ def main():
     			content = f.readlines()
 			for entry in content:
 				entries.append(abs(int(entry.split(",")[1])-int(entry.split(",")[0])))
+		entries = np.array(entries)		
 		entries = removeOutliers(entries)				
 		results[csvFile]=[mean(entries),sdDeviation(entries)]
 

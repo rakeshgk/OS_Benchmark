@@ -12,7 +12,7 @@
 #define NUM_LOOP 1000
 #define CACHE_SIZE 4736000
 #define offset 1184000
-#define MEM_SIZE 8000000
+#define MEM_SIZE 9472000
 
 int main() {
     uint64_t start, end;

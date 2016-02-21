@@ -39,7 +39,7 @@ int main() {
 
     end = ( ((uint64_t)cycles_high1 << 32) | cycles_low1 );
 
-    fprintf(fp, "%ld,%ld\n", start, end);
+    fprintf(fp, "%lu,%lu\n", start, end);
     }
   
     return 0;

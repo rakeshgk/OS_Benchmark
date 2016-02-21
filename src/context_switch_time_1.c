@@ -22,7 +22,7 @@ void *func(void *threadid) {
                           : "=r" (cycles_high1), "=r" (cycles_low1)
                             :: "%rax", "%rbx", "%rcx", "%rdx");
 
-        end = ( ((uint64_t)cycles_high1 << 32) | cycles_low1 );
+    end = ( ((uint64_t)cycles_high1 << 32) | cycles_low1 );
 	fprintf(fp, "%ld,%ld\n", start, end);
 	close(fd[0]);
 	close(fd[1]);
@@ -43,7 +43,7 @@ int main() {
                           "mov %%eax, %1\n\t"
                           : "=r" (cycles_high), "=r" (cycles_low)
                             :: "%rax", "%rbx", "%rcx", "%rdx");
-       	start = ( ((uint64_t)cycles_high << 32) | cycles_low );
+    start = ( ((uint64_t)cycles_high << 32) | cycles_low );
 
 	write(fd[1], &start, sizeof(start));
 

@@ -16,12 +16,13 @@
 
 int main() {
     uint64_t start, end;
-    int i,j,temp;
+    int i,j,temp,counter;
     int *array;
     unsigned cycles_low, cycles_high, cycles_low1, cycles_high1;
     FILE* fp;
     fp = fopen("../data/memory_bandwidth_write.csv", "w");
     array=(int *)malloc(MEM_SIZE);
+    counter=MEM_SIZE/sizeof(int);
     for (i=0; i<NUM_LOOP; i++) {
 	asm volatile ("cpuid\n\t"
 		          "rdtsc\n\t"
@@ -30,7 +31,7 @@ int main() {
 		          : "=r" (cycles_high), "=r" (cycles_low)
 		           :: "%rax", "%rbx", "%rcx", "%rdx");
 	start = ( ((uint64_t)cycles_high << 32) | cycles_low );
-	for(j=0;j<MEM_SIZE/sizeof(int);j++){
+	for(j=0;j<counter;j++){
 		array[j]=0;
 	}
 

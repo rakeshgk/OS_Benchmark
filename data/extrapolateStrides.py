@@ -7,7 +7,7 @@ def main():
 	csvFile="memory_latency_0.csv"
 	flag=False
 	output=[]
-	outputs=[64,128,256,512,1024,2048]	
+	outputs=[32,64,128,256,512,768,1024]	
 	with open(csvFile) as f:
 		content = f.readlines()
 		cycles=[]

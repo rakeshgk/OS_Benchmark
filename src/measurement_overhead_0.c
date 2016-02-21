@@ -3,7 +3,7 @@
 #include <time.h>
 #include <math.h>
 
-#define NUM_LOOP 1000
+#define NUM_TRIALS 1000
 
 void inline measured_function(volatile int *var) {
     (*var) = 1;
@@ -22,7 +22,7 @@ int main() {
     FILE* fp;
     fp = fopen("../data/measurement_overhead_0.csv", "w");
 
-    for (i=0; i<NUM_LOOP; i++) {
+    for (i=0; i<NUM_TRIALS; i++) {
         asm volatile (
             "CPUID\n\t"
             "RDTSC\n\t"

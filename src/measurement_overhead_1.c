@@ -3,8 +3,8 @@
 #include <time.h>
 #include <math.h>
 
-#define NUM_LOOP 100
-#define INN_LOOP 1000
+#define NUM_TRIALS 100
+#define NUM_LOOPS  1000
 
 int main() {
     /*
@@ -19,7 +19,7 @@ int main() {
     FILE* fp;
     fp = fopen("../data/measurement_overhead_1.csv", "w");
 
-    for (i=0; i<NUM_LOOP; i++) {
+    for (i=0; i<NUM_TRIALS; i++) {
         asm volatile (
             "CPUID\n\t"
             "RDTSC\n\t"
@@ -28,7 +28,7 @@ int main() {
             "%rax", "%rbx", "%rcx", "%rdx");
 
         // perform the actual operation
-        for (j=0; j<INN_LOOP; j++) {
+        for (j=0; j<NUM_LOOPS; j++) {
             // NO op
         }
 

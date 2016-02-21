@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>
-//#include <time.h>
-//#include <math.h>
 #include <unistd.h>
 #include <string.h>
 #include <sys/wait.h>
@@ -13,8 +11,8 @@
 
 int main() {
     uint64_t start, end;
+    uint32_t cycles_low, cycles_high, cycles_low1, cycles_high1;
     int i;
-    unsigned cycles_low, cycles_high, cycles_low1, cycles_high1;
 
     pid_t process_pid;
  
@@ -32,7 +30,7 @@ int main() {
         // Perform the fork
         process_pid = fork();
 
-        // The child writes to the shared memory
+        // The child reads from the shared memory
         if(process_pid == 0){
             read(fd[0],&start,sizeof(start));
 		
@@ -44,23 +42,22 @@ int main() {
                           : "=r" (cycles_high1), "=r" (cycles_low1)
                             :: "%rax", "%rbx", "%rcx", "%rdx");
 
-            end = ( ((uint64_t)cycles_high1 << 32) | cycles_low1 );
-	    
-            fprintf(fp, "%ld,%ld\n", start, end);
+            end = (((uint64_t)cycles_high1 << 32) | cycles_low1);
+	        fprintf(fp, "%lu,%lu\n", start, end);
+            fflush(fp); 
             return 0;
-        } else {
-            
-
-	// Take the start time reading
+        }
+        else {
+	    // Take the start time reading
             asm volatile ("cpuid\n\t"
                           "rdtsc\n\t"
                           "mov %%edx, %0\n\t"
                           "mov %%eax, %1\n\t"
                           : "=r" (cycles_high), "=r" (cycles_low)
                             :: "%rax", "%rbx", "%rcx", "%rdx");
-            start = ( ((uint64_t)cycles_high << 32) | cycles_low );
-	    write(fd[1],&start,sizeof(start));
-	    
+
+            start = (((uint64_t)cycles_high << 32) | cycles_low);
+	        write(fd[1],&start,sizeof(start));
         }
 	close(fd[0]);
 	close(fd[1]);

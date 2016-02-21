@@ -3,7 +3,7 @@
 #include <time.h>
 #include <math.h>
 
-#define NUM_TRIALS 100
+#define NUM_TRIALS 1000
 #define NUM_LOOPS  1000
 
 int main() {

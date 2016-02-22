@@ -56,7 +56,7 @@ int main(){
     fp = fopen("../data/page_fault_time.csv", "a");
 
     // Creating the random file
-    create_random_data_file(page_size);
+    // create_random_data_file(page_size);
 
     // Obtaining the file stats using the stat buffer
     stat("../data/random_data_file.txt", &statbuf);

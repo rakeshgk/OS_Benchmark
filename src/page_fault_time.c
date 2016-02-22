@@ -7,8 +7,6 @@
 #include <sys/stat.h>
 #include <sys/mman.h>
 
-#define NUM_LOOP 1000
-
 void create_random_data_file(const int page_size){
     int buffer_size = 0;
     char* buf = NULL;
@@ -45,6 +43,7 @@ int main(){
     struct stat statbuf;
     int fd = 0;
     void* ret_addr;
+    char buf[4097];
     uint32_t cycles_low, cycles_high;
     uint32_t cycles_low1, cycles_high1;
     uint64_t start, end;
@@ -54,7 +53,7 @@ int main(){
     page_size = getpagesize();
 
     // Store the results in this file
-    fp = fopen("../data/page_fault_time.csv", "w");
+    fp = fopen("../data/page_fault_time.csv", "a");
 
     // Creating the random file
     create_random_data_file(page_size);
@@ -65,38 +64,37 @@ int main(){
     // Open the random data file in read mode for local access
     fd = open("../data/random_data_file.txt", O_RDONLY);
 
-    for(index = 0; index < NUM_LOOP; ++index){
-        asm volatile (
-            "CPUID\n\t"
-            "RDTSC\n\t"
-            "mov %%edx, %0\n\t"
-            "mov %%eax, %1\n\t": "=r" (cycles_high), "=r" (cycles_low)::
-            "%rax", "%rbx", "%rcx", "%rdx");
+    asm volatile (
+        "CPUID\n\t"
+        "RDTSC\n\t"
+        "mov %%edx, %0\n\t"
+        "mov %%eax, %1\n\t": "=r" (cycles_high), "=r" (cycles_low)::
+        "%rax", "%rbx", "%rcx", "%rdx");
 
-        // First allocate the page through mmap and time the results
-        ret_addr = mmap(0, statbuf.st_size, PROT_READ, MAP_SHARED, fd, 0);
+    // First allocate the page through mmap and read the data into buf
+    ret_addr = mmap(0, statbuf.st_size, PROT_READ, MAP_SHARED, fd, 0);
+    sscanf((char *)ret_addr, "%s", buf);
 
-        asm volatile(
-            "RDTSCP\n\t"
-            "mov %%edx, %0\n\t"
-            "mov %%eax, %1\n\t"
-            "CPUID\n\t": "=r" (cycles_high1), "=r" (cycles_low1):: "%rax",
-            "%rbx", "%rcx", "%rdx");
+    asm volatile(
+        "RDTSCP\n\t"
+        "mov %%edx, %0\n\t"
+        "mov %%eax, %1\n\t"
+        "CPUID\n\t": "=r" (cycles_high1), "=r" (cycles_low1):: "%rax",
+        "%rbx", "%rcx", "%rdx");
 
-        if(ret_addr == MAP_FAILED){
-            printf("Error encountered while mapping memory pages through mmap\n");
-            exit(1);
-        }
+    if(ret_addr == MAP_FAILED){
+        printf("Error encountered while mapping memory pages through mmap\n");
+        exit(1);
+    }
 
-        start = (((uint64_t) cycles_high << 32) | cycles_low);
-        end   = (((uint64_t) cycles_high1 << 32) | cycles_low1);
-        fprintf(fp, "%lu,%lu\n", start, end);
+    start = (((uint64_t) cycles_high << 32) | cycles_low);
+    end   = (((uint64_t) cycles_high1 << 32) | cycles_low1);
+    fprintf(fp, "%lu,%lu\n", start, end);
 
-        // Deallocate the memory allocated so that we can allocate it again
-        if(munmap(ret_addr, statbuf.st_size) == -1){
-            printf("Unable to deallocate the memory pages\n");
-            exit(1);
-        }
+    // Deallocate the memory allocated so that we can allocate it again
+    if(munmap(ret_addr, statbuf.st_size) == -1){
+        printf("Unable to deallocate the memory pages\n");
+        exit(1);
     }
 
     fclose(fp);

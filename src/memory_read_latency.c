@@ -5,12 +5,12 @@
 
 #define KB 1024
 #define MB 1024*KB
-#define MIN_LEN 256
+#define MIN_LEN 64
 #define MAX_LEN 256*MB
 #define NUM_SAMPLE 100
 #define WALK_CNT 100000
-#define NUM_STRIDE 6
-#define STRIDE {8, 16, 32, 64, 96, 128}
+#define NUM_STRIDE 5
+#define STRIDE {8, 16, 32, 64, 128}
 
 #define WALK1 p = (long *)*p;
 #define WALK10 WALK1 WALK1 WALK1 WALK1 WALK1 WALK1 WALK1 WALK1 WALK1 WALK1

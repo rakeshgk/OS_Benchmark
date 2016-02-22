@@ -34,7 +34,7 @@ int main() {
 	long i;
 	pthread_t t;
 	int rc;
-	fp = fopen("../data/context_switch_time_1.csv", "w");
+	fp = fopen("../data/context_switch_time_1.csv", "a");
 	pipe(fd);
 	rc = pthread_create(&t, NULL, func, (void *)i);
 	asm volatile ("cpuid\n\t"

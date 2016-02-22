@@ -18,6 +18,7 @@ int main() {
     uint32_t cycles_low, cycles_high;
     uint32_t cycles_low1, cycles_high1;
     uint64_t start, end;
+    double difference;
     int i;
     FILE* fp;
     fp = fopen("../data/measurement_overhead_0.csv", "w");
@@ -42,7 +43,8 @@ int main() {
 
         start = (((uint64_t)cycles_high << 32) | cycles_low);
         end   = (((uint64_t)cycles_high1 << 32) | cycles_low1);
-        fprintf(fp, "%lu,%lu\n", start, end);
+        difference = (double) (end - start);
+        fprintf(fp, "%lf\n", difference);
     }
     fclose(fp);
     return 0;

@@ -88,6 +88,7 @@ void latency_test(long *arr, long size, int stride, FILE *fp) {
         fprintf(fp, "%d, %lu, %d, %lu\n", (int)i, size*8, stride*8, lat_time/WALK_CNT);
 
     }
+    fprintf(fp,"\n");
 }
 
 long next_size(long size) {

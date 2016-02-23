@@ -27,41 +27,34 @@ int main() {
     FILE* fp;
     fp = fopen("../data/task_creation_0.csv", "a");
 
-    for (i=0; i<NUM_LOOP; i++) {
-        asm volatile (
-            "CPUID\n\t"
-            "RDTSC\n\t"
-            "mov %%edx, %0\n\t"
-            "mov %%eax, %1\n\t": "=r" (cycles_high), "=r" (cycles_low)::
-            "%rax", "%rbx", "%rcx", "%rdx");
+    asm volatile (
+        "CPUID\n\t"
+        "RDTSC\n\t"
+        "mov %%edx, %0\n\t"
+        "mov %%eax, %1\n\t": "=r" (cycles_high), "=r" (cycles_low)::
+        "%rax", "%rbx", "%rcx", "%rdx");
 
-        // perform the actual operation
-        child_pid = fork();
-        if(child_pid == 0) {
-            /* This is done by the child process.
-               We don't execute anything inside the child
-            */
-            asm volatile(
-                "RDTSCP\n\t"
-                "mov %%edx, %0\n\t"
-                "mov %%eax, %1\n\t"
-                "CPUID\n\t": "=r" (cycles_high1), "=r" (cycles_low1):: "%rax",
-                "%rbx", "%rcx", "%rdx");
+    // perform the actual operation
+    child_pid = fork();
 
-            end = (((uint64_t)cycles_high1 << 32) | cycles_low1 );
-            fprintf(fp, "%lu,", end);
-            fflush(fp);
-            exit(0);
-        }
-        else {
-            /* This is run by the parent.  Wait for the child to terminate. */
-            waitpid(child_pid, &child_status, 0);
+    asm volatile(
+        "RDTSCP\n\t"
+        "mov %%edx, %0\n\t"
+        "mov %%eax, %1\n\t"
+        "CPUID\n\t": "=r" (cycles_high1), "=r" (cycles_low1):: "%rax",
+        "%rbx", "%rcx", "%rdx");
 
-            start = (((uint64_t)cycles_high << 32) | cycles_low );
-            fprintf(fp, "%lu\n", start);
-            fflush(fp);
-        }
+    if(child_pid == 0) {
+        exit(0);
     }
+    else {
+        /* This is run by the parent.  Wait for the child to terminate. */
+        waitpid(child_pid, &child_status, 0);
+    }
+
+    start = (((uint64_t)cycles_high << 32) | cycles_low );
+    end = (((uint64_t)cycles_high1 << 32) | cycles_low1 );
+    fprintf(fp, "%lu,%lu\n", start, end);
     fclose(fp);
     return 0;
 }

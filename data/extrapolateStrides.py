@@ -45,9 +45,10 @@ def main():
 				if size>stride:
 					outstride[e].append((size,avg,stddev))
 					x.append(math.log(entry[-2],2))
-					y.append(entry[0]*0.41666*(10**(-9)))
+					y.append(entry[0]*0.41666)
 		xaxis.append(x)
 		yaxis.append(y)
+		print len(x)
 	 
 	i=0
 	pp = pprint.PrettyPrinter(depth=6)
@@ -66,11 +67,15 @@ def main():
 				f.write(str(elem[0]) + " " + str(elem[1]) + " " + str(elem[2]) + "\n")	
 				start*=2
 	
+	fig=plt.figure()
+	plt.subplot(111)
+        plt.title('RAM Access Time')
+        plt.ylabel('Latency in nano seconds')
+        plt.xlabel('log(Array size, Base 2)')
 	while i<len(xaxis):
-		plt.plot(xaxis[i],yaxis[i], label=str(outputs[i]))
+		plt.plot(xaxis[i],yaxis[i], label=str(outputs[i]) + "strides")
 		i+=1
-	plt.xlim(xmin=10)
-
+	plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.05),fancybox=True, shadow=True, ncol=5)
 	plt.show()
 
 	

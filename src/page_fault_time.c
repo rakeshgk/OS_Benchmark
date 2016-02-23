@@ -7,6 +7,7 @@
 #include <sys/stat.h>
 #include <sys/mman.h>
 
+/*
 void create_random_data_file(const int page_size){
     int buffer_size = 0;
     char* buf = NULL;
@@ -29,6 +30,7 @@ void create_random_data_file(const int page_size){
     fwrite(buf, 1, buffer_size, fp);
     fclose(fp);
 }
+*/
 
 int main(){
     /*

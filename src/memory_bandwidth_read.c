@@ -21,7 +21,7 @@ int main() {
     FILE* fp;
     fp = fopen("../data/memory_bandwidth_read.csv", "w");
     array=(int *)malloc(MEM_SIZE);
-    counter=MEM_SIZE/(sizeof(int)*2);
+    counter=MEM_SIZE/sizeof(int);
     for (i=0; i<NUM_LOOP; i++) {
 	asm volatile ("cpuid\n\t"
 		          "rdtsc\n\t"
@@ -32,7 +32,6 @@ int main() {
 	start = ( ((uint64_t)cycles_high << 32) | cycles_low );
 	for(j=0;j<counter;j++){
 		temp=array[j];
-		temp=array[j+counter];
 	}
 
 	asm volatile ("rdtscp\n\t"

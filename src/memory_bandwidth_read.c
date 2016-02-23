@@ -11,7 +11,6 @@
 
 #define NUM_LOOP 1000
 #define CACHE_SIZE 4736000
-#define offset 1184000
 #define MEM_SIZE 9472000
 
 int main() {
@@ -33,7 +32,7 @@ int main() {
 	start = ( ((uint64_t)cycles_high << 32) | cycles_low );
 	for(j=0;j<counter;j++){
 		temp=array[j];
-		temp=array[j+offset];
+		temp=array[j+counter];
 	}
 
 	asm volatile ("rdtscp\n\t"

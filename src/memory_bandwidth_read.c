@@ -18,6 +18,7 @@ int main() {
     int i,j,counter;
     char temp;
     char *array;
+    int offset=CACHE_LINE_SIZE*3;
     unsigned cycles_low, cycles_high, cycles_low1, cycles_high1;
     FILE* fp;
     fp = fopen("../data/memory_bandwidth_read.csv", "w");
@@ -31,7 +32,7 @@ int main() {
 		          : "=r" (cycles_high), "=r" (cycles_low)
 		           :: "%rax", "%rbx", "%rcx", "%rdx");
 	start = ( ((uint64_t)cycles_high << 32) | cycles_low );
-	for(j=0;j<counter;j+=CACHE_LINE_SIZE){
+	for(j=0;j<counter;j+=offset){
 		temp=array[j];
 	}
 

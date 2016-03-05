@@ -29,8 +29,7 @@ int main(void)
     	struct addrinfo remote;
     	struct sockaddr_in remote_addr;
     	struct in_addr raddr;
-    	char buf[DATA_BYTES];
-    	char msg[DATA_BYTES];
+    	char buf[DATA_BYTES],msg[DATA_BYTES];
 	for (i = 0; i < DATA_BYTES; i++)
 	        msg[i] = '0';
 	len=strlen(msg);
@@ -43,17 +42,7 @@ int main(void)
 	remote_addr.sin_family = AF_INET;
 	remote_addr.sin_port = htons(RPORT);
 	remote_addr.sin_addr = raddr;
-	//initialise socket
-	if ((sock_fd = socket(remote.ai_family, remote.ai_socktype, remote.ai_protocol)) == -1) {
-            printf("unable to create client socket");
-            return 1;
-        }
-	//connect to server
-	if (connect(sock_fd, (struct sockaddr *) &remote_addr, sizeof remote_addr) == -1) {
-            close(sock_fd);
-            printf("unable to connect to server");
-            return 1;
-        }
+	
         for (i=0; i<NUM_LOOP; i++) {	
 		asm volatile (
 		        "CPUID\n\t"
@@ -61,6 +50,17 @@ int main(void)
 		        "mov %%edx, %0\n\t"
 		        "mov %%eax, %1\n\t": "=r" (cycles_high), "=r" (cycles_low)::
 		        "%rax", "%rbx", "%rcx", "%rdx");
+		//initialise socket
+		if ((sock_fd = socket(remote.ai_family, remote.ai_socktype, remote.ai_protocol)) == -1) {
+		    printf("unable to create client socket");
+		    return 1;
+		}
+		//connect to server
+		if (connect(sock_fd, (struct sockaddr *) &remote_addr, sizeof remote_addr) == -1) {
+		    close(sock_fd);
+		    printf("unable to connect to server");
+		    return 1;
+		}
 
 		// send packet and recieve it back
 		send(sock_fd, msg, len, 0);
@@ -76,6 +76,7 @@ int main(void)
 		    	end   = (((uint64_t)cycles_high1 << 32) | cycles_low1);
 		    	fprintf(fp, "%lu,%lu\n", start, end);
 		}
+		close(sock_fd);
 	}
 	close(sock_fd);
    	fclose(fp);

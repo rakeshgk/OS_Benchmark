@@ -1,7 +1,7 @@
 def main():
-	fileSizes=[512000]
-	size=512000*2
-	while(size<=8000000000):
+	fileSizes=[524288]
+	size=524288*2
+	while(size<=8589934592):
 		fileSizes.append(size)
 		size=size*2
 	for filename in fileSizes:

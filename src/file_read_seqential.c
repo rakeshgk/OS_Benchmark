@@ -31,18 +31,19 @@ void timer(int);
 int main(int argc, char **argv)
 {
     struct stat sb;
-    int fd, i, offset, readsize;
+    int fd, i, runs, offset, readsize;
     unsigned long long pos;
-    char * nadata, data;
+    char *nadata, *data;
 
     fname = argv[1];
     fsize = strtoull( argv[2], NULL, 10);
     runtime = atoi(argv[3]);
     readsize = atoi(argv[4]);
+    runs = atoi(argv[5]);
 
     // Allocate read buffer of size readsize
     nadata = malloc(readsize + BLK_SIZE);
-    data = (char *)((((int unsigned)nadata + BLK_SIZE - 1) / BLK_SIZE) * BLK_SIZE);
+    data = (char *)((((long)nadata + BLK_SIZE - 1) / BLK_SIZE) * BLK_SIZE);
 
     // create a results file
     resfd = fopen("/home/amit/acads/cse221/OS_Benchmark/data/file_read_seq.txt", "a");
@@ -53,7 +54,7 @@ int main(int argc, char **argv)
     // Loop over tuples of file_size and timeout values and
     // run the experiment
     // for(fsize = (unsigned long long) 512*KB; fsize < (unsigned long long) 10*GB; fsize *= 2) {
-    for (i=0; i < 2; i++) {
+    for (i=0; i < runs; i++) {
         // initialize control variables
         pos = 0;
         num_mb_read = 0;

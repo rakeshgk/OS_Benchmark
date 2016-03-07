@@ -7,7 +7,7 @@ touch /home/amit/acads/cse221/OS_Benchmark/data/file_read_rand.txt
 #cd $path
 
 #while [ $size -lt 10737418240 ]
-while [ $size -lt 33554432 ]
+while [ $size -lt 1048576 ]
 do
     if [ $size -lt 1048576 ]
     then

@@ -1,4 +1,4 @@
-#define _LARGEFILE64_SOURCE
+#define _GNU_SOURCE
 
 #include <sys/stat.h>
 #include <time.h>
@@ -11,12 +11,13 @@
 #include <stdbool.h>
 #include <sys/types.h>
 #include <unistd.h>
+#include <malloc.h>
 
 #define KB 1024
 #define MB (1024*KB)
 #define GB (1024*MB)
+#define BLK_SIZE 4096
 
-char *data;
 char *fname;
 unsigned long long num_mb_read;
 unsigned long long fsize;
@@ -32,14 +33,16 @@ int main(int argc, char **argv)
     struct stat sb;
     int fd, i, offset, readsize;
     unsigned long long pos;
+    char * nadata, data;
 
     fname = argv[1];
     fsize = strtoull( argv[2], NULL, 10);
     runtime = atoi(argv[3]);
     readsize = atoi(argv[4]);
 
-    // Allocate read buffer of size 1MB
-    data = (char *) malloc(MB);
+    // Allocate read buffer of size readsize
+    nadata = malloc(readsize + BLK_SIZE);
+    data = (char *)((((int unsigned)nadata + BLK_SIZE - 1) / BLK_SIZE) * BLK_SIZE);
 
     // create a results file
     resfd = fopen("/home/amit/acads/cse221/OS_Benchmark/data/file_read_seq.txt", "a");
@@ -64,7 +67,7 @@ int main(int argc, char **argv)
         // printf("found file %s \n", fname);
 
         // open the file for read
-        fd = open(fname, O_RDONLY | O_LARGEFILE);
+        fd = open(fname, O_RDONLY | O_LARGEFILE | O_DIRECT);
         if (fd < 0) {
             printf("error: cannot open a file %s \n", fname);
             exit(EXIT_SUCCESS);
@@ -80,7 +83,7 @@ int main(int argc, char **argv)
         // printf("alarm set \n");
 
         while (!done) {
-            // Read 1MB worth of data from a file
+            // Read readsize worth of data from a file
             offset = read(fd, data, readsize);
             if (offset < 0) {
                 printf("error: could not read from file %s \n", fname);
@@ -105,7 +108,7 @@ int main(int argc, char **argv)
         close(fd);
     }
     fclose(resfd);
-    free(data);
+    free(nadata);
 
 	return 0;
 }

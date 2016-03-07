@@ -38,8 +38,8 @@ int main(int argc, char **argv)
     runtime = atoi(argv[3]);
     readsize = atoi(argv[4]);
 
-    // Allocate read buffer of size 1MB
-    data = (char *) malloc(MB);
+    // Allocate read buffer of size readsize
+    data = (char *) malloc(readsize);
 
     // create a results file
     resfd = fopen("/home/amit/acads/cse221/OS_Benchmark/data/file_cache_results.txt", "a");
@@ -80,7 +80,7 @@ int main(int argc, char **argv)
         // printf("alarm set \n");
 
         while (!done) {
-            // Read 1MB worth of data from a file
+            // Read readsize worth of data from a file
             offset = read(fd, data, readsize);
             if (offset < 0) {
                 printf("error: could not read from file %s \n", fname);

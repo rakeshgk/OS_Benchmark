@@ -1,36 +1,33 @@
 #!/bin/sh
 
-size=524288
+size=134217728
+runs=4
+runtime=5
+readsize=262144
 path="/home/amit/os_dir"
 rm /home/amit/acads/cse221/OS_Benchmark/data/file_read_seq.txt
 touch /home/amit/acads/cse221/OS_Benchmark/data/file_read_seq.txt
 #cd $path
-runs=1
 
+#while [ $size -lt 10737418240 ]
 while [ $size -lt 10737418240 ]
 do
-    if [ $size -lt 1048576 ]
-    then
-        s=`expr $size / 1024`
-        fname=$(printf "%d%s" "$s" "KB")
-        runtime=60
-        readsize=262144
-    elif [ $size -lt 1073741824 ]
-    then
-        s=`expr $size / 1048576`
-        fname=$(printf "%d%s" "$s" "MB")
-        runtime=60
-        readsize=262144
-    else
-        s=`expr $size / 1073741824`
-        fname=$(printf "%d%s" "$s" "GB")
-        runtime=60
-        readsize=262144
-    fi
-
+#    if [ $size -lt 1048576 ]
+#    then
+#        s=`expr $size / 1024`
+#        fname=$(printf "%d%s" "$s" "KB")
+#    elif [ $size -lt 1073741824 ]
+#    then
+#        s=`expr $size / 1048576`
+#        fname=$(printf "%d%s" "$s" "MB")
+#    else
+#        s=`expr $size / 1073741824`
+#        fname=$(printf "%d%s" "$s" "GB")
+#    fi
+    s=`expr $size / 1048576`
+    fname=$(printf "%d%s" "$s" "MB")
     sync
     echo 3 > /proc/sys/vm/drop_caches
-
     fpath=$(printf "%s/%s" "$path" "$fname")
     echo "Working on file: $fpath"
 
@@ -38,9 +35,18 @@ do
 
     sync
     echo 3 > /proc/sys/vm/drop_caches
-    #sleep 30
+    sleep 10
 
-    size=`expr $size \* 2`
+    if [ $size -lt 1073741824 ]
+    then
+        size=`expr $size + 134217728`
+    elif [ $size -ge 1073741824 -a $size -lt 4294967296 ]
+    then
+        size=`expr $size + 536870912`
+    else
+        size=`expr $size + 1073741824`
+    fi
+
     echo "Done"
     echo ""
 done

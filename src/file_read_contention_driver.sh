@@ -1,27 +1,36 @@
 #!/bin/sh
 i=1
 size=1073741824
-procs=2
+procs=10
 path="/home/amit/os_dir/contention"
-runtime=10
+runtime=5
 readsize=262144
-
-while [ $i -le $procs ]
+runs=2
+j=1
+while [ $j -le $procs ]
 do
-    echo $(printf "Contention with %d procs" "$i")
-    resfile=$(printf "/home/amit/acads/cse221/OS_Benchmark/data/file_read_contention_%d.txt" "$i")
+    echo $(printf "Contention with %d procs" "$j")
+    resfile=$(printf "/home/amit/acads/cse221/OS_Benchmark/data/file_read_contention_%d.txt" "$j")
     rm $resfile
     touch $resfile
     #cd $path
     sync
     echo 3 > /proc/sys/vm/drop_caches
-    #sleep 10
-    /home/amit/acads/cse221/OS_Benchmark/src/a.out $path $size $runtime $readsize $i $resfile
+    while [ $i -le $j ]
+    do
+        fpath=$(printf "%s/%d_1GB" "$path" "$i")
+        #sleep 10
+        /home/amit/acads/cse221/OS_Benchmark/src/a.out $fpath $size $runtime $readsize $j $runs &
+
+        i=`expr $i + 1`
+    done
     sync
     echo 3 > /proc/sys/vm/drop_caches
-    #sleep 10
+    sl=`expr $runtime \* $runs`
+    sleep `expr $sl + 5`
 
-    echo "Done"
+    echo $(printf "Done for %d procs" "$j")
     echo ""
-    i=`expr $i + 1`
+    j=`expr $j + 1`
+    i=1
 done

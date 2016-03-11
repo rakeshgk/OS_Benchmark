@@ -12,7 +12,7 @@
 #include <arpa/inet.h>
 #include <fcntl.h>
 
-#define DATA_BYTES 1000
+#define DATA_BYTES 1048576
 #define RADDR "128.54.253.242"
 #define RPORT 7
 #define NUM_LOOP 100

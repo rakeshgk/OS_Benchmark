@@ -1,7 +1,7 @@
 #!/bin/sh
 
-size=134217728
-#step=134217728
+size=33554432
+step=33554432
 bs=134217728
 fpath="/home/amit/os_dir"
 
@@ -16,20 +16,30 @@ cd $fpath
 
 while [ $size -lt 10737418240 ]
 do
-    if [ $size -lt 1073741824 ]
+    if [ $size -lt 134217728 ]
     then
         s=`expr $size / 1048576`
+        bs=33554432
         cnt=`expr $size / $bs`
         fname=$(printf "%d%s" "$s" "MB")
-        step=13421772
+        step=33554432
+    elif [ $size -lt 1073741824 ]
+    then
+        s=`expr $size / 1048576`
+        bs=134217728
+        cnt=`expr $size / $bs`
+        fname=$(printf "%d%s" "$s" "MB")
+        step=134217728
     elif [ $size -ge 1073741824 -a $size -lt 4294967296 ]
     then
         s=`expr $size / 1048576`
+        bs=268435456
         cnt=`expr $size / $bs`
         fname=$(printf "%d%s" "$s" "MB")
         step=536870912
     else
         s=`expr $size / 1048576`
+        bs=536870912
         cnt=`expr $size / $bs`
         fname=$(printf "%d%s" "$s" "MB")
         step=1073741824

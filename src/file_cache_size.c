@@ -19,107 +19,107 @@
 #define GB (1024*MB)
 #define BLK_SIZE 4096
 
-char *fname;
-long long num_mb_read;
-long long fsize;
-int runtime;
-FILE *resfd;
-bool done;
-int readsize;
-
-void timer(int);
-
 int main(int argc, char **argv)
 {
+    uint32_t cycles_low, cycles_high;
+    uint32_t cycles_low1, cycles_high1;
+    uint64_t start, end;
     struct stat sb;
-    int fd, i, offset, runs;
-    long long pos;
-    char *nadata, *data;
+    int fd, i, offset, runs, readsize;
+    char *nadata, *data, *fname;
+    unsigned long long num_read, fsize, max_reads;
+    FILE *resfd;
 
     fname = argv[1];
     fsize = strtoull( argv[2], NULL, 10);
-    runtime = atoi(argv[3]);
-    readsize = atoi(argv[4]);
-    runs = atoi(argv[5]);
+    readsize = atoi(argv[3]);
+    runs = atoi(argv[4]);
+
+    max_reads = fsize/readsize;
+    num_read = 0;
 
     // Allocate read buffer of size readsize
     nadata = (char *)malloc(readsize + BLK_SIZE);
     data = (char *)((((long)nadata + BLK_SIZE - 1) / BLK_SIZE) * BLK_SIZE);
 
     // create a results file
-    resfd = fopen("/home/amit/acads/cse221/OS_Benchmark/data/file_cache_size.txt", "a");
+    resfd = fopen("/home/amit/acads/cse221/OS_Benchmark/data/file_cache_size.csv", "a");
     if (!resfd) {
         printf("Opening a results file failed \n");
     }
 
-    // Loop over tuples of file_size and timeout values and
+    // check if the file is present
+    if (stat(fname, &sb) == -1) {
+        printf("error: cannot find a file %s \n", fname);
+        exit(-1);
+    }
+    // printf("found file %s \n", fname);
+
+    // open the file for read
+    fd = open(fname, O_RDONLY | O_LARGEFILE);
+    if (fd < 0) {
+        printf("error: cannot open a file %s \n", fname);
+        exit(-1);
+    }
+
+    // Warmup so that the file cpontents are in buffer cache
+    while (num_read < max_reads) {
+        // Read readsize worth of data from a file
+        offset = read(fd, data, readsize);
+        if (offset < 0) {
+            printf("error: could not read from file %s \n", fname);
+            exit(-1);
+        }
+        num_read++;
+    }
+
     // run the experiment
-    // for(fsize = (long long) 512*KB; fsize < (long long) 10*GB; fsize *= 2) {
     for (i=0; i < runs; i++) {
         // initialize control variables
-        pos = 0;
-        num_mb_read = 0;
-        done = false;
+        num_read = 0;
 
-        // check if the file is present
-        if (stat(fname, &sb) == -1) {
-            printf("error: cannot find a file %s \n", fname);
+        // seek to the beginning
+        if (lseek64(fd, 0, SEEK_SET) < 0) {
+            printf("error: could not seek to position 0 in file %s \n", fname);
             exit(-1);
         }
-        // printf("found file %s \n", fname);
 
-        // open the file for read
-        fd = open(fname, O_RDONLY | O_LARGEFILE);
-        if (fd < 0) {
-            printf("error: cannot open a file %s \n", fname);
-            exit(-1);
-        }
-        // printf("opened file %s \n", fname);
+        // start time
+        asm volatile (
+            "CPUID\n\t"
+            "RDTSC\n\t"
+            "mov %%edx, %0\n\t"
+            "mov %%eax, %1\n\t": "=r" (cycles_high), "=r" (cycles_low)::
+            "%rax", "%rbx", "%rcx", "%rdx");
 
-        // Perform experiment
-        // printf("Reading file of size %lld for %d seconds \n", fsize,  runtime);
-
-        // Set timer
-        signal(SIGALRM, &timer);
-        alarm(runtime);
-        // printf("alarm set \n");
-
-        while (!done) {
+        while (num_read < max_reads) {
             // Read readsize worth of data from a file
             offset = read(fd, data, readsize);
             if (offset < 0) {
                 printf("error: could not read from file %s \n", fname);
                 exit(-1);
             }
-            // printf("read %d bytes from file %s \n", ret, fname);
-
-            pos += offset;
-            if (pos >= fsize) {
-                if (lseek64(fd, 0, SEEK_SET) < 0) {
-                    printf("error: could not seek to position 0 in file %s \n", fname);
-                    exit(-1);
-                }
-                // printf("seek to 0 in file %s \n", fname);
-                pos = 0;
-                continue;
-            }
-            num_mb_read++;
-            //printf("num_mb_read updated: %lld \n", num_mb_read);
+            num_read++;
+            //printf("num_mb_read updated: %llu \n", num_mb_read);
         }
-        close(fd);
+
+        //end time
+        asm volatile(
+            "RDTSCP\n\t"
+            "mov %%edx, %0\n\t"
+            "mov %%eax, %1\n\t"
+            "CPUID\n\t": "=r" (cycles_high1), "=r" (cycles_low1):: "%rax",
+            "%rbx", "%rcx", "%rdx");
+
+        start = (((uint64_t)cycles_high << 32) | cycles_low);
+        end   = (((uint64_t)cycles_high1 << 32) | cycles_low1);
+        printf("Time is Up! %s %llu %llu %lu \n", fname, fsize, num_read, end-start);
+        fprintf(resfd, "%llu,%d,%llu,%lu \n", fsize, readsize, num_read, end-start);
     }
+    close(fd);
     fprintf(resfd, "\n");
     fclose(resfd);
     free(nadata);
 
 	return 0;
-}
-
-// Timer handler
-void timer(int sig)
-{
-    // record results
-    done = true;
-    printf("Time is Up! %s %lld %lld %d \n", fname, fsize, num_mb_read, runtime);
-    fprintf(resfd, "%lld,%d,%lld,%d \n", fsize, readsize, num_mb_read, runtime);
 }

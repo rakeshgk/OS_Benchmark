@@ -1,12 +1,11 @@
 #!/bin/sh
 
-size=134217728
+size=33554432
 runs=4
-runtime=5
 readsize=262144
 path="/home/amit/os_dir"
-rm /home/amit/acads/cse221/OS_Benchmark/data/file_cache_size.txt
-touch /home/amit/acads/cse221/OS_Benchmark/data/file_cache_size.txt
+rm /home/amit/acads/cse221/OS_Benchmark/data/file_cache_size.csv
+touch /home/amit/acads/cse221/OS_Benchmark/data/file_cache_size.csv
 #cd $path
 
 #while [ $size -lt 10737418240 ]
@@ -19,13 +18,16 @@ do
     fpath=$(printf "%s/%s" "$path" "$fname")
     echo "Working on file: $fpath"
 
-    /home/amit/acads/cse221/OS_Benchmark/src/a.out $fpath $size $runtime $readsize $runs
+    /home/amit/acads/cse221/OS_Benchmark/src/a.out $fpath $size $readsize $runs
 
     sync
     echo 3 > /proc/sys/vm/drop_caches
     sleep 10
 
-    if [ $size -lt 1073741824 ]
+    if [ $size -lt 134217728 ]
+    then
+        size=`expr $size + 33554432`
+    elif [ $size -lt 1073741824 ]
     then
         size=`expr $size + 134217728`
     elif [ $size -ge 1073741824 -a $size -lt 4294967296 ]

@@ -1,7 +1,7 @@
 #!/bin/sh
 
 size=33554432
-runs=4
+runs=10
 readsize=262144
 path="/home/amit/os_dir"
 rm /home/amit/acads/cse221/OS_Benchmark/data/file_cache_size.csv
@@ -9,7 +9,7 @@ touch /home/amit/acads/cse221/OS_Benchmark/data/file_cache_size.csv
 #cd $path
 
 #while [ $size -lt 10737418240 ]
-while [ $size -lt 10737418240 ]
+while [ $size -le 8589934592 ]
 do
     s=`expr $size / 1048576`
     fname=$(printf "%d%s" "$s" "MB")
@@ -18,7 +18,7 @@ do
     fpath=$(printf "%s/%s" "$path" "$fname")
     echo "Working on file: $fpath"
 
-    /home/amit/acads/cse221/OS_Benchmark/src/a.out $fpath $size $readsize $runs
+    /home/amit/acads/cse221/OS_Benchmark/src/a.out $fpath $size $readsize $runs nice -20
 
     sync
     echo 3 > /proc/sys/vm/drop_caches

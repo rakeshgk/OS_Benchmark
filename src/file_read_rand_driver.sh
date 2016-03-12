@@ -18,7 +18,7 @@ do
     fpath=$(printf "%s/%s" "$path" "$fname")
     echo "Working on file: $fpath"
 
-    /home/amit/acads/cse221/OS_Benchmark/src/a.out $fpath $size $readsize $runs
+    /home/amit/acads/cse221/OS_Benchmark/src/a.out $fpath $size $readsize $runs nice -20
 
     sync
     echo 3 > /proc/sys/vm/drop_caches

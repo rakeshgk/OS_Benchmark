@@ -20,7 +20,7 @@ do
     do
         fpath=$(printf "%s/%d_1GB" "$path" "$i")
         #sleep 10
-        /home/amit/acads/cse221/OS_Benchmark/src/a.out $fpath $size $readsize $j $runs &
+        /home/amit/acads/cse221/OS_Benchmark/src/a.out $fpath $size $readsize $j $runs nice -20 &
 
         i=`expr $i + 1`
     done

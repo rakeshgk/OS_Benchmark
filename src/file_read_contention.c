@@ -26,7 +26,7 @@ int main(int argc, char **argv)
     uint64_t start, end;
     struct stat sb;
     int fd, i, runs, offset, procs, readsize;
-    char *nadata, *data, *fname, resfile[100];
+    char *nadata, *data, *fname;
     unsigned long long num_read, fsize, max_reads;
     FILE *resfd;
 
@@ -44,8 +44,7 @@ int main(int argc, char **argv)
     data = (char *)((((long)nadata + BLK_SIZE - 1) / BLK_SIZE) * BLK_SIZE);
 
     // create a results file
-    snprintf(resfile, 100, "/home/amit/acads/cse221/OS_Benchmark/data/file_read_contention_%d.csv", procs);
-    resfd = fopen(resfile, "a");
+    resfd = fopen("/home/amit/acads/cse221/OS_Benchmark/data/file_read_contention.csv", "a");
     if (!resfd) {
         printf("Opening a results file failed \n");
     }
@@ -67,7 +66,7 @@ int main(int argc, char **argv)
     // printf("opened file %s \n", fname);
 
     // Warmup so that the file cpontents are in buffer cache
-    while (num_read < max_reads) {
+    /*while (num_read < max_reads) {
         // Read readsize worth of data from a file
         offset = read(fd, data, readsize);
         if (offset < 0) {
@@ -75,7 +74,7 @@ int main(int argc, char **argv)
             exit(-1);
         }
         num_read++;
-    }
+    }*/
 
     // run the experiment
     for (i=0; i < runs; i++) {
@@ -119,7 +118,10 @@ int main(int argc, char **argv)
         end   = (((uint64_t)cycles_high1 << 32) | cycles_low1);
         printf("Time is Up! %s %llu %llu %lu \n", fname, fsize, num_read, end-start);
         fprintf(resfd, "%llu,%d,%llu,%d,%lu \n", fsize, readsize, num_read, procs, end-start);
+
+	sleep(10);
     }
+    fprintf(resfd, "\n");
     close(fd);
     fclose(resfd);
     free(nadata);

@@ -1,18 +1,18 @@
 #!/bin/sh
 i=1
-size=1073741824
-procs=2
+size=268435456
+procs=10
 path="/home/amit/os_dir/contention"
 readsize=262144
 runs=1
-j=2
+j=10
 runtime=60
 while [ $j -le $procs ]
 do
     echo $(printf "Contention with %d procs" "$j")
-    resfile=$(printf "/home/amit/acads/cse221/OS_Benchmark/data/file_read_contention_%d.csv" "$j")
-    rm $resfile
-    touch $resfile
+    #resfile=$(printf "/home/amit/acads/cse221/OS_Benchmark/data/file_read_contention_%d.csv" "$j")
+    #rm $resfile
+    #touch $resfile
     #cd $path
     sync
     echo 3 > /proc/sys/vm/drop_caches
@@ -25,8 +25,9 @@ do
         i=`expr $i + 1`
     done
 
-    sl=`expr $runtime \* $runs`
-    sleep `expr $sl + 5`
+    #sl=`expr $runtime \* $runs`
+    #sleep `expr $sl + 5`
+    sleep 120
 
     sync
     echo 3 > /proc/sys/vm/drop_caches

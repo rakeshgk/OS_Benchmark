@@ -1,15 +1,15 @@
 #!/bin/sh
 
 size=33554432
-runs=4
+runs=1
 readsize=262144
-path="/home/amit/os_dir"
-rm /home/amit/acads/cse221/OS_Benchmark/data/file_read_rand.csv
-touch /home/amit/acads/cse221/OS_Benchmark/data/file_read_rand.csv
+path="/home/amit/os_dir/remote"
+rm /home/amit/acads/cse221/OS_Benchmark/data/file_read_rand_1.csv
+touch /home/amit/acads/cse221/OS_Benchmark/data/file_read_rand_1.csv
 #cd $path
 
 #while [ $size -lt 10737418240 ]
-while [ $size -lt 10737418240 ]
+while [ $size -le 4294967296 ]
 do
     s=`expr $size / 1048576`
     fname=$(printf "%d%s" "$s" "MB")

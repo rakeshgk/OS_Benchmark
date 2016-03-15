@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 {
     uint32_t cycles_low, cycles_high;
     uint32_t cycles_low1, cycles_high1;
-    uint64_t start, end;
+    uint64_t start, end, rand_oh;
     struct stat sb;
     int fd, i, runs, offset, readsize;
     char *nadata, *data, *fname;
@@ -43,7 +43,7 @@ int main(int argc, char **argv)
     data = (char *)((((long)nadata + BLK_SIZE - 1) / BLK_SIZE) * BLK_SIZE);
 
     // create a results file
-    resfd = fopen("/home/amit/acads/cse221/OS_Benchmark/data/file_read_rand.csv", "a");
+    resfd = fopen("/home/amit/acads/cse221/OS_Benchmark/data/file_read_rand_1.csv", "a");
     if (!resfd) {
         printf("Opening a results file failed \n");
     }
@@ -55,6 +55,32 @@ int main(int argc, char **argv)
     }
     // printf("found file %s \n", fname);
 
+    // random generartor overhead
+    num_read = 0;
+    // start time
+    asm volatile (
+            "CPUID\n\t"
+            "RDTSC\n\t"
+            "mov %%edx, %0\n\t"
+            "mov %%eax, %1\n\t": "=r" (cycles_high), "=r" (cycles_low)::
+            "%rax", "%rbx", "%rcx", "%rdx");
+   
+    while (num_read < max_reads) {
+        pos = (BLK_SIZE * rand()) % fsize;
+	num_read++;
+    }
+    //end time
+    asm volatile(
+            "RDTSCP\n\t"
+            "mov %%edx, %0\n\t"
+            "mov %%eax, %1\n\t"
+            "CPUID\n\t": "=r" (cycles_high1), "=r" (cycles_low1):: "%rax",
+            "%rbx", "%rcx", "%rdx");
+    start = (((uint64_t)cycles_high << 32) | cycles_low);
+    end   = (((uint64_t)cycles_high1 << 32) | cycles_low1);
+    rand_oh = end - start;
+
+    num_read = 0;
     // open the file for read
     // XXX: Use O_DIRECT for direct disk access
     fd = open(fname, O_RDONLY | O_LARGEFILE | O_DIRECT);
@@ -65,7 +91,7 @@ int main(int argc, char **argv)
     // printf("opened file %s \n", fname);
 
     // Warmup so that the file contents are in buffer cache
-    while (num_read < max_reads) {
+    /*while (num_read < max_reads) {
         // Read readsize worth of data from a file
         offset = read(fd, data, readsize);
         if (offset < 0) {
@@ -73,7 +99,7 @@ int main(int argc, char **argv)
             exit(-1);
         }
         num_read++;
-    }
+    }*/
 
     // run the experiment
     for (i=0; i < runs; i++) {
@@ -119,8 +145,8 @@ int main(int argc, char **argv)
 
         start = (((uint64_t)cycles_high << 32) | cycles_low);
         end   = (((uint64_t)cycles_high1 << 32) | cycles_low1);
-        printf("Time is Up! %s %llu %llu %lu \n", fname, fsize, num_read, end-start);
-        fprintf(resfd, "%llu,%d,%llu,%lu \n", fsize, readsize, num_read, end-start);
+        printf("Time is Up! %s %llu %llu %lu \n", fname, fsize, num_read, end-start-rand_oh);
+        fprintf(resfd, "%llu,%d,%llu,%lu \n", fsize, readsize, num_read, end-start-rand_oh);
     }
     close(fd);
     fprintf(resfd, "\n");
